@@ -1,0 +1,1550 @@
+1
+  EQS, A STRUCTURAL EQUATION PROGRAM          MULTIVARIATE SOFTWARE, INC.
+  COPYRIGHT BY P.M. BENTLER                   VERSION 6.4 (C) 1985 - 2018 (B117).
+
+
+    PROGRAM CONTROL INFORMATION
+
+     1  /TITLE                                                                          
+     2  Model built by EQS 6 for Windows                                                
+     3  /SPECIFICATIONS                                                                 
+     4  DATA='D:\EQS Projects\Book Chapter Project 2 Countries\sample_female.ess';      
+     5  VARIABLES=138; CASES=444;                                                       
+     6  METHOD=ML,ROBUST; ANALYSIS=COVARIANCE; MATRIX=RAW;                              
+     7  /LABELS                                                                         
+     8  V1=RESPNUM; V2=A1; V3=A2; V4=A3; V5=A4;                                         
+     9  V6=A5; V7=A6; V8=A7; V9=A8; V10=A8R;                                            
+    10  V11=A9; V12=A10; V13=A11; V14=A12; V15=A13;                                     
+    11  V16=A13R; V17=A14; V18=A14R; V19=A15; V20=A16;                                  
+    12  V21=A17; V22=A18; V23=A18R; V24=A19; V25=A20;                                   
+    13  V26=A21; V27=A22; V28=A23; V29=A24; V30=A25R;                                   
+    14  V31=A26; V32=A27; V33=A28; V34=A29; V35=A29R;                                   
+    15  V36=A30; V37=A30R; V38=A31; V39=A32; V40=A33;                                   
+    16  V41=A34; V42=A35; V43=A36R; V44=A37; V45=A38;                                   
+    17  V46=A39; V47=A40; V48=A41; V49=A42; V50=A43R;                                   
+    18  V51=A44; V52=A45; V53=A46R; V54=A47; V55=A48;                                   
+    19  V56=A49R; V57=A50; V58=A51; V59=A52; V60=A52R;                                  
+    20  V61=A53; V62=A54; V63=A55; V64=A56; V65=A57;                                    
+    21  V66=A58; V67=A59; V68=A60; V69=A61; V70=A61R;                                   
+    22  V71=A62; V72=A63; V73=A64R; V74=A65; V75=A66;                                   
+    23  V76=A67; V77=A68; V78=A69; V79=A70; V80=A71;                                    
+    24  V81=BAPPLG1; V82=BAPPLG2; V83=BAPPLG3; V84=BAPPLG4; V85=BAPPLG5;                
+    25  V86=BAPPLG6; V87=BAPPLG7; V88=BAADG1; V89=BAADG2; V90=BAADG3;                   
+    26  V91=BAADG4; V92=BAADG5; V93=BAADG6; V94=BAADG7; V95=C1;                         
+    27  V96=C2; V97=C3; V98=C4; V99=C5; V100=C6;                                        
+    28  V101=C7; V102=C8; V103=C9; V104=C10; V105=C11;                                  
+    29  V106=C12; V107=C13; V108=C14; V109=C15; V110=C16;                               
+    30  V111=C17; V112=C18; V113=C19; V114=C20; V115=C21;                               
+    31  V116=C22; V117=C23; V118=C24; V119=C25; V120=C26;                               
+    32  V121=C27; V122=C28; V123=C29; V124=C30; V125=C31;                               
+    33  V126=C32; V127=COUNTRY; V128=E_1; V129=E_2; V130=E_3;                           
+    34  V131=E_4; V132=E_5; V133=E_6; V134=E_7; V135=E_8;                               
+    35  V136=E_9; V137=E_10; V138=E_11;                                                 
+    36  /EQUATIONS                                                                      
+    37  V2 =   1F1 + E2;                                                                
+    38  V7 =   *F1 + E7;                                                                
+    39  V10 =   1F3 + E10;                                                              
+    40  V14 =   *F1 + E14;                                                              
+    41  V17 =   1F6 + E17;                                                              
+    42  V23 =   1F5 + E23;                                                              
+    43  V24 =   *F1 + E24;                                                              
+    44  V27 =   *F6 + E27;                                                              
+    45  V30 =   *F6 + E30;                                                              
+    46  V37 =   *F5 + E37;                                                              
+    47  V43 =   *F3 + E43;                                                              
+    48  V47 =   1F4 + E47;                                                              
+    49  V53 =   *F6 + E53;                                                              
+    50  V56 =   *F3 + E56;                                                              
+    51  V60 =   *F5 + E60;                                                              
+    52  V67 =   *F4 + E67;                                                              
+
+    53  V69 =   *F6 + E69;                                                              
+    54  V73 =   *F3 + E73;                                                              
+    55  V76 =   *F4 + E76;                                                              
+    56  V89 =   1F2 + E89;                                                              
+    57  V90 =   *F2 + E90;                                                              
+    58  V91 =   *F2 + E91;                                                              
+    59  V92 =   *F2 + E92;                                                              
+    60  F2 = *F1 + *F4 + *F6 + D2;                                                      
+    61  F3 = *F2 + *F4 + *F5 + *F6 + D3;                                                
+    62  F6 = *F5 + D6;                                                                  
+    63  /VARIANCES;                                                                     
+    64  D2 = *;                                                                         
+    65  D3 = *;                                                                         
+    66  D6 = *;                                                                         
+    67   F1 = *;                                                                        
+    68   F4 = *;                                                                        
+    69   F5 = *;                                                                        
+    70   E2 = *;                                                                        
+    71   E7 = *;                                                                        
+    72   E10 = *;                                                                       
+    73   E14 = *;                                                                       
+    74   E17 = *;                                                                       
+    75   E23 = *;                                                                       
+    76   E24 = *;                                                                       
+    77   E27 = *;                                                                       
+    78   E30 = *;                                                                       
+    79   E37 = *;                                                                       
+    80   E43 = *;                                                                       
+    81   E47 = *;                                                                       
+    82   E53 = *;                                                                       
+    83   E56 = *;                                                                       
+    84   E60 = *;                                                                       
+    85   E67 = *;                                                                       
+    86   E69 = *;                                                                       
+    87   E73 = *;                                                                       
+    88   E76 = *;                                                                       
+    89   E89 = *;                                                                       
+    90   E90 = *;                                                                       
+    91   E91 = *;                                                                       
+    92   E92 = *;                                                                       
+    93  /COVARIANCES                                                                    
+    94  F1,F4 = *;                                                                      
+    95  F1,F5 = *;                                                                      
+    96  F4,F5 = 0;                                                                      
+    97  E53,E30 = *;                                                                    
+    98  /PRINT                                                                          
+    99  FIT=ALL;                                                                        
+   100  TABLE=EQUATION;                                                                 
+   101  /OUTPUT                                                                         
+   102  Parameters;                                                                     
+   103  Standard Errors;                                                                
+   104  RSquare;                                                                        
+   105  Codebook;                                                                       
+   106  Listing;                                                                        
+   107  DATA='Female.ETS';                                                              
+   108  /WTEST;                                                                         
+   109  /LMTEST                                                                         
+
+   110  PROCESS=SIMULTANEOUS;                                                           
+   111  SET=PDD,GFF,BFF;                                                                
+   112  /END                                                                            
+
+
+      112 RECORDS OF INPUT MODEL FILE WERE READ
+
+
+    DATA IS READ FROM D:\EQS Projects\Book Chapter Project 2 Countries\sample_female.ess                                                                                                                                                                                              
+    THERE ARE 138 VARIABLES AND   444 CASES
+    IT IS A RAW DATA ESS FILE
+
+ *** NOTE  *** THIS FILE CONTAINS ALPHANUMERIC VARIABLES,
+               WHICH MUST NOT BE USED IN THE MODEL.
+
+ *** WARNING ***    21 CASES ARE SKIPPED BECAUSE A VARIABLE IS MISSING--
+     12    27    49    51    64    74    75    92    98   113
+    129   145   148   152   165   170   365   381   390   391
+    394
+
+
+  SAMPLE STATISTICS BASED ON COMPLETE CASES
+
+
+                            UNIVARIATE STATISTICS
+                            ---------------------
+
+
+ VARIABLE           A1         A6         A8R        A12        A14   
+                  V2         V7         V10        V14        V17 
+ MEAN               2.5130     2.2861     4.2388     2.2506     2.5083
+ SKEWNESS (G1)      0.3297     0.4277    -1.3977     0.3897     0.2996
+ KURTOSIS (G2)      0.0678    -0.5521     1.2812    -0.4872    -0.7751
+ STANDARD DEV.      0.8594     0.9813     1.0314     0.9229     1.1246
+
+
+ VARIABLE           A18R       A19        A22        A25R       A30R  
+                  V23        V24        V27        V30        V37 
+ MEAN               3.4374     2.3050     2.8416     3.3097     2.4610
+ SKEWNESS (G1)     -0.4380     0.3980     0.1754    -0.2776     0.4831
+ KURTOSIS (G2)     -0.9733    -0.2752    -0.9813    -0.4711    -0.7980
+ STANDARD DEV.      1.3189     0.8945     1.2395     1.0400     1.2383
+
+
+ VARIABLE           A36R       A40        A46R       A49R       A52R  
+                  V43        V47        V53        V56        V60 
+ MEAN               4.1584     2.3144     3.2742     4.0331     3.2388
+ SKEWNESS (G1)     -0.9945     0.4685    -0.2535    -0.7932    -0.3299
+ KURTOSIS (G2)      0.4884    -0.8589    -0.6734     0.0134    -0.9070
+ STANDARD DEV.      0.9369     1.1715     1.1251     0.9657     1.2758
+
+
+ VARIABLE           A59        A61        A64R       A67      BAADG2  
+                  V67        V69        V73        V76        V89 
+ MEAN               2.7660     2.6170     3.4941     3.7849     3.3593
+ SKEWNESS (G1)      0.0245     0.2477    -0.3360    -0.6114    -0.3642
+ KURTOSIS (G2)     -1.0683    -0.5419    -0.3451     0.4492    -0.4887
+ STANDARD DEV.      1.2041     1.0950     0.9461     0.8339     1.0111
+
+
+ VARIABLE         BAADG3     BAADG4     BAADG5  
+                  V90        V91        V92 
+ MEAN               3.2837     3.2577     3.4279
+ SKEWNESS (G1)     -0.2073    -0.2641    -0.3898
+ KURTOSIS (G2)     -0.4179    -0.1093    -0.6165
+ STANDARD DEV.      0.9880     0.9274     1.0682
+
+
+                            MULTIVARIATE KURTOSIS
+                            ---------------------
+
+   MARDIA'S COEFFICIENT (G2,P) =     60.7230
+   NORMALIZED ESTIMATE =             18.4139
+
+
+                     ELLIPTICAL THEORY KURTOSIS ESTIMATES
+                     ------------------------------------
+
+   MARDIA-BASED KAPPA =      0.1056 MEAN SCALED UNIVARIATE KURTOSIS =    -0.1310
+
+   MARDIA-BASED KAPPA IS USED IN COMPUTATION. KAPPA=           0.1056
+
+
+   CASE NUMBERS WITH LARGEST CONTRIBUTION TO NORMALIZED MULTIVARIATE KURTOSIS:
+   ---------------------------------------------------------------------------
+
+   CASE NUMBER       300          306          321          343          427
+
+   ESTIMATE       826.2455     733.9744    1407.2015     785.8202    1924.7713
+
+
+  COVARIANCE  MATRIX TO BE ANALYZED:    23 VARIABLES (SELECTED FROM 138 VARIABLES)
+  BASED ON   423 CASES.
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.739
+     A6     V7         0.362      0.963
+     A8R    V10       -0.068     -0.040      1.064
+     A12    V14        0.447      0.473     -0.046      0.852
+     A14    V17       -0.091     -0.091     -0.302     -0.045      1.265
+     A18R   V23        0.076      0.159      0.192      0.094     -0.339
+     A19    V24        0.395      0.474     -0.040      0.497     -0.061
+     A22    V27       -0.144     -0.113     -0.299     -0.105      0.356
+     A25R   V30       -0.169     -0.169     -0.124     -0.097      0.605
+     A30R   V37        0.147      0.223      0.048      0.169     -0.292
+     A36R   V43        0.049     -0.019      0.434      0.015     -0.282
+     A40    V47        0.135      0.289     -0.071      0.196      0.027
+     A46R   V53       -0.205     -0.173     -0.115     -0.149      0.595
+     A49R   V56        0.033     -0.000      0.490      0.060     -0.334
+     A52R   V60        0.012      0.159      0.277      0.089     -0.347
+     A59    V67        0.075      0.174     -0.022      0.161      0.081
+     A61    V69       -0.140     -0.087     -0.283     -0.046      0.721
+     A64R   V73        0.184      0.074      0.337      0.146     -0.375
+     A67    V76       -0.122     -0.246      0.042     -0.136      0.093
+   BAADG2   V89        0.282      0.319      0.198      0.287     -0.235
+   BAADG3   V90        0.304      0.367      0.157      0.284     -0.204
+   BAADG4   V91        0.313      0.319      0.147      0.277     -0.200
+   BAADG5   V92        0.216      0.318      0.130      0.231     -0.149
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        1.740
+     A19    V24        0.103      0.800
+     A22    V27       -0.525     -0.082      1.536
+     A25R   V30       -0.396     -0.178      0.334      1.082
+     A30R   V37        0.850      0.141     -0.323     -0.340      1.533
+     A36R   V43        0.419      0.046     -0.333     -0.182      0.202
+     A40    V47        0.087      0.255      0.076     -0.117      0.122
+     A46R   V53       -0.402     -0.153      0.316      0.711     -0.425
+     A49R   V56        0.336      0.037     -0.248     -0.152      0.172
+     A52R   V60        1.206      0.109     -0.384     -0.330      0.842
+     A59    V67        0.136      0.230      0.171     -0.062      0.108
+     A61    V69       -0.481     -0.084      0.453      0.474     -0.456
+     A64R   V73        0.260      0.152     -0.395     -0.160      0.267
+     A67    V76       -0.098     -0.112      0.191      0.112     -0.192
+   BAADG2   V89        0.257      0.281     -0.133     -0.254      0.102
+   BAADG3   V90        0.224      0.323     -0.130     -0.204      0.186
+   BAADG4   V91        0.150      0.315     -0.130     -0.158      0.137
+   BAADG5   V92        0.196      0.329     -0.074     -0.168      0.179
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.878
+     A40    V47       -0.026      1.372
+     A46R   V53       -0.205     -0.046      1.266
+     A49R   V56        0.552     -0.063     -0.149      0.933
+     A52R   V60        0.424      0.036     -0.298      0.438      1.628
+     A59    V67        0.044      0.996     -0.047      0.001      0.125
+     A61    V69       -0.325     -0.007      0.558     -0.347     -0.498
+     A64R   V73        0.400      0.029     -0.212      0.394      0.306
+     A67    V76        0.037      0.065      0.128      0.026     -0.091
+   BAADG2   V89        0.234      0.200     -0.236      0.277      0.239
+   BAADG3   V90        0.213      0.264     -0.239      0.237      0.216
+   BAADG4   V91        0.177      0.198     -0.192      0.195      0.161
+   BAADG5   V92        0.152      0.223     -0.101      0.130      0.170
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        1.450
+     A61    V69        0.036      1.199
+     A64R   V73        0.005     -0.336      0.895
+     A67    V76        0.158      0.126     -0.071      0.695
+   BAADG2   V89        0.172     -0.165      0.272     -0.001      1.022
+   BAADG3   V90        0.202     -0.166      0.286     -0.010      0.822
+   BAADG4   V91        0.177     -0.138      0.244     -0.058      0.654
+   BAADG5   V92        0.183     -0.137      0.212      0.007      0.578
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        0.976
+   BAADG4   V91        0.654      0.860
+   BAADG5   V92        0.606      0.650      1.141
+
+
+
+  BENTLER-WEEKS STRUCTURAL REPRESENTATION:
+
+        NUMBER OF DEPENDENT VARIABLES = 26
+            DEPENDENT V'S :     2    7   10   14   17   23   24   27   30   37
+            DEPENDENT V'S :    43   47   53   56   60   67   69   73   76   89
+            DEPENDENT V'S :    90   91   92
+            DEPENDENT F'S :     2    3    6
+
+        NUMBER OF INDEPENDENT VARIABLES = 29
+            INDEPENDENT F'S :     1    4    5
+            INDEPENDENT E'S :     2    7   10   14   17   23   24   27   30   37
+            INDEPENDENT E'S :    43   47   53   56   60   67   69   73   76   89
+            INDEPENDENT E'S :    90   91   92
+            INDEPENDENT D'S :     2    3    6
+
+        NUMBER OF FREE PARAMETERS =  57
+        NUMBER OF FIXED NONZERO PARAMETERS =  32
+
+ *** WARNING MESSAGES ABOVE, IF ANY, REFER TO THE MODEL PROVIDED.
+     CALCULATIONS FOR INDEPENDENCE MODEL NOW BEGIN.
+
+ *** WARNING MESSAGES ABOVE, IF ANY, REFER TO INDEPENDENCE MODEL.
+     CALCULATIONS FOR USER'S MODEL NOW BEGIN.
+
+
+  3RD STAGE OF COMPUTATION REQUIRED   1014986 WORDS OF MEMORY.
+  PROGRAM ALLOCATED   5000000 WORDS
+
+  DETERMINANT OF INPUT MATRIX IS   0.25465D-03
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  FOLLOWING TECHNICAL INFORMATION HAS BEEN STORED IN
+ Female.ETS                                                                                                                                                                                                                                                      
+
+  -----------------------------------------------------------------------------
+
+          TAIL PROBABILITIES NOT APPLICABLE TO THIS ANALYSIS ARE WRITTEN AS -1.
+          OTHER STATISTICS WHICH ARE NOT APPLICABLE ARE WRITTEN AS -9.
+
+     SUMMARY SECTION CONTAINS--
+
+          LINE    1 BEGINNING: ANALYSIS ...
+
+          LINE    2 CONTAINING THESE 14 ELEMENTS OF MODEL STATISTICS:
+
+               ESTIMATION METHOD (LS,GLS,ML,ELS,EGLS,ERLS,AGLS,HKGLS,HKRLS)
+               CONDITION CODE (0 FOR NORMAL CONDITION)                     
+               CONVERGENCE (0 FOR MODEL CONVERGED)                         
+               NUMBER OF ITERATIONS FOR CONVERGENCE                        
+               DEGREES OF FREEDOM                                          
+               NUMBER OF CONSTRAINTS                                       
+               DENOMINATOR DEGREES OF FREEDOM FOR F-TESTS                  
+               DEGREES OF FREEDOM FOR POTENTIAL STRUCTURED MEANS MODEL TEST
+               D.F. FOR MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE             
+               D.F. FOR MEAN-SCALED AND SKEWNESS-ADJUSTED STATISTIC        
+               NUMBER OF SAMPLES IN ANDERSON-DARLING TEST                  
+               D.F. FOR GLS TEST OF HOMOGENEITY OF MEANS                   
+               D.F. FOR GLS TEST OF HOMOGENEITY OF COVARIANCE MATRICES     
+               D.F. FOR GLS COMBINED TEST OF HOMOGENEITY OF MEANS/COVAS.   
+
+          LINE    3 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               TAIL PROBABILITY FOR MODEL CHI-SQUARE                       
+               TAIL PROBABILITY FOR RESIDUAL-BASED TEST STATISTIC          
+               TAIL PROBABILITY FOR YUAN-BENTLER RESIDUAL-BASED TEST STAT. 
+               TAIL PROBABILITY FOR YUAN-BENTLER AGLS F-STATISTIC          
+               TAIL PROBABILITY FOR YUAN-BENTLER RESIDUAL-BASED F-STATISTIC
+               TAIL PROBABILITY FOR SATORRA-BENTLER SCALED CHI-SQUARE      
+               TAIL PROB. FOR YUAN-BENTLER SCALED CHI-SQUARE (CASE ROBUST) 
+               TAIL PROBABILITY FOR SCALED CHI-SQUARE (YUAN-BENTLER)       
+               TAIL PROBABILITY FOR POTENTIAL STRUCTURED MEANS MODEL       
+               TAIL PROB. FOR YUAN-BENTLER CORRECTED AGLS TEST STATISTIC   
+
+          LINE    4 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               TAIL PROB. FOR YUAN-BENTLER RESIDUAL-BASED ADF STATISTIC    
+               TAIL PROB. FOR YUAN-BENTLER CORRECTED RESID.-BASED ADF STAT.
+               TAIL PROB. FOR YUAN-BENTLER RESIDUAL-BASED ADF F-STATISTIC  
+               TAIL PROBABILITY FOR MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE 
+               TAIL PROBABILITY FOR MEAN-SCALED AND SKEWNESS-ADJUSTED STAT.
+               TAIL PROBABILITY FOR ANDERSON-DARLING TEST                  
+               TAIL PROBABILITY FOR COMBINED NEYMAN TEST OF UNIFORMITY     
+               TAIL PROBABILITY FOR GLS TEST OF HOMOGENEITY OF MEANS       
+               TAIL PROB. FOR GLS TEST OF HOMOGENEITY OF COV. MATRICES     
+               TAIL PROB. FOR GLS COMBINED TEST OF HOMOGENEITY             
+
+          LINE    5 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               INDEPENDENCE MODEL CHI-SQUARE                               
+               MODEL CHI-SQUARE                                            
+               JORESKOG-SORBOM'S  GFI  FIT INDEX                           
+               JORESKOG-SORBOM'S AGFI  FIT INDEX                           
+               BOLLEN'S          (IFI) FIT INDEX                           
+               MCDONALD'S        (MFI) FIT INDEX                           
+               BENTLER-BONETT     NORMED FIT INDEX                         
+               BENTLER-BONETT NON-NORMED FIT INDEX                         
+               COMPARATIVE FIT INDEX (CFI)                                 
+               ROOT MEAN-SQUARE RESIDUAL (RMR)                             
+
+          LINE    6 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               STANDARDIZED RMR                                            
+               ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)             
+               CONFIDENCE INTERVAL FOR RMSEA (LOWER BOUND)                 
+               CONFIDENCE INTERVAL FOR RMSEA (UPPER BOUND)                 
+               RESIDUAL-BASED TEST STATISTIC                               
+               YUAN-BENTLER RESIDUAL-BASED TEST STATISTIC                  
+               YUAN-BENTLER AGLS F-STATISTIC                               
+               YUAN-BENTLER RESIDUAL-BASED F-STATISTIC                     
+               AGLS FIT INDEX                                              
+               AGLS ADJUSTED FIT INDEX                                     
+
+          LINE    7 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               AGLS CORRECTED COMPARATIVE FIT INDEX                        
+               CRONBACH'S ALPHA                                            
+               COVARIATE-FREE ALPHA                                        
+               COVARIATE-BASED ALPHA                                       
+               COEFFICIENT ALPHA FOR AN OPTIMAL SHORT SCALE                
+               GREATEST LOWER BOUND RELIABILITY                            
+               LI-BENTLER CORRECTED GREATEST LOWER BOUND RELIABILITY       
+               GLB RELIABILITY FOR AN OPTIMAL SHORT SCALE                  
+               BENTLER'S DIMENSION-FREE LOWER BOUND RELIABILITY (BLB)      
+               LI-BENTLER CORRECTED DIMENSION-FREE LOWER BOUND RELIABILITY 
+
+          LINE    8 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               SHAPIRO'S LOWER BOUND RELIABILITY FOR A WEIGHTED COMPOSITE  
+               RELIABILITY COEFFICIENT RHO                                 
+               COVARIATE-FREE RHO                                          
+               COVARIATE-BASED RHO                                         
+               RELIABILITY COEFFICIENT RHO BASED ON BLB LOADINGS           
+               COVARIATE-FREE RHO BASED ON BLB LOADINGS                    
+               COVARIATE-BASED RHO BASED ON BLB LOADINGS                   
+               RELIABILITY COEFFICIENT RHO BASED ON GLB LOADINGS           
+               COVARIATE-FREE RHO BASED ON GLB LOADINGS                    
+               COVARIATE-BASED RHO BASED ON GLB LOADINGS                   
+
+          LINE    9 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               MAXIMAL WEIGHTED INTERNAL CONSISTENCY RELIABILITY           
+               SPLIT HALF RELIABILITY LAMBDA4 (0.95)                       
+               SPLIT HALF RELIABILITY LAMBDA4 (OPTIMAL)                    
+               ROBUST INDEPENDENCE MODEL CHI-SQUARE                        
+               SATORRA-BENTLER SCALED CHI-SQUARE                           
+               ROBUST  BOLLEN  (IFI) FIT INDEX                             
+               ROBUST MCDONALD (MFI) FIT INDEX                             
+               ROBUST BENTLER-BONETT     NORMED FIT INDEX                  
+               ROBUST BENTLER-BONETT NON-NORMED FIT INDEX                  
+               ROBUST COMPARATIVE FIT INDEX                                
+
+          LINE   10 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               ROBUST ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)      
+               CONFIDENCE INTERVAL FOR ROBUST RMSEA (LOWER BOUND)          
+               CONFIDENCE INTERVAL FOR ROBUST RMSEA (UPPER BOUND)          
+               YUAN-BENTLER SCALED CHI-SQUARE (CASE ROBUST WEIGHTING)      
+               SCALED CHI-SQUARE (YUAN-BENTLER)                            
+               SCALED (YUAN-BENTLER) INDEPENDENCE MODEL CHI-SQUARE         
+               BENTLER-YUAN MODIFIED TEST FOR POTENTIAL STRUC. MEANS MODEL 
+               MINIMIZED MODEL FUNCTION VALUE                              
+               YUAN-BENTLER CORRECTED AGLS TEST STATISTIC                  
+               YUAN-BENTLER RESIDUAL-BASED ADF STATISTIC                   
+
+          LINE   11 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               YUAN-BENTLER CORRECTED RESIDUAL-BASED ADF STATISTIC         
+               YUAN-BENTLER RESIDUAL-BASED ADF F-STATISTIC                 
+               INDEPENDENCE AIC                                            
+               INDEPENDENCE CAIC                                           
+               MODEL AIC                                                   
+               MODEL CAIC                                                  
+               ROBUST INDEPENDENCE AIC                                     
+               ROBUST INDEPENDENCE CAIC                                    
+               ROBUST MODEL AIC                                            
+               ROBUST MODEL CAIC                                           
+
+          LINE   12 CONTAINING THESE 10 ELEMENTS OF MODEL STATISTICS:
+
+               AKAIKE INFORMATION CRITERION (AIC) BASED ON LOG LIKELIHOOD  
+               BAYESIAN INFORMATION CRITERION (BIC) BASED ON LOG LIKELIHOOD
+               MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE                      
+               MEAN-SCALED AND SKEWNESS-ADJUSTED STATISTIC                 
+               ANDERSON-DARLING NORMALIZED TEST STATISTIC                  
+               COMBINED NEYMAN TEST OF UNIFORMITY                          
+               USER-DEFINED FUNCTION                                       
+               STANDARD ERROR OF USER-DEFINED FUNCTION                     
+               CORRECTED STANDARD ERROR OF USER-DEFINED FUNCTION           
+               SATORRA-BENTLER SCALING FACTOR                              
+
+          LINE   13 CONTAINING THESE  3 ELEMENTS OF MODEL STATISTICS:
+
+               CHI-SQUARE FOR GLS TEST OF HOMOGENEITY OF MEANS             
+               CHI-SQUARE FOR GLS TEST OF HOMOGENEITY OF COV. MATRICES     
+               CHI-SQUARE FOR GLS COMBINED TEST OF HOMOGENEITY OF MEANS/COV
+
+          THE LAST THREE STATISTICS ARE FOR MISSING DATA ANALYSIS
+
+          TOTAL NUMBER OF LINES IN SUMMARY SECTION IS: 13
+
+  -----------------------------------------------------------------------------
+
+     INFORMATION SECTION CONTAINS--
+
+          9 NUMBERS ON LINE   14:
+
+               SAMPLE SIZE                                                 
+               NUMBER OF MEASURED VARIABLES                                
+               NUMBER OF FACTORS                                           
+               NUMBER OF MISSINGNESS PATTERNS                              
+               KURTOSES: (G2,P) AND NORMALIZED MULTIVARIATE                
+               DETERMINANT OF MATRIX TO BE ANALYZED                        
+               NUMBER OF INDEPENDENT VARIABLES                             
+               NUMBER OF DEPENDENT VARIABLES                               
+
+          PARAMETERS TO BE WRITTEN ARE:
+
+   F1,F1     F4,F1     F4,F4     F5,F1     F5,F5     E2,E2     E7,E7    E10,E10 
+  E14,E14   E17,E17   E23,E23   E24,E24   E27,E27   E30,E30   E37,E37   E43,E43 
+  E47,E47   E53,E30   E53,E53   E56,E56   E60,E60   E67,E67   E69,E69   E73,E73 
+  E76,E76   E89,E89   E90,E90   E91,E91   E92,E92    D2,D2     D3,D3     D6,D6  
+   V7,F1    V14,F1    V24,F1    V37,F5    V60,F5    V67,F4    V76,F4     F2,F1  
+   F2,F4     F3,F4     F3,F5     F6,F5    V27,F6    V30,F6    V43,F3    V53,F6  
+  V56,F3    V69,F6    V73,F3    V90,F2    V91,F2    V92,F2     F2,F6     F3,F2  
+   F3,F6  
+
+         57 PARAMETER ESTIMATES ON LINES 15-22
+         57 STANDARD ERRORS ON LINES 23-30
+         57 ROBUST STANDARD ERRORS ON LINES 31-38
+         26 R-SQUARES ON LINES 39-42
+         26 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS. ON LINES 43-46
+         29 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS. ON LINES 47-50
+
+          TOTAL NUMBER OF LINES IN INFORMATION SECTION IS:     37
+
+          OUTPUT FORMAT FOR INFORMATION SECTION IS: (8E16.8)
+
+  -----------------------------------------------------------------------------
+
+          TOTAL NUMBER OF LINES PER SET IS:     50
+          (SUMMARY SECTION PLUS INFORMATION SECTION(S))
+
+ CODEBOOK FILE HAS BEEN WRITTEN ON FILE
+ Female.CBK                                                                                                                                                                                                                                                      
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  PARAMETER ESTIMATES APPEAR IN ORDER,
+  NO SPECIAL PROBLEMS WERE ENCOUNTERED DURING OPTIMIZATION.
+
+
+
+  RESIDUAL COVARIANCE MATRIX  (S-SIGMA) :       
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.001
+     A6     V7        -0.028      0.002
+     A8R    V10       -0.123     -0.103      0.003
+     A12    V14        0.031     -0.005     -0.112      0.002
+     A14    V17       -0.054     -0.049     -0.026     -0.000     -0.000
+     A18R   V23       -0.017      0.051     -0.114     -0.020      0.129
+     A19    V24       -0.008      0.009     -0.105      0.002     -0.017
+     A22    V27       -0.121     -0.087     -0.129     -0.077     -0.089
+     A25R   V30       -0.142     -0.138      0.079     -0.064      0.076
+     A30R   V37        0.081      0.147     -0.168      0.087      0.040
+     A36R   V43       -0.015     -0.093     -0.004     -0.064      0.042
+     A40    V47       -0.049      0.078     -0.030     -0.029      0.027
+     A46R   V53       -0.177     -0.141      0.099     -0.115      0.034
+     A49R   V56       -0.034     -0.077      0.033     -0.022      0.005
+     A52R   V60       -0.081      0.051     -0.030     -0.025      0.123
+     A59    V67       -0.069      0.008      0.010     -0.016      0.081
+     A61    V69       -0.103     -0.045     -0.009     -0.002      0.006
+     A64R   V73        0.134      0.016     -0.006      0.085     -0.121
+     A67    V76       -0.132     -0.259      0.044     -0.149      0.093
+   BAADG2   V89        0.019      0.016      0.010     -0.036     -0.047
+   BAADG3   V90        0.039      0.061     -0.032     -0.041     -0.014
+   BAADG4   V91        0.092      0.065     -0.011      0.006     -0.042
+   BAADG5   V92        0.009      0.080     -0.018     -0.022     -0.001
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        0.000
+     A19    V24       -0.008      0.002
+     A22    V27       -0.236     -0.055      0.000
+     A25R   V30       -0.052     -0.146      0.007     -0.000
+     A30R   V37        0.001      0.062     -0.118     -0.096     -0.000
+     A36R   V43        0.059     -0.030     -0.132      0.057     -0.053
+     A40    V47        0.087      0.036      0.076     -0.117      0.122
+     A46R   V53       -0.038     -0.119     -0.030     -0.000     -0.167
+     A49R   V56       -0.040     -0.043     -0.039      0.097     -0.095
+     A52R   V60        0.004     -0.002     -0.094      0.015     -0.009
+     A59    V67        0.136      0.059      0.171     -0.062      0.108
+     A61    V69       -0.016     -0.041      0.012     -0.052     -0.126
+     A64R   V73       -0.022      0.093     -0.239      0.026      0.067
+     A67    V76       -0.098     -0.125      0.191      0.112     -0.192
+   BAADG2   V89        0.085     -0.032     -0.016     -0.115     -0.020
+   BAADG3   V90        0.051      0.008     -0.013     -0.065      0.064
+   BAADG4   V91        0.006      0.051     -0.032     -0.042      0.035
+   BAADG5   V92        0.061      0.083      0.017     -0.060      0.083
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.004
+     A40    V47        0.021     -0.000
+     A46R   V53        0.048     -0.046     -0.000
+     A49R   V56        0.013     -0.013      0.115      0.004
+     A52R   V60        0.063      0.036      0.068      0.060      0.000
+     A59    V67        0.082     -0.000     -0.047      0.040      0.125
+     A61    V69       -0.003     -0.007      0.001     -0.011     -0.032
+     A64R   V73       -0.003      0.066     -0.014     -0.028      0.023
+     A67    V76        0.039     -0.008      0.128      0.029     -0.091
+   BAADG2   V89        0.013     -0.034     -0.090      0.046      0.066
+   BAADG3   V90       -0.010      0.028     -0.091      0.004      0.043
+   BAADG4   V91       -0.009      0.002     -0.069      0.001      0.016
+   BAADG5   V92       -0.022      0.039      0.014     -0.052      0.035
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        0.000
+     A61    V69        0.036      0.000
+     A64R   V73        0.034     -0.084      0.002
+     A67    V76        0.100      0.126     -0.069     -0.000
+   BAADG2   V89       -0.012      0.022      0.099     -0.014      0.012
+   BAADG3   V90        0.016      0.022      0.111     -0.024      0.032
+   BAADG4   V91        0.022      0.019      0.099     -0.070     -0.005
+   BAADG5   V92        0.039      0.010      0.076     -0.004     -0.039
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        0.012
+   BAADG4   V91       -0.010      0.008
+   BAADG5   V92       -0.016      0.132      0.007
+
+                                  AVERAGE ABSOLUTE RESIDUAL =         0.0530
+                     AVERAGE OFF-DIAGONAL ABSOLUTE RESIDUAL =         0.0576
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+  STANDARDIZED RESIDUAL MATRIX:                 
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.002
+     A6     V7        -0.033      0.002
+     A8R    V10       -0.138     -0.102      0.003
+     A12    V14        0.040     -0.006     -0.118      0.002
+     A14    V17       -0.056     -0.045     -0.023     -0.000     -0.000
+     A18R   V23       -0.015      0.040     -0.084     -0.017      0.087
+     A19    V24       -0.011      0.010     -0.113      0.003     -0.017
+     A22    V27       -0.114     -0.072     -0.101     -0.067     -0.064
+     A25R   V30       -0.159     -0.136      0.073     -0.067      0.065
+     A30R   V37        0.076      0.121     -0.132      0.077      0.029
+     A36R   V43       -0.019     -0.101     -0.004     -0.074      0.040
+     A40    V47       -0.049      0.068     -0.025     -0.027      0.021
+     A46R   V53       -0.183     -0.127      0.085     -0.110      0.027
+     A49R   V56       -0.041     -0.081      0.033     -0.024      0.004
+     A52R   V60       -0.074      0.041     -0.022     -0.022      0.086
+     A59    V67       -0.066      0.007      0.008     -0.014      0.060
+     A61    V69       -0.110     -0.042     -0.008     -0.002      0.005
+     A64R   V73        0.165      0.017     -0.006      0.097     -0.114
+     A67    V76       -0.185     -0.316      0.052     -0.193      0.099
+   BAADG2   V89        0.022      0.016      0.010     -0.038     -0.041
+   BAADG3   V90        0.046      0.063     -0.032     -0.045     -0.013
+   BAADG4   V91        0.115      0.071     -0.012      0.007     -0.040
+   BAADG5   V92        0.010      0.076     -0.016     -0.022     -0.001
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        0.000
+     A19    V24       -0.007      0.002
+     A22    V27       -0.145     -0.050      0.000
+     A25R   V30       -0.038     -0.157      0.005     -0.000
+     A30R   V37        0.001      0.056     -0.077     -0.074     -0.000
+     A36R   V43        0.048     -0.036     -0.114      0.058     -0.046
+     A40    V47        0.056      0.035      0.052     -0.096      0.084
+     A46R   V53       -0.025     -0.118     -0.021     -0.000     -0.120
+     A49R   V56       -0.031     -0.049     -0.033      0.096     -0.079
+     A52R   V60        0.002     -0.002     -0.059      0.012     -0.006
+     A59    V67        0.085      0.055      0.115     -0.050      0.073
+     A61    V69       -0.011     -0.042      0.009     -0.045     -0.093
+     A64R   V73       -0.018      0.109     -0.204      0.027      0.058
+     A67    V76       -0.089     -0.167      0.185      0.129     -0.186
+   BAADG2   V89        0.064     -0.036     -0.013     -0.110     -0.016
+   BAADG3   V90        0.039      0.009     -0.011     -0.063      0.052
+   BAADG4   V91        0.005      0.062     -0.028     -0.044      0.030
+   BAADG5   V92        0.044      0.086      0.013     -0.054      0.063
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.004
+     A40    V47        0.020     -0.000
+     A46R   V53        0.045     -0.035     -0.000
+     A49R   V56        0.015     -0.011      0.106      0.004
+     A52R   V60        0.053      0.024      0.047      0.049      0.000
+     A59    V67        0.072     -0.000     -0.035      0.034      0.081
+     A61    V69       -0.003     -0.006      0.001     -0.010     -0.023
+     A64R   V73       -0.003      0.060     -0.013     -0.030      0.019
+     A67    V76        0.050     -0.008      0.136      0.036     -0.085
+   BAADG2   V89        0.014     -0.029     -0.079      0.047      0.051
+   BAADG3   V90       -0.011      0.024     -0.082      0.004      0.034
+   BAADG4   V91       -0.010      0.002     -0.066      0.001      0.014
+   BAADG5   V92       -0.022      0.031      0.012     -0.050      0.025
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        0.000
+     A61    V69        0.027      0.000
+     A64R   V73        0.030     -0.081      0.003
+     A67    V76        0.100      0.138     -0.087     -0.000
+   BAADG2   V89       -0.010      0.020      0.103     -0.017      0.012
+   BAADG3   V90        0.014      0.021      0.119     -0.029      0.032
+   BAADG4   V91        0.020      0.019      0.113     -0.090     -0.006
+   BAADG5   V92        0.030      0.009      0.075     -0.004     -0.036
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        0.012
+   BAADG4   V91       -0.010      0.010
+   BAADG5   V92       -0.015      0.133      0.006
+
+                     AVERAGE ABSOLUTE STANDARDIZED RESIDUAL =         0.0493
+        AVERAGE OFF-DIAGONAL ABSOLUTE STANDARDIZED RESIDUAL =         0.0535
+
+
+  LARGEST STANDARDIZED RESIDUALS:
+
+      NO.    PARAMETER   ESTIMATE      NO.    PARAMETER   ESTIMATE
+      ---    ---------   --------      ---    ---------   --------
+       1     V76, V7       -0.316      11     V30, V24      -0.157
+       2     V73, V27      -0.204      12     V27, V23      -0.145
+       3     V76, V14      -0.193      13     V10, V2       -0.138
+       4     V76, V37      -0.186      14     V76, V69       0.138
+       5     V76, V27       0.185      15     V76, V53       0.136
+       6     V76, V2       -0.185      16     V30, V7       -0.136
+       7     V53, V2       -0.183      17     V92, V91       0.133
+       8     V76, V24      -0.167      18     V37, V10      -0.132
+       9     V73, V2        0.165      19     V76, V30       0.129
+      10     V30, V2       -0.159      20     V53, V7       -0.127
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+  DISTRIBUTION OF STANDARDIZED RESIDUALS
+
+
+
+     ----------------------------------------                     
+     !                                      !                     
+  120-                    *                 -                     
+     !                 *  *                 !                     
+     !                 *  *                 !                     
+     !                 *  *                 !                     
+     !                 *  *                 !            RANGE      FREQ PERCENT
+   90-                 *  *                 -                     
+     !                 *  *                 !    1   -0.5  -  --       0   0.00%
+     !                 *  *                 !    2   -0.4  -  -0.5     0   0.00%
+     !                 *  *                 !    3   -0.3  -  -0.4     1   0.36%
+     !                 *  *                 !    4   -0.2  -  -0.3     1   0.36%
+   60-                 *  *                 -    5   -0.1  -  -0.2    25   9.06%
+     !                 *  *                 !    6    0.0  -  -0.1   114  41.30%
+     !                 *  *                 !    7    0.1  -   0.0   120  43.48%
+     !                 *  *                 !    8    0.2  -   0.1    15   5.43%
+     !                 *  *                 !    9    0.3  -   0.2     0   0.00%
+   30-                 *  *                 -    A    0.4  -   0.3     0   0.00%
+     !              *  *  *                 !    B    0.5  -   0.4     0   0.00%
+     !              *  *  *  *              !    C     ++  -   0.5     0   0.00%
+     !              *  *  *  *              !    -------------------------------
+     !              *  *  *  *              !            TOTAL       276 100.00%
+     ----------------------------------------                     
+        1  2  3  4  5  6  7  8  9  A  B  C    EACH "*" REPRESENTS    6 RESIDUALS
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+
+  GOODNESS OF FIT SUMMARY FOR METHOD = ML    
+
+  INDEPENDENCE MODEL CHI-SQUARE        =    4318.806 ON   253 DEGREES OF FREEDOM
+
+  INDEPENDENCE AIC =    3812.806   INDEPENDENCE CAIC =    2535.820
+         MODEL AIC =     107.451          MODEL CAIC =    -997.923
+
+  LOG LIKELIHOOD BASED ON THE STRUCTURED MODEL                 =       24639.838
+  AKAIKE INFORMATION CRITERION (AIC) BASED ON LOG LIKELIHOOD   =       24753.838
+  BAYESIAN INFORMATION CRITERION (BIC) BASED ON LOG LIKELIHOOD =       24984.538
+
+  CHI-SQUARE =      545.451 BASED ON     219 DEGREES OF FREEDOM
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  THE NORMAL THEORY RLS CHI-SQUARE FOR THIS ML SOLUTION IS        559.281.
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  FIT INDICES
+  -----------
+  BENTLER-BONETT     NORMED FIT INDEX =     0.874
+  BENTLER-BONETT NON-NORMED FIT INDEX =     0.907
+  COMPARATIVE FIT INDEX (CFI)         =     0.920
+  BOLLEN'S          (IFI) FIT INDEX   =     0.920
+  MCDONALD'S        (MFI) FIT INDEX   =     0.680
+  JORESKOG-SORBOM'S  GFI  FIT INDEX   =     0.897
+  JORESKOG-SORBOM'S AGFI  FIT INDEX   =     0.870
+  ROOT MEAN-SQUARE RESIDUAL (RMR)     =     0.072
+  STANDARDIZED RMR                    =     0.069
+  ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)    =     0.059
+  90% CONFIDENCE INTERVAL OF RMSEA  (       0.053,         0.066)
+
+  RELIABILITY COEFFICIENTS
+  ------------------------
+  CRONBACH'S ALPHA                                   =     0.643
+  RELIABILITY COEFFICIENT RHO                        =     0.820
+
+  STANDARDIZED FACTOR LOADINGS FOR THE FACTOR THAT GENERATES
+  MAXIMAL RELIABILITY FOR THE UNIT-WEIGHT COMPOSITE
+
+  BASED ON THE MODEL (RHO):
+    A1         A6         A8R        A12        A14        A18R       A19   
+   0.4855     0.4896     0.2744     0.5539    -0.0400     0.3665     0.5554
+    A22        A25R       A30R       A36R       A40        A46R       A49R  
+  -0.0224     0.0059     0.2766     0.3560     0.4303     0.0037     0.3610
+    A52R       A59        A61        A64R       A67      BAADG2     BAADG3  
+   0.3801     0.3290    -0.0408     0.2757     0.0350     0.6499     0.6704
+  BAADG4     BAADG5  
+   0.5945     0.4823
+
+
+
+  GOODNESS OF FIT SUMMARY FOR METHOD = ROBUST
+
+  ROBUST INDEPENDENCE MODEL CHI-SQUARE =    3808.038 ON   253 DEGREES OF FREEDOM
+
+  INDEPENDENCE AIC =    3302.038   INDEPENDENCE CAIC =    2025.053
+         MODEL AIC =      57.310          MODEL CAIC =   -1048.065
+
+  SATORRA-BENTLER SCALED CHI-SQUARE =    495.3099 ON     219 DEGREES OF FREEDOM
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+  SATORRA-BENTLER SCALING FACTOR      =     0.908
+
+  MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE             =     216.976 ON    96 D.F.
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  RESIDUAL-BASED TEST STATISTIC                      =   941.709
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  YUAN-BENTLER RESIDUAL-BASED TEST STATISTIC         =   290.936
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00081
+
+  YUAN-BENTLER RESIDUAL-BASED F-STATISTIC     =      2.079
+  DEGREES OF FREEDOM  =                         219,   204
+  PROBABILITY VALUE FOR THE F-STATISTIC IS         0.00000
+
+  FIT INDICES
+  -----------
+  BENTLER-BONETT     NORMED FIT INDEX =     0.870
+  BENTLER-BONETT NON-NORMED FIT INDEX =     0.910
+  COMPARATIVE FIT INDEX (CFI)         =     0.922
+  BOLLEN'S          (IFI) FIT INDEX   =     0.923
+  MCDONALD'S        (MFI) FIT INDEX   =     0.721
+  ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)    =     0.055
+  90% CONFIDENCE INTERVAL OF RMSEA  (       0.048,         0.061)
+
+
+
+                         ITERATIVE SUMMARY
+
+                     PARAMETER
+  ITERATION          ABS CHANGE         ALPHA                FUNCTION
+      1               0.379995         1.00000               6.85627
+      2               0.419682         1.00000               5.19948
+      3               0.348845         1.00000               4.73360
+      4               0.314230         1.00000               3.38284
+      5               0.199723         1.00000               2.55171
+      6               0.116618         1.00000               1.76580
+      7               0.044652         1.00000               1.37925
+      8               0.021833         1.00000               1.29585
+      9               0.006772         1.00000               1.29274
+     10               0.002559         1.00000               1.29256
+     11               0.000781         1.00000               1.29254
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MEASUREMENT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+  (ROBUST STATISTICS IN PARENTHESES)
+
+
+
+   A1    =V2  =   1.000 F1    + 1.000 E2  
+                                      
+                                      
+                                                                                
+                                                                                
+
+   A6    =V7  =   1.152*F1    + 1.000 E7  
+                   .097               
+                 11.876@              
+               (   .103)                                                        
+               ( 11.16@)                                                        
+
+   A8R   =V10 =   1.000 F3    + 1.000 E10 
+                                      
+                                      
+                                                                                
+                                                                                
+
+   A12   =V14 =   1.225*F1    + 1.000 E14 
+                   .094               
+                 13.019@              
+               (   .088)                                                        
+               ( 13.87@)                                                        
+
+   A14   =V17 =   1.000 F6    + 1.000 E17 
+                                      
+                                      
+                                                                                
+                                                                                
+
+   A18R  =V23 =   1.000 F5    + 1.000 E23 
+                                      
+                                      
+                                                                                
+                                                                                
+
+   A19   =V24 =   1.190*F1    + 1.000 E24 
+                   .091               
+                 13.040@              
+               (   .096)                                                        
+               ( 12.42@)                                                        
+
+   A22   =V27 =    .617*F6    + 1.000 E27 
+                   .079               
+                  7.776@              
+               (   .086)                                                        
+               (  7.20@)                                                        
+
+   A25R  =V30 =    .735*F6    + 1.000 E30 
+                   .068               
+                 10.833@              
+               (   .072)                                                        
+               ( 10.14@)                                                        
+
+   A30R  =V37 =    .709*F5    + 1.000 E37 
+                   .055               
+                 12.780@              
+               (   .051)                                                        
+               ( 13.82@)                                                        
+
+   A36R  =V43 =   1.177*F3    + 1.000 E43 
+                   .107               
+                 11.041@              
+               (   .110)                                                        
+               ( 10.75@)                                                        
+
+   A40   =V47 =   1.000 F4    + 1.000 E47 
+                                      
+                                      
+                                                                                
+                                                                                
+
+
+
+  MEASUREMENT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS (CONTINUED)
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+  (ROBUST STATISTICS IN PARENTHESES)
+
+   A46R  =V53 =    .779*F6    + 1.000 E53 
+                   .073               
+                 10.605@              
+               (   .079)                                                        
+               (  9.86@)                                                        
+
+   A49R  =V56 =   1.231*F3    + 1.000 E56 
+                   .111               
+                 11.103@              
+               (   .110)                                                        
+               ( 11.19@)                                                        
+
+   A52R  =V60 =   1.003*F5    + 1.000 E60 
+                   .062               
+                 16.264@              
+               (   .057)                                                        
+               ( 17.69@)                                                        
+
+   A59   =V67 =    .786*F4    + 1.000 E67 
+                   .116               
+                  6.753@              
+               (   .106)                                                        
+               (  7.44@)                                                        
+
+   A61   =V69 =    .994*F6    + 1.000 E69 
+                   .075               
+                 13.246@              
+               (   .078)                                                        
+               ( 12.78@)                                                        
+
+   A64R  =V73 =    .922*F3    + 1.000 E73 
+                   .098               
+                  9.436@              
+               (   .091)                                                        
+               ( 10.12@)                                                        
+
+   A67   =V76 =    .058*F4    + 1.000 E76 
+                   .038               
+                  1.523               
+               (   .041)                                                        
+               (  1.428)                                                        
+
+ BAADG2  =V89 =   1.000 F2    + 1.000 E89 
+                                      
+                                      
+                                                                                
+                                                                                
+
+ BAADG3  =V90 =   1.008*F2    + 1.000 E90 
+                   .040               
+                 25.272@              
+               (   .032)                                                        
+               ( 31.78@)                                                        
+
+ BAADG4  =V91 =    .840*F2    + 1.000 E91 
+                   .040               
+                 20.936@              
+               (   .038)                                                        
+               ( 21.87@)                                                        
+
+ BAADG5  =V92 =    .786*F2    + 1.000 E92 
+                   .052               
+                 15.203@              
+               (   .054)                                                        
+               ( 14.43@)                                                        
+
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  CONSTRUCT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS 
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+  (ROBUST STATISTICS IN PARENTHESES)
+
+
+
+    F2   =F2  =   -.226*F6    +  .707*F1    +  .082*F4    + 1.000 D2  
+                   .053          .090          .040               
+                 -4.239@        7.882@        2.061@              
+               (   .057)     (   .086)     (   .037)                            
+               ( -3.97@)     (  8.20@)     (  2.23@)                            
+
+    F3   =F3  =    .169*F2    -  .252*F6    -  .063*F4    +  .132*F5  
+                   .038          .052          .029          .036 
+                  4.414@       -4.880@       -2.210@        3.670@
+               (   .042)     (   .057)     (   .030)     (   .038)              
+               (  4.04@)     ( -4.41@)     ( -2.07@)     (  3.50@)              
+
+                + 1.000 D3  
+                        
+                        
+                                                                                
+                                                                                
+
+    F6   =F6  =   -.391*F5    + 1.000 D6  
+                   .047               
+                 -8.261@              
+               (   .050)                                                        
+               ( -7.79@)                                                        
+
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES
+  ----------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  V                                F
+                 ---                              ---
+                                I F1  -   F1                .339*I              
+                                I                           .047 I              
+                                I                          7.286@I              
+                                I                       (   .048)I              
+                                I                       (  7.10@)I              
+                                I                                I              
+                                I F4  -   F4               1.267*I              
+                                I                           .202 I              
+                                I                          6.274@I              
+                                I                       (   .184)I              
+                                I                       (  6.87@)I              
+                                I                                I              
+                                I F5  -   F5               1.198*I              
+                                I                           .127 I              
+                                I                          9.414@I              
+                                I                       (   .107)I              
+                                I                       ( 11.22@)I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES
+  ----------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  E                                D
+                 ---                              ---
+ E2  -  A1                 .398*I D2  -   F2                .537*I              
+                           .033 I                           .052 I              
+                         12.030@I                         10.316@I              
+                       (   .041)I                       (   .046)I              
+                       (  9.70@)I                       ( 11.65@)I              
+                                I                                I              
+ E7  -  A6                 .511*I D3  -   F3                .227*I              
+                           .043 I                           .039 I              
+                         11.947@I                          5.756@I              
+                       (   .055)I                       (   .044)I              
+                       (  9.33@)I                       (  5.11@)I              
+                                I                                I              
+ E10 -  A8R                .690*I D6  -   F6                .537*I              
+                           .054 I                           .071 I              
+                         12.776@I                          7.605@I              
+                       (   .076)I                       (   .076)I              
+                       (  9.13@)I                       (  7.11@)I              
+                                I                                I              
+ E14 -  A12                .341*I                                I              
+                           .034 I                                I              
+                         10.078@I                                I              
+                       (   .039)I                                I              
+                       (  8.63@)I                                I              
+                                I                                I              
+ E17 -  A14                .545*I                                I              
+                           .056 I                                I              
+                          9.729@I                                I              
+                       (   .077)I                                I              
+                       (  7.03@)I                                I              
+                                I                                I              
+ E23 -  A18R               .542*I                                I              
+                           .068 I                                I              
+                          7.961@I                                I              
+                       (   .076)I                                I              
+                       (  7.12@)I                                I              
+                                I                                I              
+ E24 -  A19                .317*I                                I              
+                           .032 I                                I              
+                         10.020@I                                I              
+                       (   .038)I                                I              
+                       (  8.26@)I                                I              
+                                I                                I              
+ E27 -  A22               1.262*I                                I              
+                           .092 I                                I              
+                         13.779@I                                I              
+                       (   .078)I                                I              
+                       ( 16.22@)I                                I              
+                                I                                I              
+ E30 -  A25R               .692*I                                I              
+                           .056 I                                I              
+                         12.444@I                                I              
+                       (   .058)I                                I              
+                       ( 11.88@)I                                I              
+                                I                                I              
+ E37 -  A30R               .932*I                                I              
+                           .072 I                                I              
+                         12.909@I                                I              
+                       (   .071)I                                I              
+                       ( 13.07@)I                                I              
+                                I                                I              
+ E43 -  A36R               .359*I                                I              
+                           .037 I                                I              
+                          9.685@I                                I              
+                       (   .056)I                                I              
+                       (  6.36@)I                                I              
+                                I                                I              
+ E47 -  A40                .105*I                                I              
+                           .179 I                                I              
+                           .589 I                                I              
+                       (   .167)I                                I              
+                       (   .629)I                                I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES (CONTINUED)
+  ----------------------------------------------
+
+ E53 -  A46R               .830*I                                I              
+                           .066 I                                I              
+                         12.563@I                                I              
+                       (   .076)I                                I              
+                       ( 10.89@)I                                I              
+                                I                                I              
+ E56 -  A49R               .366*I                                I              
+                           .039 I                                I              
+                          9.358@I                                I              
+                       (   .048)I                                I              
+                       (  7.67@)I                                I              
+                                I                                I              
+ E60 -  A52R               .422*I                                I              
+                           .064 I                                I              
+                          6.607@I                                I              
+                       (   .085)I                                I              
+                       (  4.96@)I                                I              
+                                I                                I              
+ E67 -  A59                .667*I                                I              
+                           .120 I                                I              
+                          5.584@I                                I              
+                       (   .112)I                                I              
+                       (  5.94@)I                                I              
+                                I                                I              
+ E69 -  A61                .488*I                                I              
+                           .053 I                                I              
+                          9.260@I                                I              
+                       (   .068)I                                I              
+                       (  7.19@)I                                I              
+                                I                                I              
+ E73 -  A64R               .577*I                                I              
+                           .045 I                                I              
+                         12.750@I                                I              
+                       (   .052)I                                I              
+                       ( 11.01@)I                                I              
+                                I                                I              
+ E76 -  A67                .691*I                                I              
+                           .048 I                                I              
+                         14.518@I                                I              
+                       (   .052)I                                I              
+                       ( 13.30@)I                                I              
+                                I                                I              
+ E89 -BAADG2               .226*I                                I              
+                           .024 I                                I              
+                          9.494@I                                I              
+                       (   .033)I                                I              
+                       (  6.89@)I                                I              
+                                I                                I              
+ E90 -BAADG3               .168*I                                I              
+                           .021 I                                I              
+                          7.881@I                                I              
+                       (   .028)I                                I              
+                       (  6.04@)I                                I              
+                                I                                I              
+ E91 -BAADG4               .298*I                                I              
+                           .025 I                                I              
+                         11.999@I                                I              
+                       (   .026)I                                I              
+                       ( 11.32@)I                                I              
+                                I                                I              
+ E92 -BAADG5               .649*I                                I              
+                           .048 I                                I              
+                         13.543@I                                I              
+                       (   .053)I                                I              
+                       ( 12.32@)I                                I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  COVARIANCES AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  V                                F
+                 ---                              ---
+                                I F4  -   F4                .183*I              
+                                I F1  -   F1                .039 I              
+                                I                          4.746@I              
+                                I                       (   .040)I              
+                                I                       (  4.58@)I              
+                                I                                I              
+                                I F5  -   F5                .093*I              
+                                I F1  -   F1                .036 I              
+                                I                          2.563@I              
+                                I                       (   .034)I              
+                                I                       (  2.73@)I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  COVARIANCES AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  E                                D
+                 ---                              ---
+ E53 -  A46R               .299*I                                I              
+ E30 -  A25R               .048 I                                I              
+                          6.279@I                                I              
+                       (   .054)I                                I              
+                       (  5.54@)I                                I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  STANDARDIZED SOLUTION:                                              R-SQUARED
+
+
+
+   A1    =V2  =   .678 F1    + .735 E2                                     .460 
+   A6    =V7  =   .684*F1    + .729 E7                                     .468 
+   A8R   =V10 =   .592 F3    + .806 E10                                    .350 
+   A12   =V14 =   .774*F1    + .633 E14                                    .599 
+   A14   =V17 =   .754 F6    + .656 E17                                    .569 
+   A18R  =V23 =   .830 F5    + .558 E23                                    .689 
+   A19   =V24 =   .776*F1    + .631 E24                                    .602 
+   A22   =V27 =   .423*F6    + .906 E27                                    .179 
+   A25R  =V30 =   .600*F6    + .800 E30                                    .360 
+   A30R  =V37 =   .626*F5    + .780 E37                                    .392 
+   A36R  =V43 =   .768*F3    + .641 E43                                    .589 
+   A40   =V47 =   .961 F4    + .277 E47                                    .923 
+   A46R  =V53 =   .587*F6    + .810 E53                                    .345 
+   A49R  =V56 =   .778*F3    + .628 E56                                    .606 
+   A52R  =V60 =   .861*F5    + .509 E60                                    .741 
+   A59   =V67 =   .735*F4    + .678 E67                                    .540 
+   A61   =V69 =   .770*F6    + .638 E69                                    .593 
+   A64R  =V73 =   .594*F3    + .804 E73                                    .353 
+   A67   =V76 =   .078*F4    + .997 E76                                    .006 
+ BAADG2  =V89 =   .881 F2    + .473 E89                                    .777 
+ BAADG3  =V90 =   .909*F2    + .417 E90                                    .826 
+ BAADG4  =V91 =   .806*F2    + .592 E91                                    .650 
+ BAADG5  =V92 =   .654*F2    + .757 E92                                    .428 
+    F2   =F2  =  -.216*F6    + .465*F1    + .105*F4    + .827 D2           .316 
+    F3   =F3  =   .246*F2    - .352*F6    - .117*F4    + .237*F5  
+                + .782 D3                                                  .388 
+    F6   =F6  =  -.504*F5    + .864 D6                                     .254 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  CORRELATIONS AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+
+                  V                                F
+                 ---                              ---
+                                I F4  -   F4                .280*I              
+                                I F1  -   F1                     I              
+                                I                                I              
+                                I F5  -   F5                .147*I              
+                                I F1  -   F1                     I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  CORRELATIONS AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+
+                  E                                D
+                 ---                              ---
+ E53 -  A46R               .395*I                                I              
+ E30 -  A25R                    I                                I              
+                                I                                I              
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  WALD TEST (FOR DROPPING PARAMETERS)
+  ROBUST INFORMATION MATRIX USED IN THIS WALD TEST          
+  MULTIVARIATE WALD TEST BY SIMULTANEOUS PROCESS
+
+
+
+         CUMULATIVE MULTIVARIATE STATISTICS              UNIVARIATE INCREMENT
+         ----------------------------------              --------------------
+                      ROBUST                              ROBUST
+  STEP  PARAMETER   CHI-SQUARE  D.F.  PROBABILITY       CHI-SQUARE  PROBABILITY
+  ---- -----------  ----------  ----  -----------       ----------  -----------
+
+    1    E47,E47       0.395      1      0.529             0.395       0.529
+    2    V76,F4        2.216      2      0.330             1.821       0.177
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  LAGRANGE MULTIPLIER TEST (FOR ADDING PARAMETERS)
+
+
+  ORDERED UNIVARIATE TEST STATISTICS:             
+                                          HANCOCK          STANDAR-   ROBUST
+                             CHI-         219 DF   PARAM.   DIZED    PREDICTED
+   NO  CODE   PARAMETER     SQUARE  PROB.  PROB.   CHANGE   CHANGE  RMSEA   CFI
+   --  ----   ---------     ------  -----  -----   ------  -------  -----------
+    1  2 22       F2,F3      7.724  0.005  1.000    0.531    0.984  0.054 0.924
+    2  2 10       D3,D2      6.659  0.010  1.000    0.131    0.376  0.054 0.924
+    3  2 16       F3,F1      6.659  0.010  1.000   -0.173   -0.488  0.054 0.924
+    4  2 16       F6,F1      3.385  0.066  1.000   -0.149   -0.301  0.055 0.923
+    5  2 16       F2,F5      1.237  0.266  1.000    0.054    0.056  0.055 0.922
+    6  2 10       D6,D2      1.237  0.266  1.000    0.074    0.138  0.055 0.922
+    7  2 22       F6,F3      0.662  0.416  1.000   -0.376   -0.727  0.055 0.922
+    8  2 22       F6,F2      0.230  0.631  1.000   -0.037   -0.049  0.055 0.922
+    9  2 16       F6,F4      0.194  0.659  1.000    0.017    0.018  0.055 0.922
+   10  2 10       D6,D3      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+   11  2  0      V10,F3      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+   12  2  0      V17,F6      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+   13  2  0      V89,F2      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+   14  2  0      V47,F4      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+   15  2  0      V23,F5      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+   16  2  0       V2,F1      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MULTIVARIATE LAGRANGE MULTIPLIER TEST BY SIMULTANEOUS PROCESS IN STAGE  1
+
+  PARAMETER SETS (SUBMATRICES) ACTIVE AT THIS STAGE ARE:
+
+     PDD GFF BFF
+
+
+
+      CUMULATIVE MULTIVARIATE STATISTICS      UNIVARIATE INCREMENT
+      ----------------------------------      ------------------------------
+                                                         HANCOCK'S     ROBUST
+                       CHI-                 CHI-         SEQUENTIAL   PREDICTED
+ STEP   PARAMETER     SQUARE  D.F. PROB.   SQUARE PROB.  D.F. PROB.  RMSEA   CFI
+ ----  ----------     ------  ---- -----   ------ -----  ---- -----  -----------
+    1       F2,F3      7.724     1 0.005    7.724 0.005   219 1.000  0.054 0.924
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+
+  LAGRANGE MULTIPLIER TEST (FOR RELEASING CONSTRAINTS)
+  ROBUST TEST ON ADDITIONAL CONSTRAINTS
+
+
+  CONSTRAINTS TO BE RELEASED ARE:                     
+
+  ADDITIONAL CONSTRAINTS ON INDIVIDUAL PARAMETERS:
+          CONSTR:    1   (  D3,D2  ) =    0.000
+          CONSTR:    2   (  D6,D2  ) =    0.000
+          CONSTR:    3   (  D6,D3  ) =    0.000
+          CONSTR:    4   (  V2,F1  ) =    1.000
+          CONSTR:    5   ( V23,F5  ) =    1.000
+          CONSTR:    6   ( V47,F4  ) =    1.000
+          CONSTR:    7   (  F2,F5  ) =    0.000
+          CONSTR:    8   (  F3,F1  ) =    0.000
+          CONSTR:    9   (  F6,F1  ) =    0.000
+          CONSTR:   10   (  F6,F4  ) =    0.000
+          CONSTR:   11   ( V10,F3  ) =    1.000
+          CONSTR:   12   ( V17,F6  ) =    1.000
+          CONSTR:   13   ( V89,F2  ) =    1.000
+          CONSTR:   14   (  F2,F3  ) =    0.000
+          CONSTR:   15   (  F6,F2  ) =    0.000
+          CONSTR:   16   (  F6,F3  ) =    0.000
+
+
+           UNIVARIATE TEST STATISTICS:
+
+   NO    CONSTRAINT    CHI-SQUARE   PROBABILITY   CHANGE
+   --    -----------   ----------   -----------   ------
+
+    1    CONSTR:    1       4.748       0.029      0.094
+    2    CONSTR:    2       1.154       0.283      0.069
+    3    CONSTR:    3   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+    4    CONSTR:    4   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+    5    CONSTR:    5   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+    6    CONSTR:    6   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+    7    CONSTR:    7       1.154       0.283      0.050
+    8    CONSTR:    8       4.748       0.029     -0.123
+    9    CONSTR:    9       2.785       0.095     -0.122
+   10    CONSTR:   10       0.175       0.676      0.015
+   11    CONSTR:   11   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+   12    CONSTR:   12   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+   13    CONSTR:   13   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+   14    CONSTR:   14       5.706       0.017     -0.392
+   15    CONSTR:   15       0.235       0.628      0.038
+   16    CONSTR:   16       0.695       0.405      0.394
+
+
+
+         CUMULATIVE MULTIVARIATE STATISTICS              UNIVARIATE INCREMENT
+         ----------------------------------              --------------------
+                      ROBUST                              ROBUST
+  STEP  PARAMETER   CHI-SQUARE  D.F.  PROBABILITY       CHI-SQUARE  PROBABILITY
+  ---- -----------  ----------  ----  -----------       ----------  -----------
+
+    1  CONSTR:   14     5.706      1      0.017             5.706       0.017
+    2  CONSTR:    9     8.651      2      0.013             2.944       0.086
+    3  CONSTR:   16     9.162      3      0.027             0.511       0.475
+    4  CONSTR:    2     9.177      4      0.057             0.015       0.902
+
+
+  LAGRANGE MULTIPLIER TEST (FOR ADDING PARAMETERS)
+
+
+  ORDERED UNIVARIATE TEST STATISTICS:             
+                                          HANCOCK          STANDAR-   ROBUST
+                             CHI-         219 DF   PARAM.   DIZED    PREDICTED
+   NO  CODE   PARAMETER     SQUARE  PROB.  PROB.   CHANGE   CHANGE  RMSEA   CFI
+   --  ----   ---------     ------  -----  -----   ------  -------  -----------
+    1  2 22       F2,F3      5.706  0.017  1.000    0.392    0.566  0.054 0.924
+    2  2 10       D3,D2      4.748  0.029  1.000    0.094    0.276  0.054 0.923
+    3  2 16       F3,F1      4.748  0.029  1.000   -0.123   -0.179  0.054 0.923
+    4  2 16       F6,F1      2.785  0.095  1.000   -0.122   -0.359  0.055 0.923
+    5  2 16       F2,F5      1.154  0.283  1.000    0.050    0.098  0.055 0.922
+    6  2 10       D6,D2      1.154  0.283  1.000    0.069    0.105  0.055 0.922
+    7  2 22       F6,F3      0.695  0.405  1.000   -0.394   -1.098  0.055 0.922
+    8  2 22       F6,F2      0.235  0.628  1.000   -0.038   -0.041  0.055 0.922
+    9  2 16       F6,F4      0.175  0.676  1.000    0.015    0.028  0.055 0.922
+   10  2 10       D6,D3      0.000  1.000  1.000    0.000    0.000  0.055 0.922
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MULTIVARIATE LAGRANGE MULTIPLIER TEST BY SIMULTANEOUS PROCESS IN STAGE  1
+
+  PARAMETER SETS (SUBMATRICES) ACTIVE AT THIS STAGE ARE:
+
+     PDD GFF BFF
+
+
+
+      CUMULATIVE MULTIVARIATE STATISTICS      UNIVARIATE INCREMENT
+      ----------------------------------      ------------------------------
+                                                         HANCOCK'S     ROBUST
+                       CHI-                 CHI-         SEQUENTIAL   PREDICTED
+ STEP   PARAMETER     SQUARE  D.F. PROB.   SQUARE PROB.  D.F. PROB.  RMSEA   CFI
+ ----  ----------     ------  ---- -----   ------ -----  ---- -----  -----------
+    1       F2,F3      5.706     1 0.017    5.706 0.017   219 1.000  0.054 0.924
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+
+  LAGRANGIAN MULTIPLIER TEST REQUIRED   115462 WORDS OF MEMORY.
+  PROGRAM ALLOCATES  5000000 WORDS.
+
+
+
+
+ -------------------------------------------------------------------------------
+                           E N D    O F    M E T H O D
+ -------------------------------------------------------------------------------
+1
+  today is 2019/07/15
+  Execution begins at 10:04:24   
+  Execution ends   at 10:04:25   
+  Elapsed time =       1.00 seconds 

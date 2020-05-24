@@ -1,0 +1,2824 @@
+1
+  EQS, A STRUCTURAL EQUATION PROGRAM          MULTIVARIATE SOFTWARE, INC.
+  COPYRIGHT BY P.M. BENTLER                   VERSION 6.4 (C) 1985 - 2018 (B117).
+
+
+    PROGRAM CONTROL INFORMATION
+
+     1  /TITLE                                                                          
+     2  Model built by EQS 6 for Windows in Group 1                                     
+     3  /SPECIFICATIONS                                                                 
+     4  DATA='D:\EQS Projects\Book Chapter Project 2 Countries\sample_male.ess';        
+     5  VARIABLES=138; CASES=469; GROUPS=2;                                             
+     6  METHOD=ML,ROBUST; ANALYSIS=COVARIANCE; MATRIX=RAW;                              
+     7  /LABELS                                                                         
+     8  V1=RESPNUM; V2=A1; V3=A2; V4=A3; V5=A4;                                         
+     9  V6=A5; V7=A6; V8=A7; V9=A8; V10=A8R;                                            
+    10  V11=A9; V12=A10; V13=A11; V14=A12; V15=A13;                                     
+    11  V16=A13R; V17=A14; V18=A14R; V19=A15; V20=A16;                                  
+    12  V21=A17; V22=A18; V23=A18R; V24=A19; V25=A20;                                   
+    13  V26=A21; V27=A22; V28=A23; V29=A24; V30=A25R;                                   
+    14  V31=A26; V32=A27; V33=A28; V34=A29; V35=A29R;                                   
+    15  V36=A30; V37=A30R; V38=A31; V39=A32; V40=A33;                                   
+    16  V41=A34; V42=A35; V43=A36R; V44=A37; V45=A38;                                   
+    17  V46=A39; V47=A40; V48=A41; V49=A42; V50=A43R;                                   
+    18  V51=A44; V52=A45; V53=A46R; V54=A47; V55=A48;                                   
+    19  V56=A49R; V57=A50; V58=A51; V59=A52; V60=A52R;                                  
+    20  V61=A53; V62=A54; V63=A55; V64=A56; V65=A57;                                    
+    21  V66=A58; V67=A59; V68=A60; V69=A61; V70=A61R;                                   
+    22  V71=A62; V72=A63; V73=A64R; V74=A65; V75=A66;                                   
+    23  V76=A67; V77=A68; V78=A69; V79=A70; V80=A71;                                    
+    24  V81=BAPPLG1; V82=BAPPLG2; V83=BAPPLG3; V84=BAPPLG4; V85=BAPPLG5;                
+    25  V86=BAPPLG6; V87=BAPPLG7; V88=BAADG1; V89=BAADG2; V90=BAADG3;                   
+    26  V91=BAADG4; V92=BAADG5; V93=BAADG6; V94=BAADG7; V95=C1;                         
+    27  V96=C2; V97=C3; V98=C4; V99=C5; V100=C6;                                        
+    28  V101=C7; V102=C8; V103=C9; V104=C10; V105=C11;                                  
+    29  V106=C12; V107=C13; V108=C14; V109=C15; V110=C16;                               
+    30  V111=C17; V112=C18; V113=C19; V114=C20; V115=C21;                               
+    31  V116=C22; V117=C23; V118=C24; V119=C25; V120=C26;                               
+    32  V121=C27; V122=C28; V123=C29; V124=C30; V125=C31;                               
+    33  V126=C32; V127=COUNTRY; V128=E_1; V129=E_2; V130=E_3;                           
+    34  V131=E_4; V132=E_5; V133=E_6; V134=E_7; V135=E_8;                               
+    35  V136=E_9; V137=E_10; V138=E_11;                                                 
+    36  /EQUATIONS                                                                      
+    37  V2 =   1F1 + E2;                                                                
+    38  V7 =   *F1 + E7;                                                                
+    39  V10 =   1F3 + E10;                                                              
+    40  V14 =   *F1 + E14;                                                              
+    41  V17 =   1F6 + E17;                                                              
+    42  V23 =   1F5 + E23;                                                              
+    43  V24 =   *F1 + E24;                                                              
+    44  V27 =   *F6 + E27;                                                              
+    45  V30 =   *F6 + E30;                                                              
+    46  V37 =   *F5 + E37;                                                              
+    47  V43 =   *F3 + E43;                                                              
+    48  V47 =   1F4 + E47;                                                              
+    49  V53 =   *F6 + E53;                                                              
+    50  V56 =   *F3 + E56;                                                              
+    51  V60 =   *F5 + E60;                                                              
+    52  V67 =   *F4 + E67;                                                              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+    53  V69 =   *F6 + E69;                                                              
+    54  V73 =   *F3 + E73;                                                              
+    55  V76 =   *F4 + E76;                                                              
+    56  V89 =   1F2 + E89;                                                              
+    57  V90 =   *F2 + E90;                                                              
+    58  V91 =   *F2 + E91;                                                              
+    59  V92 =   *F2 + E92;                                                              
+    60  F2 = *F1 + *F4 + *F6 + D2;                                                      
+    61  F3 = *F2 + *F5 + *F6 + D3;                                                      
+    62  F6 = *F5 + D6;                                                                  
+    63  /VARIANCES;                                                                     
+    64  D2 = *;                                                                         
+    65  D3 = *;                                                                         
+    66  D6 = *;                                                                         
+    67   F1 = *;                                                                        
+    68   F4 = *;                                                                        
+    69   F5 = *;                                                                        
+    70   E2 = *;                                                                        
+    71   E7 = *;                                                                        
+    72   E10 = *;                                                                       
+    73   E14 = *;                                                                       
+    74   E17 = *;                                                                       
+    75   E23 = *;                                                                       
+    76   E24 = *;                                                                       
+    77   E27 = *;                                                                       
+    78   E30 = *;                                                                       
+    79   E37 = *;                                                                       
+    80   E43 = *;                                                                       
+    81   E47 = *;                                                                       
+    82   E53 = *;                                                                       
+    83   E56 = *;                                                                       
+    84   E60 = *;                                                                       
+    85   E67 = *;                                                                       
+    86   E69 = *;                                                                       
+    87   E73 = *;                                                                       
+    88   E76 = *;                                                                       
+    89   E89 = *;                                                                       
+    90   E90 = *;                                                                       
+    91   E91 = *;                                                                       
+    92   E92 = *;                                                                       
+    93  /COVARIANCES                                                                    
+    94  F1,F4 = *;                                                                      
+    95  E53,E30 = *;                                                                    
+    96  /OUTPUT                                                                         
+    97  Derivative;                                                                     
+    98  Gradients;                                                                      
+    99  Information matrix;                                                             
+   100  Parameters;                                                                     
+   101  Sigma;                                                                          
+   102  Covariance matrix;                                                              
+   103  Standard Errors;                                                                
+   104  SSolution;                                                                      
+   105  Lmtest;                                                                         
+   106  Wtest;                                                                          
+   107  RSquare;                                                                        
+   108  Weight matrix;                                                                  
+   109  Codebook;                                                                       
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+   110  Univariate;                                                                     
+   111  Listing;                                                                        
+   112  DATA='Gender MGA.ETS';                                                          
+   113  /END                                                                            
+
+
+      113 CUMULATED RECORDS OF INPUT MODEL FILE WERE READ (GROUP   1)
+
+  TITLE:                                                               
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+
+
+    PROGRAM CONTROL INFORMATION
+
+   114                                                                                  
+   115  /TITLE                                                                          
+   116  Model built by EQS 6 for Windows in Group 2                                     
+   117  /SPECIFICATIONS                                                                 
+   118  DATA='D:\EQS Projects\Book Chapter Project 2 Countries\sample_female.ess';      
+   119  VARIABLES=138; CASES=444;                                                       
+   120  METHOD=ML,ROBUST; ANALYSIS=COVARIANCE; MATRIX=RAW;                              
+   121  /LABELS                                                                         
+   122  V1=RESPNUM; V2=A1; V3=A2; V4=A3; V5=A4;                                         
+   123  V6=A5; V7=A6; V8=A7; V9=A8; V10=A8R;                                            
+   124  V11=A9; V12=A10; V13=A11; V14=A12; V15=A13;                                     
+   125  V16=A13R; V17=A14; V18=A14R; V19=A15; V20=A16;                                  
+   126  V21=A17; V22=A18; V23=A18R; V24=A19; V25=A20;                                   
+   127  V26=A21; V27=A22; V28=A23; V29=A24; V30=A25R;                                   
+   128  V31=A26; V32=A27; V33=A28; V34=A29; V35=A29R;                                   
+   129  V36=A30; V37=A30R; V38=A31; V39=A32; V40=A33;                                   
+   130  V41=A34; V42=A35; V43=A36R; V44=A37; V45=A38;                                   
+   131  V46=A39; V47=A40; V48=A41; V49=A42; V50=A43R;                                   
+   132  V51=A44; V52=A45; V53=A46R; V54=A47; V55=A48;                                   
+   133  V56=A49R; V57=A50; V58=A51; V59=A52; V60=A52R;                                  
+   134  V61=A53; V62=A54; V63=A55; V64=A56; V65=A57;                                    
+   135  V66=A58; V67=A59; V68=A60; V69=A61; V70=A61R;                                   
+   136  V71=A62; V72=A63; V73=A64R; V74=A65; V75=A66;                                   
+   137  V76=A67; V77=A68; V78=A69; V79=A70; V80=A71;                                    
+   138  V81=BAPPLG1; V82=BAPPLG2; V83=BAPPLG3; V84=BAPPLG4; V85=BAPPLG5;                
+   139  V86=BAPPLG6; V87=BAPPLG7; V88=BAADG1; V89=BAADG2; V90=BAADG3;                   
+   140  V91=BAADG4; V92=BAADG5; V93=BAADG6; V94=BAADG7; V95=C1;                         
+   141  V96=C2; V97=C3; V98=C4; V99=C5; V100=C6;                                        
+   142  V101=C7; V102=C8; V103=C9; V104=C10; V105=C11;                                  
+   143  V106=C12; V107=C13; V108=C14; V109=C15; V110=C16;                               
+   144  V111=C17; V112=C18; V113=C19; V114=C20; V115=C21;                               
+   145  V116=C22; V117=C23; V118=C24; V119=C25; V120=C26;                               
+   146  V121=C27; V122=C28; V123=C29; V124=C30; V125=C31;                               
+   147  V126=C32; V127=COUNTRY; V128=E_1; V129=E_2; V130=E_3;                           
+   148  V131=E_4; V132=E_5; V133=E_6; V134=E_7; V135=E_8;                               
+   149  V136=E_9; V137=E_10; V138=E_11;                                                 
+   150  /EQUATIONS                                                                      
+   151  V2 =   1F1 + E2;                                                                
+   152  V7 =   *F1 + E7;                                                                
+   153  V10 =   1F3 + E10;                                                              
+   154  V14 =   *F1 + E14;                                                              
+   155  V17 =   1F6 + E17;                                                              
+   156  V23 =   1F5 + E23;                                                              
+   157  V24 =   *F1 + E24;                                                              
+   158  V27 =   *F6 + E27;                                                              
+   159  V30 =   *F6 + E30;                                                              
+   160  V37 =   *F5 + E37;                                                              
+   161  V43 =   *F3 + E43;                                                              
+   162  V47 =   1F4 + E47;                                                              
+   163  V53 =   *F6 + E53;                                                              
+   164  V56 =   *F3 + E56;                                                              
+   165  V60 =   *F5 + E60;                                                              
+   166  V67 =   *F4 + E67;                                                              
+   167  V69 =   *F6 + E69;                                                              
+   168  V73 =   *F3 + E73;                                                              
+   169  V76 =   *F4 + E76;                                                              
+   170  V89 =   1F2 + E89;                                                              
+   171  V90 =   *F2 + E90;                                                              
+   172  V91 =   *F2 + E91;                                                              
+   173  V92 =   *F2 + E92;                                                              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+   174  F2 = *F1 + *F4 + *F6 + D2;                                                      
+   175  F3 = *F2 + *F5 + *F6 + D3;                                                      
+   176  F6 = *F5 + D6;                                                                  
+   177  /VARIANCES;                                                                     
+   178  D2 = *;                                                                         
+   179  D3 = *;                                                                         
+   180  D6 = *;                                                                         
+   181   F1 = *;                                                                        
+   182   F4 = *;                                                                        
+   183   F5 = *;                                                                        
+   184   E2 = *;                                                                        
+   185   E7 = *;                                                                        
+   186   E10 = *;                                                                       
+   187   E14 = *;                                                                       
+   188   E17 = *;                                                                       
+   189   E23 = *;                                                                       
+   190   E24 = *;                                                                       
+   191   E27 = *;                                                                       
+   192   E30 = *;                                                                       
+   193   E37 = *;                                                                       
+   194   E43 = *;                                                                       
+   195   E47 = *;                                                                       
+   196   E53 = *;                                                                       
+   197   E56 = *;                                                                       
+   198   E60 = *;                                                                       
+   199   E67 = *;                                                                       
+   200   E69 = *;                                                                       
+   201   E73 = *;                                                                       
+   202   E76 = *;                                                                       
+   203   E89 = *;                                                                       
+   204   E90 = *;                                                                       
+   205   E91 = *;                                                                       
+   206   E92 = *;                                                                       
+   207  /COVARIANCES                                                                    
+   208  F1,F4 = *;                                                                      
+   209  F1,F5 = *;                                                                      
+   210  F4,F5 = 0;                                                                      
+   211  E53,E30 = *;                                                                    
+   212  /CONSTRAINTS                                                                    
+   213  (1,V7,F1)=(2,V7,F1);                                                            
+   214  (1,V14,F1)=(2,V14,F1);                                                          
+   215  (1,V24,F1)=(2,V24,F1);                                                          
+   216  (1,V27,F6)=(2,V27,F6);                                                          
+   217  (1,V30,F6)=(2,V30,F6);                                                          
+   218  (1,V37,F5)=(2,V37,F5);                                                          
+   219  (1,V43,F3)=(2,V43,F3);                                                          
+   220  (1,V53,F6)=(2,V53,F6);                                                          
+   221  (1,V56,F3)=(2,V56,F3);                                                          
+   222  (1,V60,F5)=(2,V60,F5);                                                          
+   223  (1,V67,F4)=(2,V67,F4);                                                          
+   224  (1,V69,F6)=(2,V69,F6);                                                          
+   225  (1,V73,F3)=(2,V73,F3);                                                          
+   226  (1,V76,F4)=(2,V76,F4);                                                          
+   227  (1,V90,F2)=(2,V90,F2);                                                          
+   228  (1,V91,F2)=(2,V91,F2);                                                          
+   229  (1,V92,F2)=(2,V92,F2);                                                          
+   230  (1,F2,F1)=(2,F2,F1);                                                            
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+   231  (1,F2,F6)=(2,F2,F6);                                                            
+   232  (1,F2,F4)=(2,F2,F4);                                                            
+   233  (1,F3,F2)=(2,F3,F2);                                                            
+   234  (1,F3,F6)=(2,F3,F6);                                                            
+   235  (1,F6,F5)=(2,F6,F5);                                                            
+   236  (1,D3,D3)=(2,D3,D3);                                                            
+   237  (1,D6,D6)=(2,D6,D6);                                                            
+   238  (1,E53,E30)=(2,E53,E30);                                                        
+   239  /PRINT                                                                          
+   240  FIT=ALL;                                                                        
+   241  TABLE=EQUATION;                                                                 
+   242  /WTEST;                                                                         
+   243  /LMTEST                                                                         
+   244  PROCESS=SIMULTANEOUS;                                                           
+   245  SET=PDD,GFF,BFF;                                                                
+   246  /END                                                                            
+
+
+      246 CUMULATED RECORDS OF INPUT MODEL FILE WERE READ (GROUP   2)
+
+
+    DATA IS READ FROM D:\EQS Projects\Book Chapter Project 2 Countries\sample_male.ess                                                                                                                                                                                                
+    THERE ARE 138 VARIABLES AND   469 CASES
+    IT IS A RAW DATA ESS FILE
+
+ *** NOTE  *** THIS FILE CONTAINS ALPHANUMERIC VARIABLES,
+               WHICH MUST NOT BE USED IN THE MODEL.
+
+ *** WARNING ***     8 CASES ARE SKIPPED BECAUSE A VARIABLE IS MISSING--
+      3    72    79   106   149   342   364   373
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+
+  SAMPLE STATISTICS BASED ON COMPLETE CASES
+
+
+                            UNIVARIATE STATISTICS
+                            ---------------------
+
+
+ VARIABLE           A1         A6         A8R        A12        A14   
+                  V2         V7         V10        V14        V17 
+ MEAN               2.5466     2.3102     4.3167     2.3037     2.5228
+ SKEWNESS (G1)      0.2523     0.5474    -1.4522     0.4197     0.3087
+ KURTOSIS (G2)     -0.0622    -0.2488     1.3671    -0.4647    -0.5672
+ STANDARD DEV.      0.8292     0.9898     0.9932     0.9527     1.0805
+
+
+ VARIABLE           A18R       A19        A22        A25R       A30R  
+                  V23        V24        V27        V30        V37 
+ MEAN               3.4555     2.3232     2.7180     3.2560     2.3926
+ SKEWNESS (G1)     -0.4688     0.4757     0.1772    -0.2000     0.5281
+ KURTOSIS (G2)     -0.8021    -0.1601    -0.8864    -0.7288    -0.8191
+ STANDARD DEV.      1.2409     0.9241     1.1585     1.1071     1.2510
+
+
+ VARIABLE           A36R       A40        A46R       A49R       A52R  
+                  V43        V47        V53        V56        V60 
+ MEAN               4.1605     2.4143     3.2603     4.0282     3.2690
+ SKEWNESS (G1)     -1.0860     0.4154    -0.1749    -0.7558    -0.3664
+ KURTOSIS (G2)      0.9433    -0.9865    -0.6716     0.1196    -0.7884
+ STANDARD DEV.      0.9233     1.2405     1.0762     0.9144     1.2218
+
+
+ VARIABLE           A59        A61        A64R       A67      BAADG2  
+                  V67        V69        V73        V76        V89 
+ MEAN               2.9349     2.5987     3.5662     3.7939     3.4490
+ SKEWNESS (G1)     -0.1400     0.2222    -0.3237    -0.5036    -0.4839
+ KURTOSIS (G2)     -1.0405    -0.4424    -0.3591     0.1205    -0.4692
+ STANDARD DEV.      1.1740     1.0413     0.9293     0.8202     1.0775
+
+
+ VARIABLE         BAADG3     BAADG4     BAADG5  
+                  V90        V91        V92 
+ MEAN               3.3839     3.3492     3.5510
+ SKEWNESS (G1)     -0.3409    -0.3435    -0.5485
+ KURTOSIS (G2)     -0.5025    -0.4371    -0.4819
+ STANDARD DEV.      1.0602     1.0434     1.1402
+
+
+                            MULTIVARIATE KURTOSIS
+                            ---------------------
+
+   MARDIA'S COEFFICIENT (G2,P) =     63.4829
+   NORMALIZED ESTIMATE =             20.0969
+
+
+                     ELLIPTICAL THEORY KURTOSIS ESTIMATES
+                     ------------------------------------
+
+   MARDIA-BASED KAPPA =      0.1104 MEAN SCALED UNIVARIATE KURTOSIS =    -0.1213
+
+   MARDIA-BASED KAPPA IS USED IN COMPUTATION. KAPPA=           0.1104
+
+
+   CASE NUMBERS WITH LARGEST CONTRIBUTION TO NORMALIZED MULTIVARIATE KURTOSIS:
+   ---------------------------------------------------------------------------
+
+   CASE NUMBER       186          202          296          416          469
+
+   ESTIMATE      1664.7750    1059.7779     920.4492     783.1958    1580.4470
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+
+  COVARIANCE  MATRIX TO BE ANALYZED:    23 VARIABLES (SELECTED FROM 138 VARIABLES)
+  BASED ON   461 CASES.
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.687
+     A6     V7         0.417      0.980
+     A8R    V10       -0.082     -0.144      0.986
+     A12    V14        0.458      0.495     -0.068      0.908
+     A14    V17       -0.012     -0.002     -0.375      0.006      1.167
+     A18R   V23        0.068     -0.002      0.242      0.009     -0.369
+     A19    V24        0.429      0.519     -0.059      0.491     -0.008
+     A22    V27       -0.050     -0.082     -0.230     -0.103      0.380
+     A25R   V30       -0.101     -0.214     -0.155     -0.137      0.501
+     A30R   V37        0.150      0.119      0.001      0.046     -0.271
+     A36R   V43        0.021     -0.069      0.393      0.029     -0.397
+     A40    V47        0.184      0.310     -0.075      0.170     -0.011
+     A46R   V53       -0.173     -0.224     -0.098     -0.131      0.424
+     A49R   V56        0.011     -0.057      0.326      0.020     -0.334
+     A52R   V60       -0.058     -0.097      0.228     -0.067     -0.302
+     A59    V67        0.173      0.292     -0.025      0.187      0.023
+     A61    V69       -0.043     -0.012     -0.323     -0.015      0.760
+     A64R   V73        0.159      0.120      0.268      0.186     -0.314
+     A67    V76       -0.122     -0.119      0.070     -0.068      0.014
+   BAADG2   V89        0.271      0.334      0.240      0.335     -0.164
+   BAADG3   V90        0.296      0.374      0.206      0.377     -0.158
+   BAADG4   V91        0.274      0.398      0.128      0.352     -0.081
+   BAADG5   V92        0.239      0.344      0.160      0.300     -0.189
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        1.540
+     A19    V24        0.059      0.854
+     A22    V27       -0.400     -0.072      1.342
+     A25R   V30       -0.256     -0.144      0.325      1.226
+     A30R   V37        0.695      0.168     -0.235     -0.246      1.565
+     A36R   V43        0.344     -0.028     -0.279     -0.161      0.063
+     A40    V47        0.013      0.227      0.026     -0.139      0.037
+     A46R   V53       -0.332     -0.182      0.184      0.655     -0.283
+     A49R   V56        0.350     -0.005     -0.246     -0.185      0.087
+     A52R   V60        1.038     -0.052     -0.307     -0.219      0.688
+     A59    V67        0.012      0.210      0.032     -0.125      0.065
+     A61    V69       -0.445     -0.003      0.382      0.533     -0.331
+     A64R   V73        0.298      0.143     -0.277     -0.197      0.140
+     A67    V76       -0.073     -0.133      0.146      0.057     -0.195
+   BAADG2   V89        0.121      0.337     -0.095     -0.259      0.008
+   BAADG3   V90        0.094      0.347     -0.091     -0.235      0.034
+   BAADG4   V91        0.047      0.363     -0.034     -0.200     -0.020
+   BAADG5   V92        0.098      0.337     -0.044     -0.198      0.003
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.852
+     A40    V47        0.072      1.539
+     A46R   V53       -0.111     -0.278      1.158
+     A49R   V56        0.526      0.045     -0.164      0.836
+     A52R   V60        0.355     -0.046     -0.225      0.399      1.493
+     A59    V67        0.080      0.964     -0.159      0.037      0.011
+     A61    V69       -0.346     -0.051      0.542     -0.386     -0.442
+     A64R   V73        0.376      0.056     -0.215      0.399      0.228
+     A67    V76        0.098      0.140      0.091      0.073     -0.031
+   BAADG2   V89        0.269      0.251     -0.282      0.244      0.107
+   BAADG3   V90        0.227      0.275     -0.239      0.200      0.044
+   BAADG4   V91        0.181      0.335     -0.202      0.112      0.010
+   BAADG5   V92        0.200      0.326     -0.237      0.152      0.001
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        1.378
+     A61    V69       -0.028      1.084
+     A64R   V73        0.089     -0.314      0.864
+     A67    V76        0.132      0.065     -0.033      0.673
+   BAADG2   V89        0.299     -0.169      0.328      0.004      1.161
+   BAADG3   V90        0.338     -0.133      0.267     -0.014      0.997
+   BAADG4   V91        0.331     -0.090      0.232     -0.017      0.810
+   BAADG5   V92        0.321     -0.124      0.244     -0.021      0.754
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        1.124
+   BAADG4   V91        0.798      1.089
+   BAADG5   V92        0.749      0.818      1.300
+
+
+
+  BENTLER-WEEKS STRUCTURAL REPRESENTATION:
+
+        NUMBER OF DEPENDENT VARIABLES = 26
+            DEPENDENT V'S :     2    7   10   14   17   23   24   27   30   37
+            DEPENDENT V'S :    43   47   53   56   60   67   69   73   76   89
+            DEPENDENT V'S :    90   91   92
+            DEPENDENT F'S :     2    3    6
+
+        NUMBER OF INDEPENDENT VARIABLES = 29
+            INDEPENDENT F'S :     1    4    5
+            INDEPENDENT E'S :     2    7   10   14   17   23   24   27   30   37
+            INDEPENDENT E'S :    43   47   53   56   60   67   69   73   76   89
+            INDEPENDENT E'S :    90   91   92
+            INDEPENDENT D'S :     2    3    6
+
+        NUMBER OF FREE PARAMETERS =  55
+        NUMBER OF FIXED NONZERO PARAMETERS =  32
+
+
+    DATA IS READ FROM D:\EQS Projects\Book Chapter Project 2 Countries\sample_female.ess                                                                                                                                                                                              
+    THERE ARE 138 VARIABLES AND   444 CASES
+    IT IS A RAW DATA ESS FILE
+
+ *** NOTE  *** THIS FILE CONTAINS ALPHANUMERIC VARIABLES,
+               WHICH MUST NOT BE USED IN THE MODEL.
+
+ *** WARNING ***    21 CASES ARE SKIPPED BECAUSE A VARIABLE IS MISSING--
+     12    27    49    51    64    74    75    92    98   113
+    129   145   148   152   165   170   365   381   390   391
+    394
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+
+  SAMPLE STATISTICS BASED ON COMPLETE CASES
+
+
+                            UNIVARIATE STATISTICS
+                            ---------------------
+
+
+ VARIABLE           A1         A6         A8R        A12        A14   
+                  V2         V7         V10        V14        V17 
+ MEAN               2.5130     2.2861     4.2388     2.2506     2.5083
+ SKEWNESS (G1)      0.3297     0.4277    -1.3977     0.3897     0.2996
+ KURTOSIS (G2)      0.0678    -0.5521     1.2812    -0.4872    -0.7751
+ STANDARD DEV.      0.8594     0.9813     1.0314     0.9229     1.1246
+
+
+ VARIABLE           A18R       A19        A22        A25R       A30R  
+                  V23        V24        V27        V30        V37 
+ MEAN               3.4374     2.3050     2.8416     3.3097     2.4610
+ SKEWNESS (G1)     -0.4380     0.3980     0.1754    -0.2776     0.4831
+ KURTOSIS (G2)     -0.9733    -0.2752    -0.9813    -0.4711    -0.7980
+ STANDARD DEV.      1.3189     0.8945     1.2395     1.0400     1.2383
+
+
+ VARIABLE           A36R       A40        A46R       A49R       A52R  
+                  V43        V47        V53        V56        V60 
+ MEAN               4.1584     2.3144     3.2742     4.0331     3.2388
+ SKEWNESS (G1)     -0.9945     0.4685    -0.2535    -0.7932    -0.3299
+ KURTOSIS (G2)      0.4884    -0.8589    -0.6734     0.0134    -0.9070
+ STANDARD DEV.      0.9369     1.1715     1.1251     0.9657     1.2758
+
+
+ VARIABLE           A59        A61        A64R       A67      BAADG2  
+                  V67        V69        V73        V76        V89 
+ MEAN               2.7660     2.6170     3.4941     3.7849     3.3593
+ SKEWNESS (G1)      0.0245     0.2477    -0.3360    -0.6114    -0.3642
+ KURTOSIS (G2)     -1.0683    -0.5419    -0.3451     0.4492    -0.4887
+ STANDARD DEV.      1.2041     1.0950     0.9461     0.8339     1.0111
+
+
+ VARIABLE         BAADG3     BAADG4     BAADG5  
+                  V90        V91        V92 
+ MEAN               3.2837     3.2577     3.4279
+ SKEWNESS (G1)     -0.2073    -0.2641    -0.3898
+ KURTOSIS (G2)     -0.4179    -0.1093    -0.6165
+ STANDARD DEV.      0.9880     0.9274     1.0682
+
+
+                            MULTIVARIATE KURTOSIS
+                            ---------------------
+
+   MARDIA'S COEFFICIENT (G2,P) =     60.7230
+   NORMALIZED ESTIMATE =             18.4139
+
+
+                     ELLIPTICAL THEORY KURTOSIS ESTIMATES
+                     ------------------------------------
+
+   MARDIA-BASED KAPPA =      0.1056 MEAN SCALED UNIVARIATE KURTOSIS =    -0.1310
+
+   MARDIA-BASED KAPPA IS USED IN COMPUTATION. KAPPA=           0.1056
+
+
+   CASE NUMBERS WITH LARGEST CONTRIBUTION TO NORMALIZED MULTIVARIATE KURTOSIS:
+   ---------------------------------------------------------------------------
+
+   CASE NUMBER       300          306          321          343          427
+
+   ESTIMATE       826.2455     733.9744    1407.2015     785.8202    1924.7713
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+
+  COVARIANCE  MATRIX TO BE ANALYZED:    23 VARIABLES (SELECTED FROM 138 VARIABLES)
+  BASED ON   423 CASES.
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.739
+     A6     V7         0.362      0.963
+     A8R    V10       -0.068     -0.040      1.064
+     A12    V14        0.447      0.473     -0.046      0.852
+     A14    V17       -0.091     -0.091     -0.302     -0.045      1.265
+     A18R   V23        0.076      0.159      0.192      0.094     -0.339
+     A19    V24        0.395      0.474     -0.040      0.497     -0.061
+     A22    V27       -0.144     -0.113     -0.299     -0.105      0.356
+     A25R   V30       -0.169     -0.169     -0.124     -0.097      0.605
+     A30R   V37        0.147      0.223      0.048      0.169     -0.292
+     A36R   V43        0.049     -0.019      0.434      0.015     -0.282
+     A40    V47        0.135      0.289     -0.071      0.196      0.027
+     A46R   V53       -0.205     -0.173     -0.115     -0.149      0.595
+     A49R   V56        0.033     -0.000      0.490      0.060     -0.334
+     A52R   V60        0.012      0.159      0.277      0.089     -0.347
+     A59    V67        0.075      0.174     -0.022      0.161      0.081
+     A61    V69       -0.140     -0.087     -0.283     -0.046      0.721
+     A64R   V73        0.184      0.074      0.337      0.146     -0.375
+     A67    V76       -0.122     -0.246      0.042     -0.136      0.093
+   BAADG2   V89        0.282      0.319      0.198      0.287     -0.235
+   BAADG3   V90        0.304      0.367      0.157      0.284     -0.204
+   BAADG4   V91        0.313      0.319      0.147      0.277     -0.200
+   BAADG5   V92        0.216      0.318      0.130      0.231     -0.149
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        1.740
+     A19    V24        0.103      0.800
+     A22    V27       -0.525     -0.082      1.536
+     A25R   V30       -0.396     -0.178      0.334      1.082
+     A30R   V37        0.850      0.141     -0.323     -0.340      1.533
+     A36R   V43        0.419      0.046     -0.333     -0.182      0.202
+     A40    V47        0.087      0.255      0.076     -0.117      0.122
+     A46R   V53       -0.402     -0.153      0.316      0.711     -0.425
+     A49R   V56        0.336      0.037     -0.248     -0.152      0.172
+     A52R   V60        1.206      0.109     -0.384     -0.330      0.842
+     A59    V67        0.136      0.230      0.171     -0.062      0.108
+     A61    V69       -0.481     -0.084      0.453      0.474     -0.456
+     A64R   V73        0.260      0.152     -0.395     -0.160      0.267
+     A67    V76       -0.098     -0.112      0.191      0.112     -0.192
+   BAADG2   V89        0.257      0.281     -0.133     -0.254      0.102
+   BAADG3   V90        0.224      0.323     -0.130     -0.204      0.186
+   BAADG4   V91        0.150      0.315     -0.130     -0.158      0.137
+   BAADG5   V92        0.196      0.329     -0.074     -0.168      0.179
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.878
+     A40    V47       -0.026      1.372
+     A46R   V53       -0.205     -0.046      1.266
+     A49R   V56        0.552     -0.063     -0.149      0.933
+     A52R   V60        0.424      0.036     -0.298      0.438      1.628
+     A59    V67        0.044      0.996     -0.047      0.001      0.125
+     A61    V69       -0.325     -0.007      0.558     -0.347     -0.498
+     A64R   V73        0.400      0.029     -0.212      0.394      0.306
+     A67    V76        0.037      0.065      0.128      0.026     -0.091
+   BAADG2   V89        0.234      0.200     -0.236      0.277      0.239
+   BAADG3   V90        0.213      0.264     -0.239      0.237      0.216
+   BAADG4   V91        0.177      0.198     -0.192      0.195      0.161
+   BAADG5   V92        0.152      0.223     -0.101      0.130      0.170
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        1.450
+     A61    V69        0.036      1.199
+     A64R   V73        0.005     -0.336      0.895
+     A67    V76        0.158      0.126     -0.071      0.695
+   BAADG2   V89        0.172     -0.165      0.272     -0.001      1.022
+   BAADG3   V90        0.202     -0.166      0.286     -0.010      0.822
+   BAADG4   V91        0.177     -0.138      0.244     -0.058      0.654
+   BAADG5   V92        0.183     -0.137      0.212      0.007      0.578
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        0.976
+   BAADG4   V91        0.654      0.860
+   BAADG5   V92        0.606      0.650      1.141
+
+
+
+  BENTLER-WEEKS STRUCTURAL REPRESENTATION:
+
+        NUMBER OF DEPENDENT VARIABLES = 26
+            DEPENDENT V'S :     2    7   10   14   17   23   24   27   30   37
+            DEPENDENT V'S :    43   47   53   56   60   67   69   73   76   89
+            DEPENDENT V'S :    90   91   92
+            DEPENDENT F'S :     2    3    6
+
+        NUMBER OF INDEPENDENT VARIABLES = 29
+            INDEPENDENT F'S :     1    4    5
+            INDEPENDENT E'S :     2    7   10   14   17   23   24   27   30   37
+            INDEPENDENT E'S :    43   47   53   56   60   67   69   73   76   89
+            INDEPENDENT E'S :    90   91   92
+            INDEPENDENT D'S :     2    3    6
+
+        NUMBER OF FREE PARAMETERS =  56
+        NUMBER OF FIXED NONZERO PARAMETERS =  32
+
+ *** NOTE: BECAUSE LMTEST OR WTEST RESULTS, OR A WEIGHT MATRIX OF MORE
+          THAN 9999999 ELEMENTS IS WRITTEN ON
+          Gender MGA.ETS                                                                                                                                                                                                                                                  
+          CODEBOOK IS NOT PRODUCED.
+
+ *** WARNING MESSAGES ABOVE, IF ANY, REFER TO THE MODEL PROVIDED.
+     CALCULATIONS FOR INDEPENDENCE MODEL NOW BEGIN.
+
+ *** WARNING MESSAGES ABOVE, IF ANY, REFER TO INDEPENDENCE MODEL.
+     CALCULATIONS FOR USER'S MODEL NOW BEGIN.
+
+
+  3RD STAGE OF COMPUTATION REQUIRED   1236050 WORDS OF MEMORY.
+  PROGRAM ALLOCATED   5000000 WORDS
+
+  DETERMINANT OF INPUT MATRIX IN GROUP  1 IS   0.24169D-03
+
+  DETERMINANT OF INPUT MATRIX IN GROUP  2 IS   0.25465D-03
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  RELIABILITY COEFFICIENTS
+  ------------------------
+  CRONBACH'S ALPHA                                   =     0.633
+  RELIABILITY COEFFICIENT RHO                        =     0.826
+
+  STANDARDIZED FACTOR LOADINGS FOR THE FACTOR THAT GENERATES
+  MAXIMAL RELIABILITY FOR THE UNIT-WEIGHT COMPOSITE
+
+  BASED ON THE MODEL (RHO):
+    A1         A6         A8R        A12        A14        A18R       A19   
+   0.5080     0.4948     0.2487     0.5230    -0.0007     0.2743     0.5318
+    A22        A25R       A30R       A36R       A40        A46R       A49R  
+  -0.0004     0.0371     0.1829     0.3534     0.4143     0.0376     0.3546
+    A52R       A59        A61        A64R       A67      BAADG2     BAADG3  
+   0.2761     0.4409    -0.0007     0.2732     0.0718     0.7002     0.7055
+  BAADG4     BAADG5  
+   0.5995     0.5186
+
+
+  PARAMETER ESTIMATES APPEAR IN ORDER,
+  NO SPECIAL PROBLEMS WERE ENCOUNTERED DURING OPTIMIZATION.
+
+
+
+  RESIDUAL COVARIANCE MATRIX  (S-SIGMA) :       
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.003
+     A6     V7        -0.009      0.010
+     A8R    V10       -0.122     -0.190     -0.040
+     A12    V14        0.019     -0.014     -0.116     -0.014
+     A14    V17       -0.012     -0.002     -0.114      0.006      0.009
+     A18R   V23        0.068     -0.002     -0.014      0.009      0.031
+     A19    V24       -0.001      0.020     -0.106     -0.024     -0.008
+     A22    V27       -0.050     -0.082     -0.079     -0.103     -0.022
+     A25R   V30       -0.101     -0.214      0.030     -0.137      0.010
+     A30R   V37        0.150      0.119     -0.173      0.046      0.002
+     A36R   V43       -0.031     -0.129     -0.007     -0.032     -0.060
+     A40    V47       -0.004      0.093     -0.112     -0.054     -0.011
+     A46R   V53       -0.173     -0.224      0.087     -0.131     -0.067
+     A49R   V56       -0.041     -0.117     -0.075     -0.042      0.004
+     A52R   V60       -0.058     -0.097     -0.028     -0.067      0.096
+     A59    V67       -0.015      0.074     -0.062     -0.037      0.023
+     A61    V69       -0.043     -0.012     -0.047     -0.015      0.027
+     A64R   V73        0.119      0.073     -0.043      0.138     -0.051
+     A67    V76       -0.143     -0.143      0.066     -0.093      0.014
+   BAADG2   V89       -0.019     -0.002      0.056     -0.011     -0.013
+   BAADG3   V90        0.007      0.039      0.023      0.032     -0.007
+   BAADG4   V91        0.032      0.118     -0.025      0.063      0.045
+   BAADG5   V92        0.011      0.079      0.015      0.027     -0.070
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        0.012
+     A19    V24        0.059     -0.005
+     A22    V27       -0.167     -0.072     -0.023
+     A25R   V30        0.028     -0.144      0.039     -0.002
+     A30R   V37       -0.014      0.168     -0.076     -0.053     -0.031
+     A36R   V43        0.012     -0.088     -0.083      0.078     -0.163
+     A40    V47        0.013      0.007      0.026     -0.139      0.037
+     A46R   V53       -0.048     -0.182     -0.101     -0.020     -0.089
+     A49R   V56        0.017     -0.065     -0.050      0.055     -0.140
+     A52R   V60        0.003     -0.052     -0.075      0.063     -0.018
+     A59    V67        0.012     -0.010      0.032     -0.125      0.065
+     A61    V69       -0.021     -0.003     -0.044      0.013     -0.042
+     A64R   V73        0.039      0.096     -0.124     -0.011     -0.036
+     A67    V76       -0.073     -0.158      0.146      0.057     -0.195
+   BAADG2   V89        0.034     -0.003     -0.007     -0.152     -0.051
+   BAADG3   V90        0.007      0.009     -0.004     -0.129     -0.025
+   BAADG4   V91       -0.026      0.079      0.039     -0.111     -0.070
+   BAADG5   V92        0.030      0.069      0.025     -0.114     -0.044
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.002
+     A40    V47        0.025     -0.013
+     A46R   V53        0.128     -0.278     -0.038
+     A49R   V56        0.007     -0.003      0.077     -0.017
+     A52R   V60        0.024     -0.046      0.058      0.067     -0.001
+     A59    V67        0.032     -0.009     -0.159     -0.011      0.011
+     A61    V69        0.011     -0.051      0.021     -0.028     -0.020
+     A64R   V73       -0.027      0.019     -0.028     -0.006     -0.030
+     A67    V76        0.093      0.029      0.091      0.068     -0.031
+   BAADG2   V89        0.031     -0.018     -0.175      0.004      0.020
+   BAADG3   V90       -0.010      0.008     -0.133     -0.038     -0.042
+   BAADG4   V91       -0.018      0.112     -0.113     -0.088     -0.062
+   BAADG5   V92        0.013      0.114     -0.153     -0.037     -0.067
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        0.003
+     A61    V69       -0.028      0.039
+     A64R   V73        0.052     -0.035     -0.004
+     A67    V76        0.021      0.065     -0.037      0.002
+   BAADG2   V89        0.030     -0.010      0.142     -0.027      0.033
+   BAADG3   V90        0.071      0.027      0.082     -0.045      0.040
+   BAADG4   V91        0.107      0.043      0.077     -0.042      0.009
+   BAADG5   V92        0.109      0.002      0.097     -0.045     -0.003
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        0.022
+   BAADG4   V91       -0.000      0.018
+   BAADG5   V92       -0.005      0.187      0.024
+
+                                  AVERAGE ABSOLUTE RESIDUAL =         0.0554
+                     AVERAGE OFF-DIAGONAL ABSOLUTE RESIDUAL =         0.0590
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+  STANDARDIZED RESIDUAL MATRIX:                 
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2         0.004
+     A6     V7        -0.011      0.011
+     A8R    V10       -0.148     -0.194     -0.041
+     A12    V14        0.024     -0.015     -0.122     -0.015
+     A14    V17       -0.014     -0.002     -0.106      0.006      0.007
+     A18R   V23        0.066     -0.002     -0.011      0.008      0.023
+     A19    V24       -0.002      0.022     -0.115     -0.027     -0.008
+     A22    V27       -0.052     -0.071     -0.068     -0.094     -0.017
+     A25R   V30       -0.110     -0.196      0.027     -0.130      0.008
+     A30R   V37        0.145      0.096     -0.139      0.038      0.001
+     A36R   V43       -0.040     -0.141     -0.007     -0.037     -0.060
+     A40    V47       -0.004      0.076     -0.091     -0.046     -0.008
+     A46R   V53       -0.194     -0.211      0.082     -0.128     -0.058
+     A49R   V56       -0.054     -0.129     -0.083     -0.048      0.004
+     A52R   V60       -0.057     -0.080     -0.023     -0.057      0.073
+     A59    V67       -0.016      0.064     -0.053     -0.033      0.018
+     A61    V69       -0.050     -0.012     -0.045     -0.015      0.024
+     A64R   V73        0.155      0.079     -0.047      0.156     -0.051
+     A67    V76       -0.211     -0.177      0.080     -0.119      0.016
+   BAADG2   V89       -0.021     -0.002      0.052     -0.011     -0.011
+   BAADG3   V90        0.008      0.038      0.022      0.031     -0.006
+   BAADG4   V91        0.037      0.114     -0.024      0.064      0.040
+   BAADG5   V92        0.012      0.070      0.013      0.025     -0.057
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23        0.008
+     A19    V24        0.051     -0.006
+     A22    V27       -0.116     -0.067     -0.017
+     A25R   V30        0.020     -0.141      0.031     -0.002
+     A30R   V37       -0.009      0.146     -0.053     -0.038     -0.020
+     A36R   V43        0.011     -0.104     -0.077      0.077     -0.141
+     A40    V47        0.008      0.006      0.018     -0.101      0.024
+     A46R   V53       -0.036     -0.183     -0.081     -0.017     -0.066
+     A49R   V56        0.015     -0.077     -0.047      0.054     -0.123
+     A52R   V60        0.002     -0.046     -0.053      0.047     -0.012
+     A59    V67        0.008     -0.009      0.023     -0.096      0.044
+     A61    V69       -0.017     -0.003     -0.036      0.012     -0.033
+     A64R   V73        0.034      0.111     -0.115     -0.011     -0.031
+     A67    V76       -0.072     -0.209      0.154      0.063     -0.190
+   BAADG2   V89        0.025     -0.003     -0.006     -0.127     -0.038
+   BAADG3   V90        0.006      0.009     -0.003     -0.110     -0.019
+   BAADG4   V91       -0.020      0.082      0.032     -0.096     -0.053
+   BAADG5   V92        0.021      0.065      0.019     -0.090     -0.031
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.002
+     A40    V47        0.022     -0.009
+     A46R   V53        0.129     -0.208     -0.033
+     A49R   V56        0.008     -0.003      0.078     -0.020
+     A52R   V60        0.022     -0.031      0.044      0.060     -0.000
+     A59    V67        0.030     -0.006     -0.126     -0.011      0.008
+     A61    V69        0.011     -0.039      0.019     -0.029     -0.016
+     A64R   V73       -0.031      0.017     -0.028     -0.007     -0.026
+     A67    V76        0.123      0.029      0.103      0.090     -0.031
+   BAADG2   V89        0.031     -0.013     -0.151      0.005      0.016
+   BAADG3   V90       -0.010      0.006     -0.116     -0.040     -0.033
+   BAADG4   V91       -0.019      0.086     -0.100     -0.092     -0.049
+   BAADG5   V92        0.012      0.081     -0.124     -0.035     -0.048
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67        0.002
+     A61    V69       -0.023      0.036
+     A64R   V73        0.048     -0.036     -0.004
+     A67    V76        0.022      0.076     -0.049      0.004
+   BAADG2   V89        0.024     -0.009      0.142     -0.030      0.029
+   BAADG3   V90        0.057      0.024      0.083     -0.051      0.035
+   BAADG4   V91        0.088      0.040      0.080     -0.050      0.008
+   BAADG5   V92        0.082      0.002      0.092     -0.048     -0.002
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90        0.020
+   BAADG4   V91       -0.000      0.016
+   BAADG5   V92       -0.004      0.157      0.018
+
+                     AVERAGE ABSOLUTE STANDARDIZED RESIDUAL =         0.0520
+        AVERAGE OFF-DIAGONAL ABSOLUTE STANDARDIZED RESIDUAL =         0.0554
+
+
+  LARGEST STANDARDIZED RESIDUALS:
+
+      NO.    PARAMETER   ESTIMATE      NO.    PARAMETER   ESTIMATE
+      ---    ---------   --------      ---    ---------   --------
+       1     V53, V7       -0.211      11     V92, V91       0.157
+       2     V76, V2       -0.211      12     V73, V14       0.156
+       3     V76, V24      -0.209      13     V73, V2        0.155
+       4     V53, V47      -0.208      14     V76, V27       0.154
+       5     V30, V7       -0.196      15     V89, V53      -0.151
+       6     V53, V2       -0.194      16     V10, V2       -0.148
+       7     V10, V7       -0.194      17     V37, V24       0.146
+       8     V76, V37      -0.190      18     V37, V2        0.145
+       9     V53, V24      -0.183      19     V89, V73       0.142
+      10     V76, V7       -0.177      20     V43, V7       -0.141
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+  DISTRIBUTION OF STANDARDIZED RESIDUALS
+
+
+
+     ----------------------------------------                     
+     !                                      !                     
+  120-                 *                    -                     
+     !                 *                    !                     
+     !                 *  *                 !                     
+     !                 *  *                 !                     
+     !                 *  *                 !            RANGE      FREQ PERCENT
+   90-                 *  *                 -                     
+     !                 *  *                 !    1   -0.5  -  --       0   0.00%
+     !                 *  *                 !    2   -0.4  -  -0.5     0   0.00%
+     !                 *  *                 !    3   -0.3  -  -0.4     0   0.00%
+     !                 *  *                 !    4   -0.2  -  -0.3     4   1.45%
+   60-                 *  *                 -    5   -0.1  -  -0.2    31  11.23%
+     !                 *  *                 !    6    0.0  -  -0.1   122  44.20%
+     !                 *  *                 !    7    0.1  -   0.0   107  38.77%
+     !                 *  *                 !    8    0.2  -   0.1    12   4.35%
+     !                 *  *                 !    9    0.3  -   0.2     0   0.00%
+   30-              *  *  *                 -    A    0.4  -   0.3     0   0.00%
+     !              *  *  *                 !    B    0.5  -   0.4     0   0.00%
+     !              *  *  *                 !    C     ++  -   0.5     0   0.00%
+     !              *  *  *  *              !    -------------------------------
+     !           *  *  *  *  *              !            TOTAL       276 100.00%
+     ----------------------------------------                     
+        1  2  3  4  5  6  7  8  9  A  B  C    EACH "*" REPRESENTS    6 RESIDUALS
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MEASUREMENT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+  (ROBUST STATISTICS IN PARENTHESES)
+
+
+
+   A1    =V2  =    1.000 F1    +  1.000 E2  
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A6    =V7  =    1.159*F1    +  1.000 E7  
+                    .063                
+                  18.290@               
+               (    .066)                                                       
+               (  17.69@)                                                       
+
+   A8R   =V10 =    1.000 F3    +  1.000 E10 
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A12   =V14 =    1.195*F1    +  1.000 E14 
+                    .061                
+                  19.473@               
+               (    .056)                                                       
+               (  21.19@)                                                       
+
+   A14   =V17 =    1.000 F6    +  1.000 E17 
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A18R  =V23 =    1.000 F5    +  1.000 E23 
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A19   =V24 =    1.173*F1    +  1.000 E24 
+                    .060                
+                  19.656@               
+               (    .062)                                                       
+               (  19.05@)                                                       
+
+   A22   =V27 =     .581*F6    +  1.000 E27 
+                    .052                
+                  11.132@               
+               (    .057)                                                       
+               (  10.14@)                                                       
+
+   A25R  =V30 =     .709*F6    +  1.000 E30 
+                    .047                
+                  15.150@               
+               (    .049)                                                       
+               (  14.46@)                                                       
+
+   A30R  =V37 =     .682*F5    +  1.000 E37 
+                    .041                
+                  16.697@               
+               (    .038)                                                       
+               (  17.78@)                                                       
+
+   A36R  =V43 =    1.293*F3    +  1.000 E43 
+                    .087                
+                  14.900@               
+               (    .099)                                                       
+               (  13.10@)                                                       
+
+   A40   =V47 =    1.000 F4    +  1.000 E47 
+                                        
+                                        
+                                                                                
+                                                                                
+
+
+
+  MEASUREMENT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS (CONTINUED)
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+  (ROBUST STATISTICS IN PARENTHESES)
+
+   A46R  =V53 =     .710*F6    +  1.000 E53 
+                    .048                
+                  14.771@               
+               (    .054)                                                       
+               (  13.16@)                                                       
+
+   A49R  =V56 =    1.299*F3    +  1.000 E56 
+                    .087                
+                  14.877@               
+               (    .100)                                                       
+               (  13.03@)                                                       
+
+   A52R  =V60 =     .995*F5    +  1.000 E60 
+                    .046                
+                  21.842@               
+               (    .043)                                                       
+               (  23.07@)                                                       
+
+   A59   =V67 =    1.002*F4    +  1.000 E67 
+                    .095                
+                  10.544@               
+               (    .089)                                                       
+               (  11.20@)                                                       
+
+   A61   =V69 =    1.059*F6    +  1.000 E69 
+                    .050                
+                  21.020@               
+               (    .048)                                                       
+               (  22.12@)                                                       
+
+   A64R  =V73 =    1.009*F3    +  1.000 E73 
+                    .078                
+                  12.996@               
+               (    .081)                                                       
+               (  12.42@)                                                       
+
+   A67   =V76 =     .114*F4    +  1.000 E76 
+                    .031                
+                   3.640@               
+               (    .033)                                                       
+               (   3.43@)                                                       
+
+ BAADG2  =V89 =    1.000 F2    +  1.000 E89 
+                                        
+                                        
+                                                                                
+                                                                                
+
+ BAADG3  =V90 =     .996*F2    +  1.000 E90 
+                    .024                
+                  41.222@               
+               (    .019)                                                       
+               (  51.52@)                                                       
+
+ BAADG4  =V91 =     .834*F2    +  1.000 E91 
+                    .027                
+                  31.456@               
+               (    .026)                                                       
+               (  32.69@)                                                       
+
+ BAADG5  =V92 =     .788*F2    +  1.000 E92 
+                    .033                
+                  23.699@               
+               (    .035)                                                       
+               (  22.29@)                                                       
+
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  CONSTRUCT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS 
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+  (ROBUST STATISTICS IN PARENTHESES)
+
+
+
+    F2   =F2  =    -.218*F6    +   .719*F1    +   .137*F4    +  1.000 D2  
+                    .038           .062           .035                
+                  -5.707@        11.509@         3.954@               
+               (    .040)     (    .062)     (    .034)                         
+               (  -5.47@)     (  11.59@)     (   4.05@)                         
+
+    F3   =F3  =     .137*F2    -   .271*F6    +   .131*F5    +  1.000 D3  
+                    .021           .033           .030                
+                   6.431@        -8.184@         4.378@               
+               (    .024)     (    .038)     (    .031)                         
+               (   5.82@)     (  -7.09@)     (   4.29@)                         
+
+    F6   =F6  =    -.385*F5    +  1.000 D6  
+                    .033                
+                 -11.552@               
+               (    .036)                                                       
+               ( -10.83@)                                                       
+
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES
+  ----------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  V                                F
+                 ---                              ---
+                                I F1  -   F1                .367*I              
+                                I                           .038 I              
+                                I                          9.667@I              
+                                I                      (    .037)I              
+                                I                      (   9.87@)I              
+                                I                                I              
+                                I F4  -   F4                .971*I              
+                                I                           .125 I              
+                                I                          7.788@I              
+                                I                      (    .113)I              
+                                I                      (   8.62@)I              
+                                I                                I              
+                                I F5  -   F5               1.040*I              
+                                I                           .097 I              
+                                I                         10.718@I              
+                                I                      (    .088)I              
+                                I                      (  11.81@)I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES
+  ----------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  E                                D
+                 ---                              ---
+ E2  -  A1                 .317*I D2  -   F2                .682*I              
+                           .027 I                           .056 I              
+                         11.964@I                         12.295@I              
+                      (    .030)I                      (    .053)I              
+                      (  10.63@)I                      (  12.89@)I              
+                                I                                I              
+ E7  -  A6                 .476*I D3  -   F3                .179*I              
+                           .039 I                           .023 I              
+                         12.319@I                          7.638@I              
+                      (    .039)I                      (    .028)I              
+                      (  12.27@)I                      (   6.47@)I              
+                                I                                I              
+ E10 -  A8R                .718*I D6  -   F6                .538*I              
+                           .052 I                           .047 I              
+                         13.877@I                         11.482@I              
+                      (    .076)I                      (    .049)I              
+                      (   9.42@)I                      (  10.97@)I              
+                                I                                I              
+ E14 -  A12                .397*I                                I              
+                           .034 I                                I              
+                         11.538@I                                I              
+                      (    .042)I                                I              
+                      (   9.38@)I                                I              
+                                I                                I              
+ E17 -  A14                .467*I                                I              
+                           .043 I                                I              
+                         10.821@I                                I              
+                      (    .050)I                                I              
+                      (   9.28@)I                                I              
+                                I                                I              
+ E23 -  A18R               .488*I                                I              
+                           .059 I                                I              
+                          8.284@I                                I              
+                      (    .063)I                                I              
+                      (   7.79@)I                                I              
+                                I                                I              
+ E24 -  A19                .354*I                                I              
+                           .032 I                                I              
+                         11.232@I                                I              
+                      (    .040)I                                I              
+                      (   8.82@)I                                I              
+                                I                                I              
+ E27 -  A22               1.131*I                                I              
+                           .077 I                                I              
+                         14.640@I                                I              
+                      (    .073)I                                I              
+                      (  15.52@)I                                I              
+                                I                                I              
+ E30 -  A25R               .880*I                                I              
+                           .058 I                                I              
+                         15.273@I                                I              
+                      (    .058)I                                I              
+                      (  15.05@)I                                I              
+                                I                                I              
+ E37 -  A30R              1.113*I                                I              
+                           .080 I                                I              
+                         13.965@I                                I              
+                      (    .073)I                                I              
+                      (  15.27@)I                                I              
+                                I                                I              
+ E43 -  A36R               .334*I                                I              
+                           .032 I                                I              
+                         10.320@I                                I              
+                      (    .059)I                                I              
+                      (   5.63@)I                                I              
+                                I                                I              
+ E47 -  A40                .581*I                                I              
+                           .101 I                                I              
+                          5.726@I                                I              
+                      (    .100)I                                I              
+                      (   5.81@)I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES (CONTINUED)
+  ----------------------------------------------
+
+ E53 -  A46R               .847*I                                I              
+                           .056 I                                I              
+                         15.215@I                                I              
+                      (    .064)I                                I              
+                      (  13.28@)I                                I              
+                                I                                I              
+ E56 -  A49R               .332*I                                I              
+                           .032 I                                I              
+                         10.233@I                                I              
+                      (    .038)I                                I              
+                      (   8.80@)I                                I              
+                                I                                I              
+ E60 -  A52R               .463*I                                I              
+                           .058 I                                I              
+                          8.047@I                                I              
+                      (    .069)I                                I              
+                      (   6.70@)I                                I              
+                                I                                I              
+ E67 -  A59                .401*I                                I              
+                           .098 I                                I              
+                          4.094@I                                I              
+                      (    .095)I                                I              
+                      (   4.21@)I                                I              
+                                I                                I              
+ E69 -  A61                .268*I                                I              
+                           .037 I                                I              
+                          7.339@I                                I              
+                      (    .036)I                                I              
+                      (   7.41@)I                                I              
+                                I                                I              
+ E73 -  A64R               .553*I                                I              
+                           .041 I                                I              
+                         13.446@I                                I              
+                      (    .051)I                                I              
+                      (  10.82@)I                                I              
+                                I                                I              
+ E76 -  A67                .658*I                                I              
+                           .044 I                                I              
+                         15.103@I                                I              
+                      (    .044)I                                I              
+                      (  14.99@)I                                I              
+                                I                                I              
+ E89 -BAADG2               .167*I                                I              
+                           .019 I                                I              
+                          8.608@I                                I              
+                      (    .023)I                                I              
+                      (   7.19@)I                                I              
+                                I                                I              
+ E90 -BAADG3               .149*I                                I              
+                           .019 I                                I              
+                          8.027@I                                I              
+                      (    .025)I                                I              
+                      (   6.01@)I                                I              
+                                I                                I              
+ E91 -BAADG4               .402*I                                I              
+                           .030 I                                I              
+                         13.486@I                                I              
+                      (    .035)I                                I              
+                      (  11.36@)I                                I              
+                                I                                I              
+ E92 -BAADG5               .680*I                                I              
+                           .048 I                                I              
+                         14.293@I                                I              
+                      (    .056)I                                I              
+                      (  12.21@)I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  COVARIANCES AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  V                                F
+                 ---                              ---
+                                I F4  -   F4                .187*I              
+                                I F1  -   F1                .037 I              
+                                I                          5.048@I              
+                                I                      (    .036)I              
+                                I                      (   5.19@)I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  COVARIANCES AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  E                                D
+                 ---                              ---
+ E53 -  A46R               .326*I                                I              
+ E30 -  A25R               .034 I                                I              
+                          9.680@I                                I              
+                      (    .040)I                                I              
+                      (   8.15@)I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  STANDARDIZED SOLUTION:                                              R-SQUARED
+
+
+
+   A1    =V2  =   .733 F1    + .681 E2                                     .537 
+   A6    =V7  =   .714*F1    + .701 E7                                     .509 
+   A8R   =V10 =   .548 F3    + .836 E10                                    .301 
+   A12   =V14 =   .754*F1    + .657 E14                                    .569 
+   A14   =V17 =   .773 F6    + .635 E17                                    .597 
+   A18R  =V23 =   .825 F5    + .565 E23                                    .681 
+   A19   =V24 =   .767*F1    + .642 E24                                    .588 
+   A22   =V27 =   .414*F6    + .910 E27                                    .171 
+   A25R  =V30 =   .533*F6    + .846 E30                                    .284 
+   A30R  =V37 =   .550*F5    + .835 E37                                    .303 
+   A36R  =V43 =   .779*F3    + .627 E43                                    .607 
+   A40   =V47 =   .791 F4    + .612 E47                                    .626 
+   A46R  =V53 =   .540*F6    + .842 E53                                    .292 
+   A49R  =V56 =   .782*F3    + .624 E56                                    .611 
+   A52R  =V60 =   .831*F5    + .557 E60                                    .690 
+   A59   =V67 =   .842*F4    + .540 E67                                    .709 
+   A61   =V69 =   .862*F6    + .507 E69                                    .743 
+   A64R  =V73 =   .602*F3    + .798 E73                                    .363 
+   A67   =V76 =   .137*F4    + .991 E76                                    .019 
+ BAADG2  =V89 =   .923 F2    + .385 E89                                    .852 
+ BAADG3  =V90 =   .930*F2    + .368 E90                                    .865 
+ BAADG4  =V91 =   .790*F2    + .613 E91                                    .624 
+ BAADG5  =V92 =   .684*F2    + .730 E92                                    .467 
+    F2   =F2  =  -.185*F6    + .445*F1    + .138*F4    + .843 D2           .290 
+    F3   =F3  =   .242*F2    - .405*F6    + .240*F5    + .762 D3           .419 
+    F6   =F6  =  -.472*F5    + .882 D6                                     .222 
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  CORRELATIONS AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+
+                  V                                F
+                 ---                              ---
+                                I F4  -   F4                .314*I              
+                                I F1  -   F1                     I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 1                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  1
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  CORRELATIONS AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+
+                  E                                D
+                 ---                              ---
+ E53 -  A46R               .377*I                                I              
+ E30 -  A25R                    I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  RELIABILITY COEFFICIENTS
+  ------------------------
+  CRONBACH'S ALPHA                                   =     0.643
+  RELIABILITY COEFFICIENT RHO                        =     0.823
+
+  STANDARDIZED FACTOR LOADINGS FOR THE FACTOR THAT GENERATES
+  MAXIMAL RELIABILITY FOR THE UNIT-WEIGHT COMPOSITE
+
+  BASED ON THE MODEL (RHO):
+    A1         A6         A8R        A12        A14        A18R       A19   
+   0.4883     0.4940     0.2648     0.5491    -0.0469     0.3603     0.5537
+    A22        A25R       A30R       A36R       A40        A46R       A49R  
+  -0.0251     0.0042     0.2651     0.3696     0.4258     0.0039     0.3647
+    A52R       A59        A61        A64R       A67      BAADG2     BAADG3  
+   0.3724     0.4131    -0.0499     0.2862     0.0678     0.6645     0.6824
+  BAADG4     BAADG5  
+   0.6078     0.4969
+
+
+  PARAMETER ESTIMATES APPEAR IN ORDER,
+  NO SPECIAL PROBLEMS WERE ENCOUNTERED DURING OPTIMIZATION.
+
+  ALL EQUALITY CONSTRAINTS WERE CORRECTLY IMPOSED
+
+
+
+  RESIDUAL COVARIANCE MATRIX  (S-SIGMA) :       
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2        -0.003
+     A6     V7        -0.037     -0.010
+     A8R    V10       -0.127     -0.108      0.048
+     A12    V14        0.035     -0.004     -0.115      0.015
+     A14    V17       -0.055     -0.050     -0.030     -0.002     -0.009
+     A18R   V23       -0.017      0.051     -0.095     -0.018      0.129
+     A19    V24       -0.009      0.005     -0.108      0.014     -0.018
+     A22    V27       -0.123     -0.089     -0.140     -0.080     -0.062
+     A25R   V30       -0.143     -0.140      0.069     -0.066      0.096
+     A30R   V37        0.083      0.150     -0.147      0.093      0.027
+     A36R   V43       -0.027     -0.107      0.033     -0.075      0.070
+     A40    V47       -0.023      0.107     -0.105      0.008      0.027
+     A46R   V53       -0.180     -0.144      0.078     -0.119      0.085
+     A49R   V56       -0.043     -0.088      0.087     -0.030      0.019
+     A52R   V60       -0.081      0.051     -0.008     -0.022      0.119
+     A59    V67       -0.082     -0.009     -0.056     -0.028      0.081
+     A61    V69       -0.102     -0.043      0.006     -0.001     -0.040
+     A64R   V73        0.125      0.006      0.024      0.076     -0.100
+     A67    V76       -0.140     -0.267      0.038     -0.157      0.093
+   BAADG2   V89        0.005     -0.003      0.018     -0.045     -0.053
+   BAADG3   V90        0.028      0.046     -0.022     -0.046     -0.022
+   BAADG4   V91        0.082      0.051     -0.003     -0.000     -0.048
+   BAADG5   V92       -0.003      0.065     -0.012     -0.030     -0.006
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23       -0.015
+     A19    V24       -0.006      0.007
+     A22    V27       -0.253     -0.057      0.028
+     A25R   V30       -0.064     -0.148      0.037      0.005
+     A30R   V37        0.020      0.067     -0.137     -0.113      0.028
+     A36R   V43        0.048     -0.042     -0.128      0.068     -0.051
+     A40    V47        0.087      0.070      0.076     -0.117      0.122
+     A46R   V53       -0.070     -0.123      0.020      0.023     -0.199
+     A49R   V56       -0.036     -0.052     -0.043      0.098     -0.082
+     A52R   V60       -0.006      0.001     -0.113      0.001      0.016
+     A59    V67        0.136      0.045      0.171     -0.062      0.108
+     A61    V69        0.015     -0.040      0.011     -0.066     -0.118
+     A64R   V73       -0.030      0.083     -0.236      0.034      0.070
+     A67    V76       -0.098     -0.133      0.191      0.112     -0.192
+   BAADG2   V89        0.088     -0.044     -0.026     -0.124     -0.014
+   BAADG3   V90        0.055     -0.001     -0.025     -0.075      0.072
+   BAADG4   V91        0.009      0.043     -0.041     -0.050      0.041
+   BAADG5   V92        0.063      0.073      0.009     -0.066      0.088
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.005
+     A40    V47       -0.070      0.009
+     A46R   V53        0.045     -0.046      0.043
+     A49R   V56        0.031     -0.107      0.102      0.028
+     A52R   V60        0.055      0.036      0.033      0.067      0.001
+     A59    V67       -0.000      0.003     -0.047     -0.044      0.125
+     A61    V69        0.047     -0.007      0.017      0.027     -0.005
+     A64R   V73       -0.004     -0.005     -0.017     -0.013      0.018
+     A67    V76        0.031     -0.047      0.128      0.021     -0.091
+   BAADG2   V89        0.002     -0.049     -0.107      0.043      0.070
+   BAADG3   V90       -0.019      0.016     -0.110      0.004      0.049
+   BAADG4   V91       -0.017     -0.009     -0.084      0.000      0.021
+   BAADG5   V92       -0.031      0.027      0.001     -0.054      0.037
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67       -0.004
+     A61    V69        0.036     -0.064
+     A64R   V73       -0.030     -0.045      0.009
+     A67    V76        0.045      0.126     -0.075     -0.003
+   BAADG2   V89       -0.078      0.028      0.091     -0.029     -0.016
+   BAADG3   V90       -0.047      0.027      0.105     -0.038      0.012
+   BAADG4   V91       -0.032      0.023      0.093     -0.082     -0.025
+   BAADG5   V92       -0.013      0.016      0.069     -0.015     -0.063
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90       -0.000
+   BAADG4   V91       -0.021     -0.003
+   BAADG5   V92       -0.032      0.116     -0.011
+
+                                  AVERAGE ABSOLUTE RESIDUAL =         0.0569
+                     AVERAGE OFF-DIAGONAL ABSOLUTE RESIDUAL =         0.0606
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+  STANDARDIZED RESIDUAL MATRIX:                 
+
+
+                       A1         A6         A8R        A12        A14   
+                        V2         V7         V10        V14        V17 
+     A1     V2        -0.003
+     A6     V7        -0.044     -0.011
+     A8R    V10       -0.143     -0.106      0.045
+     A12    V14        0.044     -0.005     -0.121      0.018
+     A14    V17       -0.057     -0.045     -0.026     -0.002     -0.007
+     A18R   V23       -0.015      0.039     -0.070     -0.014      0.087
+     A19    V24       -0.012      0.006     -0.117      0.017     -0.018
+     A22    V27       -0.115     -0.073     -0.110     -0.070     -0.044
+     A25R   V30       -0.160     -0.137      0.064     -0.069      0.082
+     A30R   V37        0.078      0.123     -0.115      0.081      0.020
+     A36R   V43       -0.033     -0.116      0.034     -0.087      0.066
+     A40    V47       -0.023      0.093     -0.087      0.007      0.021
+     A46R   V53       -0.186     -0.130      0.067     -0.115      0.067
+     A49R   V56       -0.052     -0.093      0.087     -0.034      0.018
+     A52R   V60       -0.073      0.041     -0.006     -0.018      0.083
+     A59    V67       -0.080     -0.008     -0.045     -0.025      0.060
+     A61    V69       -0.108     -0.040      0.005     -0.001     -0.032
+     A64R   V73        0.154      0.006      0.025      0.087     -0.094
+     A67    V76       -0.195     -0.326      0.044     -0.204      0.099
+   BAADG2   V89        0.005     -0.003      0.018     -0.048     -0.046
+   BAADG3   V90        0.033      0.048     -0.022     -0.050     -0.020
+   BAADG4   V91        0.102      0.056     -0.004     -0.000     -0.046
+   BAADG5   V92       -0.003      0.062     -0.011     -0.030     -0.005
+
+
+                       A18R       A19        A22        A25R       A30R  
+                        V23        V24        V27        V30        V37 
+     A18R   V23       -0.008
+     A19    V24       -0.005      0.009
+     A22    V27       -0.155     -0.052      0.018
+     A25R   V30       -0.047     -0.159      0.029      0.005
+     A30R   V37        0.012      0.060     -0.089     -0.088      0.018
+     A36R   V43        0.039     -0.050     -0.110      0.070     -0.044
+     A40    V47        0.056      0.067      0.052     -0.096      0.084
+     A46R   V53       -0.047     -0.122      0.014      0.020     -0.143
+     A49R   V56       -0.029     -0.060     -0.036      0.098     -0.069
+     A52R   V60       -0.004      0.000     -0.071      0.001      0.010
+     A59    V67        0.085      0.042      0.115     -0.050      0.073
+     A61    V69        0.010     -0.041      0.008     -0.058     -0.087
+     A64R   V73       -0.024      0.098     -0.201      0.035      0.059
+     A67    V76       -0.089     -0.178      0.185      0.129     -0.186
+   BAADG2   V89        0.066     -0.049     -0.021     -0.118     -0.011
+   BAADG3   V90        0.043     -0.001     -0.020     -0.073      0.059
+   BAADG4   V91        0.007      0.052     -0.036     -0.052      0.035
+   BAADG5   V92        0.045      0.076      0.007     -0.060      0.067
+
+
+                       A36R       A40        A46R       A49R       A52R  
+                        V43        V47        V53        V56        V60 
+     A36R   V43        0.006
+     A40    V47       -0.064      0.007
+     A46R   V53        0.043     -0.035      0.034
+     A49R   V56        0.034     -0.095      0.094      0.030
+     A52R   V60        0.046      0.024      0.023      0.054      0.000
+     A59    V67       -0.000      0.002     -0.035     -0.038      0.081
+     A61    V69        0.046     -0.006      0.014      0.026     -0.003
+     A64R   V73       -0.005     -0.005     -0.016     -0.014      0.015
+     A67    V76        0.040     -0.049      0.136      0.026     -0.085
+   BAADG2   V89        0.002     -0.042     -0.094      0.044      0.054
+   BAADG3   V90       -0.020      0.013     -0.099      0.004      0.039
+   BAADG4   V91       -0.020     -0.009     -0.080      0.000      0.017
+   BAADG5   V92       -0.031      0.021      0.001     -0.052      0.027
+
+
+                       A59        A61        A64R       A67      BAADG2  
+                        V67        V69        V73        V76        V89 
+     A59    V67       -0.003
+     A61    V69        0.027     -0.053
+     A64R   V73       -0.026     -0.044      0.010
+     A67    V76        0.045      0.138     -0.095     -0.004
+   BAADG2   V89       -0.064      0.025      0.095     -0.035     -0.015
+   BAADG3   V90       -0.039      0.025      0.112     -0.046      0.012
+   BAADG4   V91       -0.028      0.023      0.106     -0.106     -0.026
+   BAADG5   V92       -0.010      0.013      0.068     -0.017     -0.058
+
+
+                     BAADG3     BAADG4     BAADG5  
+                        V90        V91        V92 
+   BAADG3   V90       -0.000
+   BAADG4   V91       -0.023     -0.004
+   BAADG5   V92       -0.031      0.117     -0.010
+
+                     AVERAGE ABSOLUTE STANDARDIZED RESIDUAL =         0.0527
+        AVERAGE OFF-DIAGONAL ABSOLUTE STANDARDIZED RESIDUAL =         0.0563
+
+
+  LARGEST STANDARDIZED RESIDUALS:
+
+      NO.    PARAMETER   ESTIMATE      NO.    PARAMETER   ESTIMATE
+      ---    ---------   --------      ---    ---------   --------
+       1     V76, V7       -0.326      11     V27, V23      -0.155
+       2     V76, V14      -0.204      12     V73, V2        0.154
+       3     V73, V27      -0.201      13     V10, V2       -0.143
+       4     V76, V2       -0.195      14     V53, V37      -0.143
+       5     V76, V37      -0.186      15     V76, V69       0.138
+       6     V53, V2       -0.186      16     V30, V7       -0.137
+       7     V76, V27       0.185      17     V76, V53       0.136
+       8     V76, V24      -0.178      18     V53, V7       -0.130
+       9     V30, V2       -0.160      19     V76, V30       0.129
+      10     V30, V24      -0.159      20     V37, V7        0.123
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+
+  DISTRIBUTION OF STANDARDIZED RESIDUALS
+
+
+
+     ----------------------------------------                     
+     !                                      !                     
+  140-                                      -                     
+     !                                      !                     
+     !                 *                    !                     
+     !                 *                    !                     
+     !                 *  *                 !            RANGE      FREQ PERCENT
+  105-                 *  *                 -                     
+     !                 *  *                 !    1   -0.5  -  --       0   0.00%
+     !                 *  *                 !    2   -0.4  -  -0.5     0   0.00%
+     !                 *  *                 !    3   -0.3  -  -0.4     1   0.36%
+     !                 *  *                 !    4   -0.2  -  -0.3     2   0.72%
+   70-                 *  *                 -    5   -0.1  -  -0.2    24   8.70%
+     !                 *  *                 !    6    0.0  -  -0.1   124  44.93%
+     !                 *  *                 !    7    0.1  -   0.0   114  41.30%
+     !                 *  *                 !    8    0.2  -   0.1    11   3.99%
+     !                 *  *                 !    9    0.3  -   0.2     0   0.00%
+   35-                 *  *                 -    A    0.4  -   0.3     0   0.00%
+     !                 *  *                 !    B    0.5  -   0.4     0   0.00%
+     !              *  *  *                 !    C     ++  -   0.5     0   0.00%
+     !              *  *  *  *              !    -------------------------------
+     !              *  *  *  *              !            TOTAL       276 100.00%
+     ----------------------------------------                     
+        1  2  3  4  5  6  7  8  9  A  B  C    EACH "*" REPRESENTS    7 RESIDUALS
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MEASUREMENT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+  (ROBUST STATISTICS IN PARENTHESES)
+
+
+
+   A1    =V2  =    1.000 F1    +  1.000 E2  
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A6    =V7  =    1.159*F1    +  1.000 E7  
+                    .063                
+                  18.290@               
+               (    .066)                                                       
+               (  17.69@)                                                       
+
+   A8R   =V10 =    1.000 F3    +  1.000 E10 
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A12   =V14 =    1.195*F1    +  1.000 E14 
+                    .061                
+                  19.473@               
+               (    .056)                                                       
+               (  21.19@)                                                       
+
+   A14   =V17 =    1.000 F6    +  1.000 E17 
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A18R  =V23 =    1.000 F5    +  1.000 E23 
+                                        
+                                        
+                                                                                
+                                                                                
+
+   A19   =V24 =    1.173*F1    +  1.000 E24 
+                    .060                
+                  19.656@               
+               (    .062)                                                       
+               (  19.05@)                                                       
+
+   A22   =V27 =     .581*F6    +  1.000 E27 
+                    .052                
+                  11.132@               
+               (    .057)                                                       
+               (  10.14@)                                                       
+
+   A25R  =V30 =     .709*F6    +  1.000 E30 
+                    .047                
+                  15.150@               
+               (    .049)                                                       
+               (  14.46@)                                                       
+
+   A30R  =V37 =     .682*F5    +  1.000 E37 
+                    .041                
+                  16.697@               
+               (    .038)                                                       
+               (  17.78@)                                                       
+
+   A36R  =V43 =    1.293*F3    +  1.000 E43 
+                    .087                
+                  14.900@               
+               (    .099)                                                       
+               (  13.10@)                                                       
+
+   A40   =V47 =    1.000 F4    +  1.000 E47 
+                                        
+                                        
+                                                                                
+                                                                                
+
+
+
+  MEASUREMENT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS (CONTINUED)
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+  (ROBUST STATISTICS IN PARENTHESES)
+
+   A46R  =V53 =     .710*F6    +  1.000 E53 
+                    .048                
+                  14.771@               
+               (    .054)                                                       
+               (  13.16@)                                                       
+
+   A49R  =V56 =    1.299*F3    +  1.000 E56 
+                    .087                
+                  14.877@               
+               (    .100)                                                       
+               (  13.03@)                                                       
+
+   A52R  =V60 =     .995*F5    +  1.000 E60 
+                    .046                
+                  21.842@               
+               (    .043)                                                       
+               (  23.07@)                                                       
+
+   A59   =V67 =    1.002*F4    +  1.000 E67 
+                    .095                
+                  10.544@               
+               (    .089)                                                       
+               (  11.20@)                                                       
+
+   A61   =V69 =    1.059*F6    +  1.000 E69 
+                    .050                
+                  21.020@               
+               (    .048)                                                       
+               (  22.12@)                                                       
+
+   A64R  =V73 =    1.009*F3    +  1.000 E73 
+                    .078                
+                  12.996@               
+               (    .081)                                                       
+               (  12.42@)                                                       
+
+   A67   =V76 =     .114*F4    +  1.000 E76 
+                    .031                
+                   3.640@               
+               (    .033)                                                       
+               (   3.43@)                                                       
+
+ BAADG2  =V89 =    1.000 F2    +  1.000 E89 
+                                        
+                                        
+                                                                                
+                                                                                
+
+ BAADG3  =V90 =     .996*F2    +  1.000 E90 
+                    .024                
+                  41.222@               
+               (    .019)                                                       
+               (  51.52@)                                                       
+
+ BAADG4  =V91 =     .834*F2    +  1.000 E91 
+                    .027                
+                  31.456@               
+               (    .026)                                                       
+               (  32.69@)                                                       
+
+ BAADG5  =V92 =     .788*F2    +  1.000 E92 
+                    .033                
+                  23.699@               
+               (    .035)                                                       
+               (  22.29@)                                                       
+
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  CONSTRUCT EQUATIONS WITH STANDARD ERRORS AND TEST STATISTICS 
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+  (ROBUST STATISTICS IN PARENTHESES)
+
+
+
+    F2   =F2  =    -.218*F6    +   .719*F1    +   .137*F4    +  1.000 D2  
+                    .038           .062           .035                
+                  -5.707@        11.509@         3.954@               
+               (    .040)     (    .062)     (    .034)                         
+               (  -5.47@)     (  11.59@)     (   4.05@)                         
+
+    F3   =F3  =     .137*F2    -   .271*F6    +   .112*F5    +  1.000 D3  
+                    .021           .033           .029                
+                   6.431@        -8.184@         3.917@               
+               (    .024)     (    .038)     (    .032)                         
+               (   5.82@)     (  -7.09@)     (   3.53@)                         
+
+    F6   =F6  =    -.385*F5    +  1.000 D6  
+                    .033                
+                 -11.552@               
+               (    .036)                                                       
+               ( -10.83@)                                                       
+
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES
+  ----------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  V                                F
+                 ---                              ---
+                                I F1  -   F1                .345*I              
+                                I                           .038 I              
+                                I                          9.169@I              
+                                I                      (    .037)I              
+                                I                      (   9.22@)I              
+                                I                                I              
+                                I F4  -   F4                .991*I              
+                                I                           .125 I              
+                                I                          7.933@I              
+                                I                      (    .112)I              
+                                I                      (   8.88@)I              
+                                I                                I              
+                                I F5  -   F5               1.218*I              
+                                I                           .116 I              
+                                I                         10.473@I              
+                                I                      (    .099)I              
+                                I                      (  12.34@)I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES
+  ----------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  E                                D
+                 ---                              ---
+ E2  -  A1                 .396*I D2  -   F2                .540*I              
+                           .032 I                           .048 I              
+                         12.206@I                         11.184@I              
+                      (    .040)I                      (    .044)I              
+                      (   9.98@)I                      (  12.21@)I              
+                                I                                I              
+ E7  -  A6                 .510*I D3  -   F3                .179*I              
+                           .042 I                           .023 I              
+                         12.089@I                          7.638@I              
+                      (    .052)I                      (    .028)I              
+                      (   9.79@)I                      (   6.47@)I              
+                                I                                I              
+ E10 -  A8R                .706*I D6  -   F6                .538*I              
+                           .053 I                           .047 I              
+                         13.202@I                         11.482@I              
+                      (    .074)I                      (    .049)I              
+                      (   9.50@)I                      (  10.97@)I              
+                                I                                I              
+ E14 -  A12                .344*I                                I              
+                           .032 I                                I              
+                         10.626@I                                I              
+                      (    .036)I                                I              
+                      (   9.52@)I                                I              
+                                I                                I              
+ E17 -  A14                .555*I                                I              
+                           .053 I                                I              
+                         10.478@I                                I              
+                      (    .069)I                                I              
+                      (   8.08@)I                                I              
+                                I                                I              
+ E23 -  A18R               .537*I                                I              
+                           .064 I                                I              
+                          8.361@I                                I              
+                      (    .070)I                                I              
+                      (   7.61@)I                                I              
+                                I                                I              
+ E24 -  A19                .319*I                                I              
+                           .030 I                                I              
+                         10.466@I                                I              
+                      (    .037)I                                I              
+                      (   8.69@)I                                I              
+                                I                                I              
+ E27 -  A22               1.266*I                                I              
+                           .091 I                                I              
+                         13.959@I                                I              
+                      (    .072)I                                I              
+                      (  17.51@)I                                I              
+                                I                                I              
+ E30 -  A25R               .715*I                                I              
+                           .050 I                                I              
+                         14.252@I                                I              
+                      (    .053)I                                I              
+                      (  13.45@)I                                I              
+                                I                                I              
+ E37 -  A30R               .940*I                                I              
+                           .072 I                                I              
+                         13.129@I                                I              
+                      (    .069)I                                I              
+                      (  13.62@)I                                I              
+                                I                                I              
+ E43 -  A36R               .354*I                                I              
+                           .035 I                                I              
+                          9.972@I                                I              
+                      (    .054)I                                I              
+                      (   6.55@)I                                I              
+                                I                                I              
+ E47 -  A40                .372*I                                I              
+                           .099 I                                I              
+                          3.760@I                                I              
+                      (    .097)I                                I              
+                      (   3.83@)I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  VARIANCES OF INDEPENDENT VARIABLES (CONTINUED)
+  ----------------------------------------------
+
+ E53 -  A46R               .861*I                                I              
+                           .059 I                                I              
+                         14.545@I                                I              
+                      (    .068)I                                I              
+                      (  12.67@)I                                I              
+                                I                                I              
+ E56 -  A49R               .381*I                                I              
+                           .037 I                                I              
+                         10.258@I                                I              
+                      (    .045)I                                I              
+                      (   8.44@)I                                I              
+                                I                                I              
+ E60 -  A52R               .421*I                                I              
+                           .059 I                                I              
+                          7.119@I                                I              
+                      (    .077)I                                I              
+                      (   5.48@)I                                I              
+                                I                                I              
+ E67 -  A59                .459*I                                I              
+                           .101 I                                I              
+                          4.540@I                                I              
+                      (    .097)I                                I              
+                      (   4.71@)I                                I              
+                                I                                I              
+ E69 -  A61                .457*I                                I              
+                           .050 I                                I              
+                          9.097@I                                I              
+                      (    .062)I                                I              
+                      (   7.34@)I                                I              
+                                I                                I              
+ E73 -  A64R               .571*I                                I              
+                           .044 I                                I              
+                         12.851@I                                I              
+                      (    .051)I                                I              
+                      (  11.26@)I                                I              
+                                I                                I              
+ E76 -  A67                .685*I                                I              
+                           .047 I                                I              
+                         14.475@I                                I              
+                      (    .051)I                                I              
+                      (  13.43@)I                                I              
+                                I                                I              
+ E89 -BAADG2               .225*I                                I              
+                           .023 I                                I              
+                          9.758@I                                I              
+                      (    .031)I                                I              
+                      (   7.15@)I                                I              
+                                I                                I              
+ E90 -BAADG3               .170*I                                I              
+                           .020 I                                I              
+                          8.385@I                                I              
+                      (    .026)I                                I              
+                      (   6.49@)I                                I              
+                                I                                I              
+ E91 -BAADG4               .297*I                                I              
+                           .025 I                                I              
+                         12.114@I                                I              
+                      (    .026)I                                I              
+                      (  11.58@)I                                I              
+                                I                                I              
+ E92 -BAADG5               .647*I                                I              
+                           .048 I                                I              
+                         13.570@I                                I              
+                      (    .052)I                                I              
+                      (  12.57@)I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  COVARIANCES AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  V                                F
+                 ---                              ---
+                                I F4  -   F4                .157*I              
+                                I F1  -   F1                .036 I              
+                                I                          4.372@I              
+                                I                      (    .038)I              
+                                I                      (   4.14@)I              
+                                I                                I              
+                                I F5  -   F5                .093*I              
+                                I F1  -   F1                .037 I              
+                                I                          2.526@I              
+                                I                      (    .035)I              
+                                I                      (   2.67@)I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  COVARIANCES AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+  STATISTICS SIGNIFICANT AT THE 5% LEVEL ARE MARKED WITH @.
+
+                  E                                D
+                 ---                              ---
+ E53 -  A46R               .326*I                                I              
+ E30 -  A25R               .034 I                                I              
+                          9.680@I                                I              
+                      (    .040)I                                I              
+                      (   8.15@)I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  STANDARDIZED SOLUTION:                                              R-SQUARED
+
+
+
+   A1    =V2  =   .682 F1    + .731 E2                                     .465 
+   A6    =V7  =   .690*F1    + .724 E7                                     .476 
+   A8R   =V10 =   .552 F3    + .834 E10                                    .305 
+   A12   =V14 =   .767*F1    + .642 E14                                    .588 
+   A14   =V17 =   .751 F6    + .660 E17                                    .564 
+   A18R  =V23 =   .833 F5    + .553 E23                                    .694 
+   A19   =V24 =   .773*F1    + .634 E24                                    .598 
+   A22   =V27 =   .401*F6    + .916 E27                                    .161 
+   A25R  =V30 =   .579*F6    + .815 E30                                    .336 
+   A30R  =V37 =   .613*F5    + .790 E37                                    .376 
+   A36R  =V43 =   .771*F3    + .637 E43                                    .594 
+   A40   =V47 =   .853 F4    + .523 E47                                    .727 
+   A46R  =V53 =   .544*F6    + .839 E53                                    .296 
+   A49R  =V56 =   .761*F3    + .649 E56                                    .578 
+   A52R  =V60 =   .861*F5    + .509 E60                                    .741 
+   A59   =V67 =   .827*F4    + .562 E67                                    .684 
+   A61   =V69 =   .799*F6    + .601 E69                                    .638 
+   A64R  =V73 =   .597*F3    + .802 E73                                    .356 
+   A67   =V76 =   .136*F4    + .991 E76                                    .018 
+ BAADG2  =V89 =   .885 F2    + .465 E89                                    .783 
+ BAADG3  =V90 =   .909*F2    + .417 E90                                    .826 
+ BAADG4  =V91 =   .810*F2    + .587 E91                                    .656 
+ BAADG5  =V92 =   .662*F2    + .750 E92                                    .438 
+    F2   =F2  =  -.205*F6    + .468*F1    + .151*F4    + .815 D2           .336 
+    F3   =F3  =   .222*F2    - .412*F6    + .223*F5    + .761 D3           .421 
+    F6   =F6  =  -.501*F5    + .866 D6                                     .251 
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  CORRELATIONS AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+
+                  V                                F
+                 ---                              ---
+                                I F4  -   F4                .269*I              
+                                I F1  -   F1                     I              
+                                I                                I              
+                                I F5  -   F5                .144*I              
+                                I F1  -   F1                     I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  CORRELATIONS AMONG INDEPENDENT VARIABLES
+  ---------------------------------------
+
+                  E                                D
+                 ---                              ---
+ E53 -  A46R               .415*I                                I              
+ E30 -  A25R                    I                                I              
+                                I                                I              
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MULTIPLE POPULATION ANALYSIS, INFORMATION IN GROUP  2
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+  STATISTICS FOR MULTIPLE POPULATION ANALYSIS
+
+  ALL EQUALITY CONSTRAINTS WERE CORRECTLY IMPOSED
+
+
+
+
+  GOODNESS OF FIT SUMMARY FOR METHOD = ML    
+
+  INDEPENDENCE MODEL CHI-SQUARE        =    9060.580 ON   506 DEGREES OF FREEDOM
+
+  INDEPENDENCE AIC =    8048.580   INDEPENDENCE CAIC =    5121.644
+         MODEL AIC =     173.901          MODEL CAIC =   -2527.441
+
+  LOG LIKELIHOOD BASED ON THE STRUCTURED MODEL                 =       51438.491
+  AKAIKE INFORMATION CRITERION (AIC) BASED ON LOG LIKELIHOOD   =       51660.491
+  BAYESIAN INFORMATION CRITERION (BIC) BASED ON LOG LIKELIHOOD =       52191.565
+
+  CHI-SQUARE =     1107.901 BASED ON     467 DEGREES OF FREEDOM
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  THE NORMAL THEORY RLS CHI-SQUARE FOR THIS ML SOLUTION IS       1183.814.
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  FIT INDICES
+  -----------
+  BENTLER-BONETT     NORMED FIT INDEX =     0.878
+  BENTLER-BONETT NON-NORMED FIT INDEX =     0.919
+  COMPARATIVE FIT INDEX (CFI)         =     0.925
+  BOLLEN'S          (IFI) FIT INDEX   =     0.925
+  MCDONALD'S        (MFI) FIT INDEX   =     0.696
+  JORESKOG-SORBOM'S  GFI  FIT INDEX   =     0.896
+  JORESKOG-SORBOM'S AGFI  FIT INDEX   =     0.876
+  ROOT MEAN-SQUARE RESIDUAL (RMR)     =     0.075
+  STANDARDIZED RMR                    =     0.071
+  ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)    =     0.056
+  90% CONFIDENCE INTERVAL OF RMSEA  (       0.051,         0.060)
+
+
+  GOODNESS OF FIT SUMMARY FOR METHOD = ROBUST
+
+  ROBUST INDEPENDENCE MODEL CHI-SQUARE =    7947.864 ON   506 DEGREES OF FREEDOM
+
+  INDEPENDENCE AIC =    6935.864   INDEPENDENCE CAIC =    4008.929
+         MODEL AIC =      75.950          MODEL CAIC =   -2625.392
+
+  SATORRA-BENTLER SCALED CHI-SQUARE =   1009.9499 ON     467 DEGREES OF FREEDOM
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+  SATORRA-BENTLER SCALING FACTOR      =     0.912
+
+  MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE             =     451.969 ON   209 D.F.
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  RESIDUAL-BASED TEST STATISTIC                      =  2977.285
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  YUAN-BENTLER RESIDUAL-BASED TEST STATISTIC         =   680.429
+  PROBABILITY VALUE FOR THE CHI-SQUARE STATISTIC IS      0.00000
+
+  YUAN-BENTLER RESIDUAL-BASED F-STATISTIC     =      3.011
+  DEGREES OF FREEDOM  =                         467,   417
+  PROBABILITY VALUE FOR THE F-STATISTIC IS         0.00000
+
+  FIT INDICES
+  -----------
+  BENTLER-BONETT     NORMED FIT INDEX =     0.873
+  BENTLER-BONETT NON-NORMED FIT INDEX =     0.921
+  COMPARATIVE FIT INDEX (CFI)         =     0.927
+  BOLLEN'S          (IFI) FIT INDEX   =     0.927
+  MCDONALD'S        (MFI) FIT INDEX   =     0.736
+  ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)    =     0.051
+  90% CONFIDENCE INTERVAL OF RMSEA  (       0.047,         0.056)
+
+
+
+                         ITERATIVE SUMMARY
+
+                     PARAMETER
+  ITERATION          ABS CHANGE         ALPHA                FUNCTION
+      1               0.336547         1.00000               5.93764
+      2               0.286099         1.00000               4.17971
+      3               0.246244         1.00000               4.17514
+      4               0.170959         1.00000               2.70454
+      5               0.119646         0.50000               1.72819
+      6               0.055054         0.50000               1.48131
+      7               0.041516         0.50000               1.35324
+      8               0.030310         1.00000               1.27440
+      9               0.005755         1.00000               1.25637
+     10               0.001264         1.00000               1.25613
+     11               0.000216         1.00000               1.25612
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  WALD TEST (FOR ADDING EQUALITY CONSTRAINTS)
+  ROBUST INFORMATION MATRIX USED IN THIS WALD TEST          
+  MULTIVARIATE WALD TEST BY SIMULTANEOUS PROCESS
+
+  THE CONSTRAINTS COMPRISE EQUALITY OF THESE  29
+  PARAMETERS BETWEEN GROUP  1 AND GROUP  2:
+
+   F1,F1     F4,F1     F4,F4     F5,F5     E2,E2     E7,E7    E10,E10   E14,E14 
+  E17,E17   E23,E23   E24,E24   E27,E27   E30,E30   E37,E37   E43,E43   E47,E47 
+  E53,E53   E56,E56   E60,E60   E67,E67   E69,E69   E73,E73   E76,E76   E89,E89 
+  E90,E90   E91,E91   E92,E92    D2,D2     F3,F5  
+
+
+
+         CUMULATIVE MULTIVARIATE STATISTICS              UNIVARIATE INCREMENT
+         ----------------------------------              --------------------
+                      ROBUST                              ROBUST
+  STEP  PARAMETER   CHI-SQUARE  D.F.  PROBABILITY       CHI-SQUARE  PROBABILITY
+  ---- -----------  ----------  ----  -----------       ----------  -----------
+
+    1    E10,E10       0.012      1      0.912             0.012       0.912
+    2    E53,E53       0.041      2      0.980             0.029       0.864
+    3     F4,F4        0.085      3      0.994             0.043       0.835
+    4    E73,E73       0.143      4      0.998             0.059       0.809
+    5    E43,E43       0.216      5      0.999             0.073       0.787
+    6    E76,E76       0.338      6      0.999             0.121       0.728
+    7    E92,E92       0.556      7      0.999             0.219       0.640
+    8     F3,F5        0.797      8      0.999             0.240       0.624
+    9    E60,E60       1.017      9      0.999             0.220       0.639
+   10     E7,E7        1.264     10      1.000             0.247       0.619
+   11     F1,F1        1.549     11      1.000             0.285       0.593
+   12     F4,F1        1.842     12      1.000             0.292       0.589
+   13    E90,E90       2.206     13      1.000             0.365       0.546
+   14    E23,E23       2.731     14      0.999             0.524       0.469
+   15    E56,E56       3.512     15      0.999             0.781       0.377
+   16    E24,E24       4.405     16      0.998             0.893       0.345
+   17    E67,E67       5.318     17      0.997             0.913       0.339
+   18    E14,E14       6.591     18      0.993             1.273       0.259
+   19    E17,E17       7.990     19      0.987             1.399       0.237
+   20    E27,E27       9.750     20      0.972             1.760       0.185
+   21     F5,F5       11.973     21      0.940             2.223       0.136
+   22     E2,E2       14.854     22      0.868             2.880       0.090
+   23    E37,E37      18.083     23      0.753             3.230       0.072
+   24    E89,E89      20.981     24      0.640             2.898       0.089
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  WALD TEST (FOR DROPPING PARAMETERS)
+  MULTIVARIATE WALD TEST BY SIMULTANEOUS PROCESS
+
+
+
+         CUMULATIVE MULTIVARIATE STATISTICS              UNIVARIATE INCREMENT
+         ----------------------------------              --------------------
+                                                                
+  STEP  PARAMETER   CHI-SQUARE  D.F.  PROBABILITY       CHI-SQUARE  PROBABILITY
+  ---- -----------  ----------  ----  -----------       ----------  -----------
+
+
+     ************
+          NONE OF THE FREE PARAMETERS IS DROPPED IN THIS PROCESS.
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  ROBUST LAGRANGE MULTIPLIER TEST (FOR RELEASING CONSTRAINTS)
+
+
+  CONSTRAINTS TO BE RELEASED ARE:                     
+
+          CONSTRAINTS FROM GROUP  2
+
+          CONSTR:    1   (1,V7,F1)-(2,V7,F1)=0;
+          CONSTR:    2   (1,V14,F1)-(2,V14,F1)=0;
+          CONSTR:    3   (1,V24,F1)-(2,V24,F1)=0;
+          CONSTR:    4   (1,V27,F6)-(2,V27,F6)=0;
+          CONSTR:    5   (1,V30,F6)-(2,V30,F6)=0;
+          CONSTR:    6   (1,V37,F5)-(2,V37,F5)=0;
+          CONSTR:    7   (1,V43,F3)-(2,V43,F3)=0;
+          CONSTR:    8   (1,V53,F6)-(2,V53,F6)=0;
+          CONSTR:    9   (1,V56,F3)-(2,V56,F3)=0;
+          CONSTR:   10   (1,V60,F5)-(2,V60,F5)=0;
+          CONSTR:   11   (1,V67,F4)-(2,V67,F4)=0;
+          CONSTR:   12   (1,V69,F6)-(2,V69,F6)=0;
+          CONSTR:   13   (1,V73,F3)-(2,V73,F3)=0;
+          CONSTR:   14   (1,V76,F4)-(2,V76,F4)=0;
+          CONSTR:   15   (1,V90,F2)-(2,V90,F2)=0;
+          CONSTR:   16   (1,V91,F2)-(2,V91,F2)=0;
+          CONSTR:   17   (1,V92,F2)-(2,V92,F2)=0;
+          CONSTR:   18   (1,F2,F1)-(2,F2,F1)=0;
+          CONSTR:   19   (1,F2,F6)-(2,F2,F6)=0;
+          CONSTR:   20   (1,F2,F4)-(2,F2,F4)=0;
+          CONSTR:   21   (1,F3,F2)-(2,F3,F2)=0;
+          CONSTR:   22   (1,F3,F6)-(2,F3,F6)=0;
+          CONSTR:   23   (1,F6,F5)-(2,F6,F5)=0;
+          CONSTR:   24   (1,D3,D3)-(2,D3,D3)=0;
+          CONSTR:   25   (1,D6,D6)-(2,D6,D6)=0;
+          CONSTR:   26   (1,E53,E30)-(2,E53,E30)=0;
+
+
+           UNIVARIATE TEST STATISTICS:
+
+   NO    CONSTRAINT    CHI-SQUARE   PROBABILITY   CHANGE
+   --    -----------   ----------   -----------   ------
+
+    1    CONSTR:    1       0.194       0.660      0.045
+    2    CONSTR:    2       0.497       0.481     -0.074
+    3    CONSTR:    3       0.069       0.792     -0.025
+    4    CONSTR:    4       0.708       0.400     -0.078
+    5    CONSTR:    5       0.065       0.799      0.019
+    6    CONSTR:    6       0.561       0.454     -0.060
+    7    CONSTR:    7       0.113       0.736      0.033
+    8    CONSTR:    8       1.712       0.191     -0.092
+    9    CONSTR:    9       0.430       0.512     -0.066
+   10    CONSTR:   10       0.001       0.977     -0.002
+   11    CONSTR:   11       0.126       0.723      0.070
+   12    CONSTR:   12       2.848       0.091      0.128
+   13    CONSTR:   13       0.002       0.968     -0.005
+   14    CONSTR:   14       0.179       0.672      0.025
+   15    CONSTR:   15       0.107       0.743     -0.017
+   16    CONSTR:   16       0.000       0.988     -0.001
+   17    CONSTR:   17       0.038       0.846      0.012
+   18    CONSTR:   18       0.370       0.543      0.064
+   19    CONSTR:   19       0.081       0.776      0.020
+   20    CONSTR:   20       1.553       0.213      0.081
+   21    CONSTR:   21       0.007       0.935      0.003
+   22    CONSTR:   22       0.198       0.656     -0.022
+   23    CONSTR:   23       0.017       0.895     -0.007
+   24    CONSTR:   24       1.686       0.194     -0.032
+   25    CONSTR:   25       0.215       0.643      0.032
+   26    CONSTR:   26       0.004       0.949      0.004
+
+
+
+         CUMULATIVE MULTIVARIATE STATISTICS              UNIVARIATE INCREMENT
+         ----------------------------------              --------------------
+                      ROBUST                              ROBUST
+  STEP  PARAMETER   CHI-SQUARE  D.F.  PROBABILITY       CHI-SQUARE  PROBABILITY
+  ---- -----------  ----------  ----  -----------       ----------  -----------
+
+    1  CONSTR:   12     2.848      1      0.091             2.848       0.091
+    2  CONSTR:   24     4.719      2      0.094             1.871       0.171
+    3  CONSTR:    8     6.385      3      0.094             1.666       0.197
+    4  CONSTR:   20     7.543      4      0.110             1.158       0.282
+    5  CONSTR:    7     8.571      5      0.127             1.028       0.311
+    6  CONSTR:   22     9.044      6      0.171             0.473       0.492
+    7  CONSTR:    4     9.522      7      0.217             0.478       0.489
+    8  CONSTR:    2     9.934      8      0.270             0.412       0.521
+    9  CONSTR:    6    10.331      9      0.324             0.398       0.528
+   10  CONSTR:   11    10.731     10      0.379             0.399       0.528
+   11  CONSTR:   13    11.031     11      0.441             0.301       0.584
+   12  CONSTR:    9    11.419     12      0.493             0.387       0.534
+   13  CONSTR:    1    11.660     13      0.556             0.242       0.623
+   14  CONSTR:   26    11.861     14      0.617             0.200       0.655
+   15  CONSTR:   15    12.030     15      0.677             0.170       0.680
+   16  CONSTR:   23    12.161     16      0.733             0.130       0.718
+   17  CONSTR:   10    12.378     17      0.777             0.217       0.641
+   18  CONSTR:   16    12.444     18      0.823             0.067       0.796
+   19  CONSTR:    3    12.517     19      0.862             0.072       0.788
+   20  CONSTR:   19    12.574     20      0.895             0.057       0.811
+   21  CONSTR:    5    12.626     21      0.921             0.052       0.819
+   22  CONSTR:   25    12.675     22      0.942             0.049       0.825
+   23  CONSTR:   18    12.715     23      0.958             0.041       0.840
+   24  CONSTR:   21    12.748     24      0.970             0.032       0.857
+   25  CONSTR:   14    12.764     25      0.979             0.016       0.898
+   26  CONSTR:   17    12.767     26      0.986             0.003       0.954
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  LAGRANGE MULTIPLIER TEST (FOR ADDING PARAMETERS)
+
+
+  ORDERED UNIVARIATE TEST STATISTICS:             
+                                          HANCOCK          STANDAR-   ROBUST
+                             CHI-         467 DF   PARAM.   DIZED    PREDICTED
+   NO  CODE   PARAMETER     SQUARE  PROB.  PROB.   CHANGE   CHANGE  RMSEA   CFI
+   --  ----   ---------     ------  -----  -----   ------  -------  -----------
+    1  2 16   1,  F3,F1      8.026  0.005  1.000   -0.136   -0.403  0.051 0.928
+    2  2 16   2,  F3,F1      7.333  0.007  1.000   -0.141   -0.432  0.051 0.928
+    3  2 10   2,  D3,D2      4.360  0.037  1.000    0.052    0.166  0.051 0.927
+    4  2 10   1,  D3,D2      3.666  0.056  1.000    0.055    0.157  0.051 0.927
+    5  2 22   2,  F2,F3      3.516  0.061  1.000    0.195    0.389  0.051 0.927
+    6  2 16   2,  F3,F4      3.147  0.076  1.000   -0.051   -0.092  0.051 0.927
+    7  2 16   2,  F6,F1      2.578  0.108  1.000   -0.127   -0.255  0.051 0.927
+    8  2  0   2, V10,F3      2.060  0.151  1.000    0.172    0.307  0.051 0.927
+    9  2  0   1, V10,F3      2.060  0.151  1.000   -0.172   -0.242  0.051 0.927
+   10  2 16   1,  F6,F1      1.621  0.203  1.000   -0.089   -0.177  0.051 0.927
+   11  2 22   1,  F2,F3      1.570  0.210  1.000    0.141    0.259  0.051 0.927
+   12  2 16   2,  F6,F4      1.435  0.231  1.000    0.055    0.066  0.051 0.927
+   13  2 16   2,  F2,F5      1.021  0.312  1.000    0.043    0.044  0.051 0.927
+   14  2  0   2, V47,F4      0.934  0.334  1.000    0.177    0.152  0.051 0.927
+   15  2  0   1, V47,F4      0.934  0.334  1.000   -0.177   -0.144  0.051 0.927
+   16  2 16   1,  F6,F4      0.927  0.336  1.000   -0.042   -0.052  0.051 0.927
+   17  2 22   1,  F6,F3      0.584  0.445  1.000   -0.077   -0.166  0.051 0.927
+   18  2 22   1,  F6,F2      0.517  0.472  1.000   -0.035   -0.042  0.051 0.927
+   19  2 16   1,  F3,F4      0.300  0.584  1.000   -0.015   -0.028  0.051 0.927
+   20  2 22   2,  F6,F3      0.257  0.612  1.000    0.052    0.111  0.051 0.927
+   21  2 10   2,  D6,D3      0.255  0.614  1.000    0.015    0.049  0.051 0.927
+   22  2 10   1,  D6,D3      0.255  0.614  1.000   -0.015   -0.049  0.051 0.927
+   23  2  0   1, V23,F5      0.224  0.636  1.000    0.039    0.031  0.051 0.927
+   24  2  0   2, V23,F5      0.224  0.636  1.000   -0.039   -0.027  0.051 0.927
+   25  2  0   1, V89,F2      0.187  0.665  1.000    0.019    0.016  0.051 0.927
+   26  2  0   2, V89,F2      0.187  0.665  1.000   -0.019   -0.021  0.051 0.927
+   27  2 10   2,  D6,D2      0.166  0.684  1.000    0.018    0.033  0.051 0.927
+   28  2 22   2,  F6,F2      0.058  0.810  1.000   -0.014   -0.018  0.051 0.927
+   29  2 16   1,  F2,F5      0.045  0.833  1.000   -0.010   -0.010  0.051 0.927
+   30  2  0   1,  V2,F1      0.035  0.851  1.000    0.016    0.033  0.051 0.927
+   31  2  0   2,  V2,F1      0.035  0.851  1.000   -0.016   -0.032  0.051 0.927
+   32  2 10   1,  D6,D2      0.035  0.852  1.000    0.008    0.013  0.051 0.927
+   33  2  0   2, V17,F6      0.006  0.936  1.000    0.006    0.006  0.051 0.927
+   34  2  0   1, V17,F6      0.006  0.936  1.000   -0.006   -0.007  0.051 0.927
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MULTIVARIATE LAGRANGE MULTIPLIER TEST BY SIMULTANEOUS PROCESS IN STAGE  1
+
+  PARAMETER SETS (SUBMATRICES) ACTIVE AT THIS STAGE ARE:
+
+     PDD GFF BFF
+
+
+
+      CUMULATIVE MULTIVARIATE STATISTICS      UNIVARIATE INCREMENT
+      ----------------------------------      ------------------------------
+                                                         HANCOCK'S     ROBUST
+                       CHI-                 CHI-         SEQUENTIAL   PREDICTED
+ STEP   PARAMETER     SQUARE  D.F. PROB.   SQUARE PROB.  D.F. PROB.  RMSEA   CFI
+ ----  ----------     ------  ---- -----   ------ -----  ---- -----  -----------
+    1   1,  F3,F1      8.026     1 0.005    8.026 0.005   467 1.000  0.051 0.928
+    2   2,  F3,F1     19.006     2 0.000   10.979 0.001   466 1.000  0.051 0.929
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+
+  LAGRANGE MULTIPLIER TEST (FOR RELEASING CONSTRAINTS)
+  ROBUST TEST ON ADDITIONAL CONSTRAINTS
+
+
+  CONSTRAINTS TO BE RELEASED ARE:                     
+
+          CONSTRAINTS FROM GROUP  2
+
+          CONSTR:    1   (1,V7,F1)-(2,V7,F1)=0;
+          CONSTR:    2   (1,V14,F1)-(2,V14,F1)=0;
+          CONSTR:    3   (1,V24,F1)-(2,V24,F1)=0;
+          CONSTR:    4   (1,V27,F6)-(2,V27,F6)=0;
+          CONSTR:    5   (1,V30,F6)-(2,V30,F6)=0;
+          CONSTR:    6   (1,V37,F5)-(2,V37,F5)=0;
+          CONSTR:    7   (1,V43,F3)-(2,V43,F3)=0;
+          CONSTR:    8   (1,V53,F6)-(2,V53,F6)=0;
+          CONSTR:    9   (1,V56,F3)-(2,V56,F3)=0;
+          CONSTR:   10   (1,V60,F5)-(2,V60,F5)=0;
+          CONSTR:   11   (1,V67,F4)-(2,V67,F4)=0;
+          CONSTR:   12   (1,V69,F6)-(2,V69,F6)=0;
+          CONSTR:   13   (1,V73,F3)-(2,V73,F3)=0;
+          CONSTR:   14   (1,V76,F4)-(2,V76,F4)=0;
+          CONSTR:   15   (1,V90,F2)-(2,V90,F2)=0;
+          CONSTR:   16   (1,V91,F2)-(2,V91,F2)=0;
+          CONSTR:   17   (1,V92,F2)-(2,V92,F2)=0;
+          CONSTR:   18   (1,F2,F1)-(2,F2,F1)=0;
+          CONSTR:   19   (1,F2,F6)-(2,F2,F6)=0;
+          CONSTR:   20   (1,F2,F4)-(2,F2,F4)=0;
+          CONSTR:   21   (1,F3,F2)-(2,F3,F2)=0;
+          CONSTR:   22   (1,F3,F6)-(2,F3,F6)=0;
+          CONSTR:   23   (1,F6,F5)-(2,F6,F5)=0;
+          CONSTR:   24   (1,D3,D3)-(2,D3,D3)=0;
+          CONSTR:   25   (1,D6,D6)-(2,D6,D6)=0;
+          CONSTR:   26   (1,E53,E30)-(2,E53,E30)=0;
+
+  ADDITIONAL CONSTRAINTS ON INDIVIDUAL PARAMETERS:
+          CONSTR:   27   (  1,  D3,D2  ) =    0.000
+          CONSTR:   28   (  1, V47,F4  ) =    1.000
+          CONSTR:   29   (  1,  F3,F1  ) =    0.000
+          CONSTR:   30   (  1,  F3,F4  ) =    0.000
+          CONSTR:   31   (  1,  F6,F1  ) =    0.000
+          CONSTR:   32   (  1,  F6,F4  ) =    0.000
+          CONSTR:   33   (  1, V10,F3  ) =    1.000
+          CONSTR:   34   (  1,  F2,F3  ) =    0.000
+          CONSTR:   35   (  1,  F6,F2  ) =    0.000
+          CONSTR:   36   (  1,  F6,F3  ) =    0.000
+          CONSTR:   37   (  2,  D3,D2  ) =    0.000
+          CONSTR:   38   (  2, V47,F4  ) =    1.000
+          CONSTR:   39   (  2,  F2,F5  ) =    0.000
+          CONSTR:   40   (  2,  F3,F1  ) =    0.000
+          CONSTR:   41   (  2,  F3,F4  ) =    0.000
+          CONSTR:   42   (  2,  F6,F1  ) =    0.000
+          CONSTR:   43   (  2,  F6,F4  ) =    0.000
+          CONSTR:   44   (  2, V10,F3  ) =    1.000
+          CONSTR:   45   (  2,  F2,F3  ) =    0.000
+          CONSTR:   46   (  2,  F6,F3  ) =    0.000
+
+
+           UNIVARIATE TEST STATISTICS:
+
+   NO    CONSTRAINT    CHI-SQUARE   PROBABILITY   CHANGE
+   --    -----------   ----------   -----------   ------
+
+    1    CONSTR:    1       0.254       0.614      0.054
+    2    CONSTR:    2       0.438       0.508     -0.070
+    3    CONSTR:    3       0.058       0.810     -0.024
+    4    CONSTR:    4       0.617       0.432     -0.074
+    5    CONSTR:    5       0.111       0.739      0.025
+    6    CONSTR:    6       0.430       0.512     -0.057
+    7    CONSTR:    7       0.060       0.806      0.025
+    8    CONSTR:    8       1.604       0.205     -0.091
+    9    CONSTR:    9       0.591       0.442     -0.080
+   10    CONSTR:   10       0.052       0.819      0.024
+   11    CONSTR:   11       0.124       0.725      0.069
+   12    CONSTR:   12       4.163       0.041      0.164
+   13    CONSTR:   13       0.009       0.923     -0.011
+   14    CONSTR:   14       0.179       0.672      0.025
+   15    CONSTR:   15       0.001       0.970      0.002
+   16    CONSTR:   16       0.031       0.861      0.010
+   17    CONSTR:   17       0.099       0.754      0.020
+   18    CONSTR:   18       0.544       0.461      0.080
+   19    CONSTR:   19   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+   20    CONSTR:   20       1.560       0.212      0.081
+   21    CONSTR:   21       0.003       0.959      0.002
+   22    CONSTR:   22   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+   23    CONSTR:   23       0.199       0.655     -0.026
+   24    CONSTR:   24       1.866       0.172     -0.034
+   25    CONSTR:   25       0.522       0.470      0.058
+   26    CONSTR:   26       0.006       0.938      0.005
+   27    CONSTR:   27       3.156       0.076      0.046
+   28    CONSTR:   28       1.002       0.317     -0.190
+   29    CONSTR:   29       6.762       0.009     -0.115
+   30    CONSTR:   30       0.273       0.602     -0.014
+   31    CONSTR:   31       1.581       0.209     -0.086
+   32    CONSTR:   32       0.727       0.394     -0.033
+   33    CONSTR:   33       1.644       0.200      0.133
+   34    CONSTR:   34       3.641       0.056     -0.276
+   35    CONSTR:   35       2.089       0.148      0.110
+   36    CONSTR:   36       1.554       0.213      0.221
+   37    CONSTR:   37       3.306       0.069      0.039
+   38    CONSTR:   38       1.002       0.317      0.190
+   39    CONSTR:   39   NOT TESTED DUE TO NUMERICAL PROBLEMS.
+   40    CONSTR:   40       4.934       0.026     -0.092
+   41    CONSTR:   41       2.842       0.092     -0.045
+   42    CONSTR:   42       4.820       0.028     -0.454
+   43    CONSTR:   43       2.978       0.084      0.084
+   44    CONSTR:   44       1.644       0.200     -0.133
+   45    CONSTR:   45       2.883       0.090     -0.204
+   46    CONSTR:   46       0.866       0.352     -0.202
+
+
+
+         CUMULATIVE MULTIVARIATE STATISTICS              UNIVARIATE INCREMENT
+         ----------------------------------              --------------------
+                      ROBUST                              ROBUST
+  STEP  PARAMETER   CHI-SQUARE  D.F.  PROBABILITY       CHI-SQUARE  PROBABILITY
+  ---- -----------  ----------  ----  -----------       ----------  -----------
+
+    1  CONSTR:   29     6.762      1      0.009             6.762       0.009
+    2  CONSTR:   40    14.386      2      0.001             7.624       0.006
+    3  CONSTR:   42    19.121      3      0.000             4.735       0.030
+    4  CONSTR:    8    21.758      4      0.000             2.637       0.104
+    5  CONSTR:   44    24.153      5      0.000             2.396       0.122
+    6  CONSTR:   35    26.295      6      0.000             2.142       0.143
+    7  CONSTR:   20    27.643      7      0.000             1.348       0.246
+    8  CONSTR:   41    28.937      8      0.000             1.294       0.255
+    9  CONSTR:    5    30.215      9      0.000             1.278       0.258
+   10  CONSTR:    4    31.463     10      0.000             1.247       0.264
+   11  CONSTR:    9    32.290     11      0.001             0.828       0.363
+   12  CONSTR:   11    32.919     12      0.001             0.629       0.428
+   13  CONSTR:    1    33.412     13      0.001             0.492       0.483
+   14  CONSTR:   24    33.635     14      0.002             0.223       0.637
+   15  CONSTR:   30    33.889     15      0.004             0.254       0.614
+   16  CONSTR:   34    34.081     16      0.005             0.192       0.661
+   17  CONSTR:   26    34.235     17      0.008             0.154       0.695
+   18  CONSTR:   10    34.316     18      0.012             0.082       0.775
+   19  CONSTR:   32    34.375     19      0.017             0.059       0.809
+   20  CONSTR:   17    34.405     20      0.024             0.030       0.863
+   21  CONSTR:   36    34.418     21      0.033             0.013       0.908
+   22  CONSTR:   28    34.429     22      0.044             0.011       0.918
+   23  CONSTR:    2    34.435     23      0.059             0.006       0.938
+   24  CONSTR:   31    34.437     24      0.077             0.003       0.958
+   25  CONSTR:   16    34.440     25      0.099             0.002       0.963
+   26  CONSTR:   13    34.441     26      0.124             0.002       0.966
+   27  CONSTR:    3    34.441     27      0.154             0.000       0.990
+
+
+  LAGRANGE MULTIPLIER TEST (FOR ADDING PARAMETERS)
+
+
+  ORDERED UNIVARIATE TEST STATISTICS:             
+                                          HANCOCK          STANDAR-   ROBUST
+                             CHI-         467 DF   PARAM.   DIZED    PREDICTED
+   NO  CODE   PARAMETER     SQUARE  PROB.  PROB.   CHANGE   CHANGE  RMSEA   CFI
+   --  ----   ---------     ------  -----  -----   ------  -------  -----------
+    1  2 16   1,  F3,F1     10.016  0.002  1.000   -0.159   -0.164  0.051 0.928
+    2  2 22   1,  F2,F3      8.694  0.003  1.000    0.671    1.689  0.051 0.928
+    3  2 10   1,  D3,D2      8.694  0.003  1.000    0.120    0.327  0.051 0.928
+    4  2 22   1,  F2,F3      5.923  0.015  1.000    0.440    1.327  0.051 0.928
+    5  2 10   1,  D3,D2      5.923  0.015  1.000    0.079    0.223  0.051 0.928
+    6  2 16   1,  F3,F1      4.889  0.027  1.000   -0.110   -0.099  0.051 0.928
+    7  2 16   1,  F6,F4      4.291  0.038  1.000    0.106    0.123  0.051 0.927
+    8  2 16   1,  F6,F1      4.291  0.038  1.000   -0.557   -0.959  0.051 0.927
+    9  2 16   1,  F3,F4      3.383  0.066  1.000   -0.054   -0.161  0.051 0.927
+   10  2 16   1,  F6,F1      2.068  0.150  1.000   -0.102   -0.322  0.051 0.927
+   11  2 22   1,  F6,F3      2.043  0.153  1.000   -0.865   -1.774  0.051 0.927
+   12  2 22   1,  F6,F2      2.043  0.153  1.000   -0.119   -0.255  0.051 0.927
+   13  2 16   1,  F3,F4      0.797  0.372  1.000   -0.026   -0.025  0.051 0.927
+   14  2 16   1,  F6,F4      0.565  0.452  1.000   -0.030   -0.062  0.051 0.927
+   15  2 16   1,  F2,F5      0.000  1.000  1.000    0.000    0.000  0.051 0.927
+   16  2 22   1,  F6,F3      0.000  1.000  1.000    0.000    0.000  0.051 0.927
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+  TITLE:   Model built by EQS 6 for Windows in Group 2                 
+
+  MAXIMUM LIKELIHOOD SOLUTION (NORMAL DISTRIBUTION THEORY)
+
+
+  MULTIVARIATE LAGRANGE MULTIPLIER TEST BY SIMULTANEOUS PROCESS IN STAGE  1
+
+  PARAMETER SETS (SUBMATRICES) ACTIVE AT THIS STAGE ARE:
+
+     PDD GFF BFF
+
+
+
+      CUMULATIVE MULTIVARIATE STATISTICS      UNIVARIATE INCREMENT
+      ----------------------------------      ------------------------------
+                                                         HANCOCK'S     ROBUST
+                       CHI-                 CHI-         SEQUENTIAL   PREDICTED
+ STEP   PARAMETER     SQUARE  D.F. PROB.   SQUARE PROB.  D.F. PROB.  RMSEA   CFI
+ ----  ----------     ------  ---- -----   ------ -----  ---- -----  -----------
+    1   1,  F3,F1     10.016     1 0.002   10.016 0.002   467 1.000  0.051 0.928
+    2   1,  F2,F3     14.827     2 0.001    4.811 0.028   466 1.000  0.051 0.929
+    3   1,  F6,F4     18.740     3 0.000    3.913 0.048   465 1.000  0.051 0.929
+
+ *** NOTE *** IF PREDICTED RMSEA COULD NOT BE CALCULATED, 99.999 IS PRINTED.
+              IF PREDICTED  CFI  COULD NOT BE CALCULATED,  9.999 IS PRINTED.
+
+
+  LAGRANGIAN MULTIPLIER TEST REQUIRED   237337 WORDS OF MEMORY.
+  PROGRAM ALLOCATES  5000000 WORDS.
+
+
+
+
+ -------------------------------------------------------------------------------
+                           E N D    O F    M E T H O D
+ -------------------------------------------------------------------------------
+1
+  today is 2019/07/15
+  Execution begins at 10:16:23   
+  Execution ends   at 10:16:24   
+  Elapsed time =       1.00 seconds 

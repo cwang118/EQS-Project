@@ -1,0 +1,388 @@
+               0       1       0
+              58      58      58       0       0       0       0       0       0       0       0       0       0       0
+              26       0       0       0       0       0       0      26
+              29
+              12      20      28       0       0       0       0       0       0       0       0       0       0       0
+              36       0       0       0       0       0       0      40
+              44
+METHOD         2 ESTIMATION METHOD (LS,GLS,ML,ELS,EGLS,ERLS,AGLS,HKGLS,HKRLS) 
+CONDCODE       2 CONDITION CODE (0 FOR NORMAL CONDITION)                      
+CONVRGNC       2 CONVERGENCE (0 FOR MODEL CONVERGED)                          
+ITER           2 NUMBER OF ITERATIONS FOR CONVERGENCE                         
+DF             2 DEGREES OF FREEDOM                                           
+CNSTRANT       2 NUMBER OF CONSTRAINTS                                        
+DFDENOM        2 DENOMINATOR DEGREES OF FREEDOM FOR F-TESTS                   
+DFSTRMEN       2 DEGREES OF FREEDOM FOR POTENTIAL STRUCTURED MEANS MODEL TEST 
+DFADJCHI       2 D.F. FOR MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE              
+DFMNSKEW       2 D.F. FOR MEAN-SCALED AND SKEWNESS-ADJUSTED STATISTIC         
+SMPLMAND       2 NUMBER OF SAMPLES IN ANDERSON-DARLING TEST                   
+DFGLSMEN       2 D.F. FOR GLS TEST OF HOMOGENEITY OF MEANS                    
+DFGLSCOV       2 D.F. FOR GLS TEST OF HOMOGENEITY OF COVARIANCE MATRICES      
+DFGLSCMB       2 D.F. FOR GLS COMBINED TEST OF HOMOGENEITY OF MEANS/COVAS.    
+PVAL           3 TAIL PROBABILITY FOR MODEL CHI-SQUARE                        
+TPRESTST       3 TAIL PROBABILITY FOR RESIDUAL-BASED TEST STATISTIC           
+TPYBRTST       3 TAIL PROBABILITY FOR YUAN-BENTLER RESIDUAL-BASED TEST STAT.  
+TPYBAGLS       3 TAIL PROBABILITY FOR YUAN-BENTLER AGLS F-STATISTIC           
+TPYBRESF       3 TAIL PROBABILITY FOR YUAN-BENTLER RESIDUAL-BASED F-STATISTIC 
+SBPVAL         3 TAIL PROBABILITY FOR SATORRA-BENTLER SCALED CHI-SQUARE       
+YBPVAL         3 TAIL PROB. FOR YUAN-BENTLER SCALED CHI-SQUARE (CASE ROBUST)  
+TPSCALYB       3 TAIL PROBABILITY FOR SCALED CHI-SQUARE (YUAN-BENTLER)        
+TPSTRMEN       3 TAIL PROBABILITY FOR POTENTIAL STRUCTURED MEANS MODEL        
+TPYBCORA       3 TAIL PROB. FOR YUAN-BENTLER CORRECTED AGLS TEST STATISTIC    
+TPYBRBTS       4 TAIL PROB. FOR YUAN-BENTLER RESIDUAL-BASED ADF STATISTIC     
+TPYBCORT       4 TAIL PROB. FOR YUAN-BENTLER CORRECTED RESID.-BASED ADF STAT. 
+TPYBRBAF       4 TAIL PROB. FOR YUAN-BENTLER RESIDUAL-BASED ADF F-STATISTIC   
+TPADJCHI       4 TAIL PROBABILITY FOR MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE  
+TPMNSKEW       4 TAIL PROBABILITY FOR MEAN-SCALED AND SKEWNESS-ADJUSTED STAT. 
+TPANDERS       4 TAIL PROBABILITY FOR ANDERSON-DARLING TEST                   
+TPNEYMAN       4 TAIL PROBABILITY FOR COMBINED NEYMAN TEST OF UNIFORMITY      
+TPGLSMEN       4 TAIL PROBABILITY FOR GLS TEST OF HOMOGENEITY OF MEANS        
+TPGLSCOV       4 TAIL PROB. FOR GLS TEST OF HOMOGENEITY OF COV. MATRICES      
+TPGLSTOT       4 TAIL PROB. FOR GLS COMBINED TEST OF HOMOGENEITY              
+NULCHI         5 INDEPENDENCE MODEL CHI-SQUARE                                
+CHI            5 MODEL CHI-SQUARE                                             
+GFI            5 JORESKOG-SORBOM'S  GFI  FIT INDEX                            
+AGFI           5 JORESKOG-SORBOM'S AGFI  FIT INDEX                            
+IFI            5 BOLLEN'S          (IFI) FIT INDEX                            
+MFI            5 MCDONALD'S        (MFI) FIT INDEX                            
+NFI            5 BENTLER-BONETT     NORMED FIT INDEX                          
+NNFI           5 BENTLER-BONETT NON-NORMED FIT INDEX                          
+CFI            5 COMPARATIVE FIT INDEX (CFI)                                  
+RMR            5 ROOT MEAN-SQUARE RESIDUAL (RMR)                              
+STANDRMR       6 STANDARDIZED RMR                                             
+RMSEA          6 ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)              
+RMSEALOW       6 CONFIDENCE INTERVAL FOR RMSEA (LOWER BOUND)                  
+RMSEAUPR       6 CONFIDENCE INTERVAL FOR RMSEA (UPPER BOUND)                  
+RESIDTST       6 RESIDUAL-BASED TEST STATISTIC                                
+YBRESTST       6 YUAN-BENTLER RESIDUAL-BASED TEST STATISTIC                   
+YBAGLSF        6 YUAN-BENTLER AGLS F-STATISTIC                                
+YBRESF         6 YUAN-BENTLER RESIDUAL-BASED F-STATISTIC                      
+AGLS           6 AGLS FIT INDEX                                               
+AGLSADJU       6 AGLS ADJUSTED FIT INDEX                                      
+AGLSCCFI       7 AGLS CORRECTED COMPARATIVE FIT INDEX                         
+CRONALFA       7 CRONBACH'S ALPHA                                             
+CVFREALF       7 COVARIATE-FREE ALPHA                                         
+CVBASALF       7 COVARIATE-BASED ALPHA                                        
+BETRALFA       7 COEFFICIENT ALPHA FOR AN OPTIMAL SHORT SCALE                 
+GLBRELIA       7 GREATEST LOWER BOUND RELIABILITY                             
+CORGLBRL       7 LI-BENTLER CORRECTED GREATEST LOWER BOUND RELIABILITY        
+BETRRELI       7 GLB RELIABILITY FOR AN OPTIMAL SHORT SCALE                   
+BENRELIA       7 BENTLER'S DIMENSION-FREE LOWER BOUND RELIABILITY (BLB)       
+CORBENRL       7 LI-BENTLER CORRECTED DIMENSION-FREE LOWER BOUND RELIABILITY  
+SHAPRELI       8 SHAPIRO'S LOWER BOUND RELIABILITY FOR A WEIGHTED COMPOSITE   
+RELIARHO       8 RELIABILITY COEFFICIENT RHO                                  
+CVFRERHO       8 COVARIATE-FREE RHO                                           
+CVBASRHO       8 COVARIATE-BASED RHO                                          
+RELIABLB       8 RELIABILITY COEFFICIENT RHO BASED ON BLB LOADINGS            
+CVFREBLB       8 COVARIATE-FREE RHO BASED ON BLB LOADINGS                     
+CVBASBLB       8 COVARIATE-BASED RHO BASED ON BLB LOADINGS                    
+RELIAGLB       8 RELIABILITY COEFFICIENT RHO BASED ON GLB LOADINGS            
+CVFREGLB       8 COVARIATE-FREE RHO BASED ON GLB LOADINGS                     
+CVBASGLB       8 COVARIATE-BASED RHO BASED ON GLB LOADINGS                    
+MAXICREL       9 MAXIMAL WEIGHTED INTERNAL CONSISTENCY RELIABILITY            
+SPLTRHO1       9 SPLIT HALF RELIABILITY LAMBDA4 (0.95)                        
+SPLTRHO2       9 SPLIT HALF RELIABILITY LAMBDA4 (OPTIMAL)                     
+SBNULCHI       9 ROBUST INDEPENDENCE MODEL CHI-SQUARE                         
+SBCHI          9 SATORRA-BENTLER SCALED CHI-SQUARE                            
+ROIFI          9 ROBUST  BOLLEN  (IFI) FIT INDEX                              
+ROMFI          9 ROBUST MCDONALD (MFI) FIT INDEX                              
+ROBNFI         9 ROBUST BENTLER-BONETT     NORMED FIT INDEX                   
+ROBNNFI        9 ROBUST BENTLER-BONETT NON-NORMED FIT INDEX                   
+ROBCFI         9 ROBUST COMPARATIVE FIT INDEX                                 
+RORMSEA       10 ROBUST ROOT MEAN-SQUARE ERROR OF APPROXIMATION (RMSEA)       
+ROBRMSLO      10 CONFIDENCE INTERVAL FOR ROBUST RMSEA (LOWER BOUND)           
+ROBRMSUP      10 CONFIDENCE INTERVAL FOR ROBUST RMSEA (UPPER BOUND)           
+YBSCLCAM      10 YUAN-BENTLER SCALED CHI-SQUARE (CASE ROBUST WEIGHTING)       
+SCLCHIYB      10 SCALED CHI-SQUARE (YUAN-BENTLER)                             
+BYSTRMEN      10 SCALED (YUAN-BENTLER) INDEPENDENCE MODEL CHI-SQUARE          
+MINIFUNC      10 BENTLER-YUAN MODIFIED TEST FOR POTENTIAL STRUC. MEANS MODEL  
+YBCRAGLS      10 MINIMIZED MODEL FUNCTION VALUE                               
+SCLYBIND      10 YUAN-BENTLER CORRECTED AGLS TEST STATISTIC                   
+YBRESADF      10 YUAN-BENTLER RESIDUAL-BASED ADF STATISTIC                    
+YBCORRES      11 YUAN-BENTLER CORRECTED RESIDUAL-BASED ADF STATISTIC          
+YBRSADFF      11 YUAN-BENTLER RESIDUAL-BASED ADF F-STATISTIC                  
+INDAIC        11 INDEPENDENCE AIC                                             
+INDCAIC       11 INDEPENDENCE CAIC                                            
+MODAIC        11 MODEL AIC                                                    
+MODCAIC       11 MODEL CAIC                                                   
+RINDAIC       11 ROBUST INDEPENDENCE AIC                                      
+RINDCAIC      11 ROBUST INDEPENDENCE CAIC                                     
+RMODAIC       11 ROBUST MODEL AIC                                             
+RMODCAIC      11 ROBUST MODEL CAIC                                            
+LLIKEAIC      12 AKAIKE INFORMATION CRITERION (AIC) BASED ON LOG LIKELIHOOD   
+LLIKEBIC      12 BAYESIAN INFORMATION CRITERION (BIC) BASED ON LOG LIKELIHOOD 
+MVADJCHI      12 MEAN- AND VARIANCE-ADJUSTED CHI-SQUARE                       
+MNSKUADJ      12 MEAN-SCALED AND SKEWNESS-ADJUSTED STATISTIC                  
+ANDRNORM      12 ANDERSON-DARLING NORMALIZED TEST STATISTIC                   
+CNEYMAN       12 COMBINED NEYMAN TEST OF UNIFORMITY                           
+USERFUNC      12 USER-DEFINED FUNCTION                                        
+STDERRFN      12 STANDARD ERROR OF USER-DEFINED FUNCTION                      
+CORSTDER      12 CORRECTED STANDARD ERROR OF USER-DEFINED FUNCTION            
+ROBSCAL       12 SATORRA-BENTLER SCALING FACTOR                               
+GLSMEAN       13 CHI-SQUARE FOR GLS TEST OF HOMOGENEITY OF MEANS              
+GLSCOVA       13 CHI-SQUARE FOR GLS TEST OF HOMOGENEITY OF COV. MATRICES      
+GLSCOMBI      13 CHI-SQUARE FOR GLS COMBINED TEST OF HOMOGENEITY OF MEANS/COV 
+N             14 SAMPLE SIZE                                                  
+p             14 NUMBER OF MEASURED VARIABLES                                 
+NF            14 NUMBER OF FACTORS                                            
+MISPAT        14 NUMBER OF MISSINGNESS PATTERNS                               
+KURTOS1       14 KURTOSES: (G2,P) AND NORMALIZED MULTIVARIATE                 
+KURTOS2       14 KURTOSES: (G2,P) AND NORMALIZED MULTIVARIATE                 
+DETERMNT      14 DETERMINANT OF MATRIX TO BE ANALYZED                         
+BE2           14 NUMBER OF INDEPENDENT VARIABLES                              
+NINP2         14 NUMBER OF DEPENDENT VARIABLES                                
+PA1           15 PARAMETER ESTIMATES                                          
+PA2           15 PARAMETER ESTIMATES                                          
+PA3           15 PARAMETER ESTIMATES                                          
+PA4           15 PARAMETER ESTIMATES                                          
+PA5           15 PARAMETER ESTIMATES                                          
+PA6           15 PARAMETER ESTIMATES                                          
+PA7           15 PARAMETER ESTIMATES                                          
+PA8           15 PARAMETER ESTIMATES                                          
+PA9           16 PARAMETER ESTIMATES                                          
+PA10          16 PARAMETER ESTIMATES                                          
+PA11          16 PARAMETER ESTIMATES                                          
+PA12          16 PARAMETER ESTIMATES                                          
+PA13          16 PARAMETER ESTIMATES                                          
+PA14          16 PARAMETER ESTIMATES                                          
+PA15          16 PARAMETER ESTIMATES                                          
+PA16          16 PARAMETER ESTIMATES                                          
+PA17          17 PARAMETER ESTIMATES                                          
+PA18          17 PARAMETER ESTIMATES                                          
+PA19          17 PARAMETER ESTIMATES                                          
+PA20          17 PARAMETER ESTIMATES                                          
+PA21          17 PARAMETER ESTIMATES                                          
+PA22          17 PARAMETER ESTIMATES                                          
+PA23          17 PARAMETER ESTIMATES                                          
+PA24          17 PARAMETER ESTIMATES                                          
+PA25          18 PARAMETER ESTIMATES                                          
+PA26          18 PARAMETER ESTIMATES                                          
+PA27          18 PARAMETER ESTIMATES                                          
+PA28          18 PARAMETER ESTIMATES                                          
+PA29          18 PARAMETER ESTIMATES                                          
+PA30          18 PARAMETER ESTIMATES                                          
+PA31          18 PARAMETER ESTIMATES                                          
+PA32          18 PARAMETER ESTIMATES                                          
+PA33          19 PARAMETER ESTIMATES                                          
+PA34          19 PARAMETER ESTIMATES                                          
+PA35          19 PARAMETER ESTIMATES                                          
+PA36          19 PARAMETER ESTIMATES                                          
+PA37          19 PARAMETER ESTIMATES                                          
+PA38          19 PARAMETER ESTIMATES                                          
+PA39          19 PARAMETER ESTIMATES                                          
+PA40          19 PARAMETER ESTIMATES                                          
+PA41          20 PARAMETER ESTIMATES                                          
+PA42          20 PARAMETER ESTIMATES                                          
+PA43          20 PARAMETER ESTIMATES                                          
+PA44          20 PARAMETER ESTIMATES                                          
+PA45          20 PARAMETER ESTIMATES                                          
+PA46          20 PARAMETER ESTIMATES                                          
+PA47          20 PARAMETER ESTIMATES                                          
+PA48          20 PARAMETER ESTIMATES                                          
+PA49          21 PARAMETER ESTIMATES                                          
+PA50          21 PARAMETER ESTIMATES                                          
+PA51          21 PARAMETER ESTIMATES                                          
+PA52          21 PARAMETER ESTIMATES                                          
+PA53          21 PARAMETER ESTIMATES                                          
+PA54          21 PARAMETER ESTIMATES                                          
+PA55          21 PARAMETER ESTIMATES                                          
+PA56          21 PARAMETER ESTIMATES                                          
+PA57          22 PARAMETER ESTIMATES                                          
+PA58          22 PARAMETER ESTIMATES                                          
+ST1           23 STANDARD ERRORS                                              
+ST2           23 STANDARD ERRORS                                              
+ST3           23 STANDARD ERRORS                                              
+ST4           23 STANDARD ERRORS                                              
+ST5           23 STANDARD ERRORS                                              
+ST6           23 STANDARD ERRORS                                              
+ST7           23 STANDARD ERRORS                                              
+ST8           23 STANDARD ERRORS                                              
+ST9           24 STANDARD ERRORS                                              
+ST10          24 STANDARD ERRORS                                              
+ST11          24 STANDARD ERRORS                                              
+ST12          24 STANDARD ERRORS                                              
+ST13          24 STANDARD ERRORS                                              
+ST14          24 STANDARD ERRORS                                              
+ST15          24 STANDARD ERRORS                                              
+ST16          24 STANDARD ERRORS                                              
+ST17          25 STANDARD ERRORS                                              
+ST18          25 STANDARD ERRORS                                              
+ST19          25 STANDARD ERRORS                                              
+ST20          25 STANDARD ERRORS                                              
+ST21          25 STANDARD ERRORS                                              
+ST22          25 STANDARD ERRORS                                              
+ST23          25 STANDARD ERRORS                                              
+ST24          25 STANDARD ERRORS                                              
+ST25          26 STANDARD ERRORS                                              
+ST26          26 STANDARD ERRORS                                              
+ST27          26 STANDARD ERRORS                                              
+ST28          26 STANDARD ERRORS                                              
+ST29          26 STANDARD ERRORS                                              
+ST30          26 STANDARD ERRORS                                              
+ST31          26 STANDARD ERRORS                                              
+ST32          26 STANDARD ERRORS                                              
+ST33          27 STANDARD ERRORS                                              
+ST34          27 STANDARD ERRORS                                              
+ST35          27 STANDARD ERRORS                                              
+ST36          27 STANDARD ERRORS                                              
+ST37          27 STANDARD ERRORS                                              
+ST38          27 STANDARD ERRORS                                              
+ST39          27 STANDARD ERRORS                                              
+ST40          27 STANDARD ERRORS                                              
+ST41          28 STANDARD ERRORS                                              
+ST42          28 STANDARD ERRORS                                              
+ST43          28 STANDARD ERRORS                                              
+ST44          28 STANDARD ERRORS                                              
+ST45          28 STANDARD ERRORS                                              
+ST46          28 STANDARD ERRORS                                              
+ST47          28 STANDARD ERRORS                                              
+ST48          28 STANDARD ERRORS                                              
+ST49          29 STANDARD ERRORS                                              
+ST50          29 STANDARD ERRORS                                              
+ST51          29 STANDARD ERRORS                                              
+ST52          29 STANDARD ERRORS                                              
+ST53          29 STANDARD ERRORS                                              
+ST54          29 STANDARD ERRORS                                              
+ST55          29 STANDARD ERRORS                                              
+ST56          29 STANDARD ERRORS                                              
+ST57          30 STANDARD ERRORS                                              
+ST58          30 STANDARD ERRORS                                              
+RST1          31 ROBUST STANDARD ERRORS                                       
+RST2          31 ROBUST STANDARD ERRORS                                       
+RST3          31 ROBUST STANDARD ERRORS                                       
+RST4          31 ROBUST STANDARD ERRORS                                       
+RST5          31 ROBUST STANDARD ERRORS                                       
+RST6          31 ROBUST STANDARD ERRORS                                       
+RST7          31 ROBUST STANDARD ERRORS                                       
+RST8          31 ROBUST STANDARD ERRORS                                       
+RST9          32 ROBUST STANDARD ERRORS                                       
+RST10         32 ROBUST STANDARD ERRORS                                       
+RST11         32 ROBUST STANDARD ERRORS                                       
+RST12         32 ROBUST STANDARD ERRORS                                       
+RST13         32 ROBUST STANDARD ERRORS                                       
+RST14         32 ROBUST STANDARD ERRORS                                       
+RST15         32 ROBUST STANDARD ERRORS                                       
+RST16         32 ROBUST STANDARD ERRORS                                       
+RST17         33 ROBUST STANDARD ERRORS                                       
+RST18         33 ROBUST STANDARD ERRORS                                       
+RST19         33 ROBUST STANDARD ERRORS                                       
+RST20         33 ROBUST STANDARD ERRORS                                       
+RST21         33 ROBUST STANDARD ERRORS                                       
+RST22         33 ROBUST STANDARD ERRORS                                       
+RST23         33 ROBUST STANDARD ERRORS                                       
+RST24         33 ROBUST STANDARD ERRORS                                       
+RST25         34 ROBUST STANDARD ERRORS                                       
+RST26         34 ROBUST STANDARD ERRORS                                       
+RST27         34 ROBUST STANDARD ERRORS                                       
+RST28         34 ROBUST STANDARD ERRORS                                       
+RST29         34 ROBUST STANDARD ERRORS                                       
+RST30         34 ROBUST STANDARD ERRORS                                       
+RST31         34 ROBUST STANDARD ERRORS                                       
+RST32         34 ROBUST STANDARD ERRORS                                       
+RST33         35 ROBUST STANDARD ERRORS                                       
+RST34         35 ROBUST STANDARD ERRORS                                       
+RST35         35 ROBUST STANDARD ERRORS                                       
+RST36         35 ROBUST STANDARD ERRORS                                       
+RST37         35 ROBUST STANDARD ERRORS                                       
+RST38         35 ROBUST STANDARD ERRORS                                       
+RST39         35 ROBUST STANDARD ERRORS                                       
+RST40         35 ROBUST STANDARD ERRORS                                       
+RST41         36 ROBUST STANDARD ERRORS                                       
+RST42         36 ROBUST STANDARD ERRORS                                       
+RST43         36 ROBUST STANDARD ERRORS                                       
+RST44         36 ROBUST STANDARD ERRORS                                       
+RST45         36 ROBUST STANDARD ERRORS                                       
+RST46         36 ROBUST STANDARD ERRORS                                       
+RST47         36 ROBUST STANDARD ERRORS                                       
+RST48         36 ROBUST STANDARD ERRORS                                       
+RST49         37 ROBUST STANDARD ERRORS                                       
+RST50         37 ROBUST STANDARD ERRORS                                       
+RST51         37 ROBUST STANDARD ERRORS                                       
+RST52         37 ROBUST STANDARD ERRORS                                       
+RST53         37 ROBUST STANDARD ERRORS                                       
+RST54         37 ROBUST STANDARD ERRORS                                       
+RST55         37 ROBUST STANDARD ERRORS                                       
+RST56         37 ROBUST STANDARD ERRORS                                       
+RST57         38 ROBUST STANDARD ERRORS                                       
+RST58         38 ROBUST STANDARD ERRORS                                       
+RS1           39 R-SQUARES                                                    
+RS2           39 R-SQUARES                                                    
+RS3           39 R-SQUARES                                                    
+RS4           39 R-SQUARES                                                    
+RS5           39 R-SQUARES                                                    
+RS6           39 R-SQUARES                                                    
+RS7           39 R-SQUARES                                                    
+RS8           39 R-SQUARES                                                    
+RS9           40 R-SQUARES                                                    
+RS10          40 R-SQUARES                                                    
+RS11          40 R-SQUARES                                                    
+RS12          40 R-SQUARES                                                    
+RS13          40 R-SQUARES                                                    
+RS14          40 R-SQUARES                                                    
+RS15          40 R-SQUARES                                                    
+RS16          40 R-SQUARES                                                    
+RS17          41 R-SQUARES                                                    
+RS18          41 R-SQUARES                                                    
+RS19          41 R-SQUARES                                                    
+RS20          41 R-SQUARES                                                    
+RS21          41 R-SQUARES                                                    
+RS22          41 R-SQUARES                                                    
+RS23          41 R-SQUARES                                                    
+RS24          41 R-SQUARES                                                    
+RS25          42 R-SQUARES                                                    
+RS26          42 R-SQUARES                                                    
+STDD1         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD2         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD3         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD4         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD5         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD6         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD7         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD8         43 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD9         44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD10        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD11        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD12        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD13        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD14        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD15        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD16        44 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD17        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD18        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD19        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD20        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD21        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD22        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD23        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD24        45 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD25        46 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDD26        46 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR DEP. VARS.      
+STDI1         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI2         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI3         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI4         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI5         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI6         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI7         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI8         47 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI9         48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI10        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI11        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI12        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI13        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI14        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI15        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI16        48 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI17        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI18        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI19        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI20        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI21        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI22        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI23        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI24        49 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI25        50 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI26        50 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI27        50 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI28        50 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
+STDI29        50 MODEL-BASED ESTIMATES OF VAR. STD. DEVS. FOR IND. VARS.      
